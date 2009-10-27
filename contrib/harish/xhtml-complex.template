@@ -1,6 +1,6 @@
-<ul>
-
 <h2>Peer-reviewed journal articles</h2>
+
+<ul>
 
 {% for p in papers %}
 {% ifequal p.category 'articles' %}
