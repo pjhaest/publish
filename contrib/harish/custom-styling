@@ -19,6 +19,6 @@ else:
     papers = read_file("papers.pub")
 
     # Output results
-    for paper in papers:
-        context = Context(paper)
-        print template.render(context)
+    context = Context({"papers": papers})
+    print template.render(context)
+    

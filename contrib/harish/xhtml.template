@@ -1,1 +1,5 @@
-<li>{{ title }} in {{ journal }}, {{ year }}.</li>
+<ul>
+{% for paper in papers %}
+    <li>{{ paper.title }}</li>
+{% endfor %}
+</ul>
