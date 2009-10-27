@@ -14,7 +14,7 @@ from validation import validate_papers
 from log import print_summary
 from common import short_author
 
-def export_file(filename, filters):
+def export_file(filename, filters=[]):
     "Export data into desired file format"
 
     # Make sure we don't overwrite the database

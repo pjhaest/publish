@@ -12,19 +12,19 @@ from publish import config
 from log import print_summary
 from database import read_database, save_database, save_invalid_papers
 
-def import_file(filename, filters):
+def import_file(filename, filters=[]):
     "Import data from file into database."
 
     # Read and validate database
     database_papers = read_database()
     (database_papers, invalid_database_papers) = validate_papers(database_papers)
-   
+
     # Read imported file
     imported_papers = _read_file(filename)
 
     # Assign attributes to imported papers
     _assign_attributes(imported_papers, filters)
-    
+
     # Validate imported file
     (imported_papers, invalid_imported_papers) = validate_papers(imported_papers)
     print ""
@@ -65,7 +65,7 @@ def _read_file(filename):
         file.close()
     except:
         raise RuntimeError, 'Unable to open file "%s"' % filename
-    
+
     # Parse file
     imported_papers = read(text)
 
