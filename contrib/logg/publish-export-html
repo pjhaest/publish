@@ -1,0 +1,14 @@
+#!/bin/bash
+
+HTML_DIR=/home/logg/work/www/current
+
+# Generate HTML
+publish export category!=courses pdf_dir=pub/papers logg-bibliography.html
+
+# Copy to web page
+cp logg-bibliography.html $HTML_DIR/research
+cp papers/* $HTML_DIR/pub/papers
+
+# Publish
+cd $HTML_DIR
+./publish.sh

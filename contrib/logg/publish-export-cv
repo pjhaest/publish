@@ -1,0 +1,14 @@
+#!/bin/bash
+
+CV_DIR=/home/logg/work/documents/cv/current
+
+# Generate LaTeX
+publish export category!=courses headline=" " logg-bibliography.tex
+
+# Rebild CV
+cp logg-bibliography.tex $CV_DIR
+cd $CV_DIR
+make
+
+# Publish
+./publish.sh

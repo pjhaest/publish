@@ -1,0 +1,184 @@
+\chapter{Importing}
+\label{import}
+\index{importing}
+
+\section{Overview}
+
+Papers may be imported into the system using the \emp{import} command
+(here for a file in BibTeX format):
+\begin{code}
+# publish import inputfile.bib
+\end{code}
+
+Papers imported to the system will either end up in the database-file
+(\emp{papers.pub}) or in a file with invalid papers that didn't pass
+the first round of validation. The file with the invalid papers is
+saved with date and time so that it can easily be located if needed.
+During import, the papers will be merged together with the papers
+already present in the database with particular attention to removing
+duplicate entries.  The database is always saved in the \texttt{pub}
+format.
+
+The following steps are carried out during import (see also
+Figure~\ref{fig:import}):
+\begin{enumerate}
+\item
+  Read \emp{papers.pub}
+\item
+  Validate \emp{papers.pub}, see Chapter \ref{validate}
+\item
+  Read the file which is being imported
+\item
+  Validate the imported file, see Chapter \ref{validate}
+\item
+  Merge \emp{papers.pub} with the imported file
+\item
+  Make a backup-copy of the database named \emp{papers.pub.bak}
+\item
+  Save merge papers to \emp{papers.pub}
+\end{enumerate}
+
+\section{Supported File Formats}
+
+In Table~\ref{tab:suffix}, the mapping between filename suffix and
+file format is shown. These are the formats currently supported by
+\package{}:
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{|l|l|}
+      \hline
+      \textbf{Filename Suffix} & \textbf{File Format}\\
+      \hline
+      \hline
+      \emp{.pdf} & PDF\\
+      \emp{.bib} & BibTeX\\
+      \emp{.bibtex} & BibTeX\\
+      \emp{.tex} & \LaTeX\\
+      \emp{.pub} & \emp{pub}\\
+      \hline
+    \end{tabular}
+    \caption{Mapping from filename suffix to format.}
+    \label{tab:suffix}
+  \end{center}
+\end{table}
+
+\section{Handling Invalid Papers}
+
+All invalid papers will automatically be saved to a file postfixed by
+the current date and time
+(\emp{invalid\_papers-\%Y\%m\%d-\%H:\%m:\%S.pub}), such as for example
+\emp{invalid\_papers-20081128-21:11:47.pub}.
+
+The following steps must typically be carried out when importing papers
+from a file containing one or more invalid papers:
+\begin{enumerate}
+  \item
+    Import file
+  \item
+    Open file with invalid papers, edit and correct the inaccuracies
+  \item
+    Import the file with the invalid papers
+  \item
+    Repeat as needed
+\end{enumerate}
+
+Alternatively, one may also edit and validate (see next chapter) the
+file containing the invalid papers before they are imported into the
+database.
+
+It is possible to import a file using the option \emp{autofix}:
+\begin{code}
+# publish import autofix=yes inputfile.bib
+\end{code}
+
+When autofix is used, the system automatically answers all questions
+that arise during validation and merging. This may be useful (but
+somewhat dangerous) when importing a large number of papers into the
+database.
+
+To see which inaccuracies that may occur during validation, see
+Chapter~\ref{validate} (validation) below.
+
+\section{Handling Duplicate Papers}
+
+If two authors have entered the same paper in different (but similar)
+ways (for example by specifying the author list in different order) or
+if a conference proceeding and journal paper have identical names, a
+duplicate is reported during merging. The system detects this by
+computing the distance between paper venues (journal names) and paper
+titles. If this distance between two papers is less than a certain
+matching distance\footnote{The matching distance
+\emp{matching\_distance\_strong} can be edited in
+\emp{publish/config/general.py}.} then the two papers are considered
+as duplicates.
+
+If a duplicate occurs, the user is faced with the following question:
+Attribute "\emph{name of attribute}" differs, what should I do?
+\begin{enumerate}
+\item
+  Keep both papers (marking them as allowed duplicates)
+\item
+  Ignore papers (marking them as invalid)
+\item
+  Keep first paper (\emph{name of first paper}) and ignore second paper (\emph{name of second paper})
+\item
+  Keep second paper (\emph{name of second paper}) and ignore first paper (\emph{name of first paper})
+\item
+  Use attribute from first paper (\emph{value of attribute})
+\item
+  Use attribute from second paper (\emph{value of attribute})
+\item
+  Print diff 
+\end{enumerate}
+
+If the user chooses to keep both papers, they are both marked as
+allowed duplicates, and will thereafter not be up for questioning
+again.  If the user instead chooses to ignore the papers, they will
+both be marked as invalid, and end up in the file with invalid papers.
+Number three to six in the list are self explanatory. If the user
+chooses to print a diff, both papers will be shown at the same time
+in the terminal window, and the differences will be marked, so that
+the differences are easily spotted for the user.
+
+\section{Overriding Attributes}
+
+When importing a file with papers, it can be useful to specify certain
+attributes, for example by specifying \texttt{department=sc} (to
+specify publications published by the scientific computing department)
+and/or \texttt{year=2005} (to specify that all papers were published
+in 2005). This means that all papers imported at this time will get
+those attributes and later, if one wants to extract only those papers
+written in 2005, they are easily found. (See Chapter~\ref{export}
+(Exporting) for more information about paper extraction/filtering.)
+The following command illustrates the above example:
+
+\begin{code}
+# publish import department=sc year=2005 inputfile.bib
+\end{code}
+
+Overriding attributes is mostly useful when the category is not easily
+deduced from the BibTeX entry-type. As shown above in
+Table~\ref{tab:entrytypes}, the category is not always evident for each
+BibTeX entry-type. \package{} tries to make an intelligent choice, but
+this is not always possible.
+
+For example, if a paper has the BibTeX entry-type \emp{book}, then
+\package{} looks for the attribute \emp{editor}. If there is such an
+attribute, the \emp{book} will end up in the category \emp{edited},
+and if not, the \emp{book} will end up in \emp{books}. Similarly,
+papers with entry-type \emp{misc} will end up in the category
+\emp{courses} if the attribute \emp{code} is found, in \emp{talks} if
+the attribute \emp{meeting} is found, or else in \emp{misc}.
+
+However, \package{} is currently not able to deduce whether a paper
+with entry-types \emp{proceedings} or \emp{conference} should be
+categorized into \emp{pro\-ceedings} or \emp{refproceedings}.
+
+This must then be specified explicitly when importing papers:
+\begin{code}
+# publish import category=refproceedings inputfile.bib
+\end{code}
+If not otherwise specified, \package{} places all papers with entry-type
+\emp{proceeding} (or \emp{conference}) into the category
+\emp{proceedings}.

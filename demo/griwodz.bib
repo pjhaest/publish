@@ -1,0 +1,770 @@
+
+@Inproceedings{Palant.2006.1,
+  author = {Palant, Wladimir and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Evaluating dead reckoning variations with a multi-player game simulator},
+  year = {2006},
+  abstract = {One of the most difficult tasks when creating an online multi-player game is to provide the players with a consistent view of the virtual world despite the network delays. Most current games use prediction algorithms to achieve this, but usually it does not go beyond applying the DIS dead reckoning algorithm proposed in the mid-90s. In this paper we introduce a simulator called GLS that allows us to evaluate different aspects of DIS and its variations. We examine the impact of prediction and clock synchronization on game consistency. We also evaluate the convergence algorithm we introduce here. Furthermore we look into ways for compensating increasing delays to keep the player's view of the game state sufficiently consistent with other players.},
+  booktitle = {Network and Operating System Support for Digital Audio and Video (NOSSDAV 2006)},
+  editor = {Brian Neil Levine and Mark Claypool},
+  pages = {20--25},
+  publisher = {ACM Press},
+  isbn = {1-59593-285-2}
+}
+
+@Inproceedings{Griwodz.2006.1,
+  author = {Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {The Fun of using TCP for an MMORPG},
+  year = {2006},
+  abstract = {Massive multi-player online games have become a popular, fast growing, multi-million industry with a very high user mass supporting hundreds or thousands of concurrent players. In many cases, these games are centralized and every player communicates with the central server through a time-critical unicast event stream. Funcom's Anarchy Online is one of these; it is based on TCP. We find that its kind of traffic has some interesting properties that inspire changes to protocol or architecture. In these game streams, using TCP is not TCP-friendly, using TCP does not have to be slower than using UDP, and only repeated timeouts ruin game experience. Improving the latter in the sender implementation does not impose any remarkable penalty on the network. Alternatively, a proxy architecture for multiplexing could save about 40\% resources at the server, allow congestion control to work and also reduce the lag of the game.},
+  booktitle = {Network and Operating System Support for Digital Audio and Video (NOSSDAV 2006)},
+  editor = {Brian Neil Levine and Mark Claypool},
+  pages = {1--7},
+  publisher = {ACM Press},
+  isbn = {1-59593-285-2},
+  note = {received the best paper award}
+}
+
+@Inproceedings{Majewski.2006.1,
+  author = {Majewski, Chris and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Translating Latency Requirements into Resource Requirements for Game Traffic},
+  year = {2006},
+  abstract = {Networked   multi-player  games  constitute   a  demanding   class  of
+interactive  distributed   multimedia  applications  with   very  high
+commercial  relevance.  As such,  they  attract  a  growing number  of
+researchers in multimedia networking.  Most games use a client-server
+architecture, mainly to prevent cheating. By analyzing the traffic of such  games, we  confirm that  individual client-server  flows consume relatively little bandwidth.  Thus latency, rather than bandwidth, is the critical parameter when provisioning this class of applications.   In  order  for  commercial  game  services  to  ensure low-latency operation, resource reservation must be explored. In this paper, we investigate options for a DiffServ-style reservation on part of the path between a game server and sets of clients. We show  how a token bucket shaper  can be parameterized based on a target end-to-end latency, and discuss the implications for a network infrastructure.  We use the shaper to quantify the burstiness of game traffic and the correlation between individual flows, with a view to the limitations this imposes on resource reservation for aggregate (multiplexed) flows.
+},
+  booktitle = {International Network Conference (INC 2006)},
+  editor = {Steven Furnell and Paul Dowland},
+  pages = {113--120},
+  publisher = {University of Plymouth},
+  isbn = {1-84102-157-1}
+}
+
+@Inproceedings{Halvorsen.2006.1,
+  author = {Halvorsen, P{\r a}l and Sunde, {\O}ystein Yri and Petlund, Andreas and Griwodz, Carsten},
+  title = {Programmable Subsystems: A Traffic Shaping \& Packet Prioritizing Case Study },
+  year = {2006},
+  abstract = {Due to a faster speed increase of networks than processors, we have today a trend towards the distribution of functionality and workload for network processing on several processing units. For this purpose, network processors are being developed which are special processor architectures aimed for demanding networking tasks such as backbone routing and switching. In this paper, we investigate the possibility of improving the scalability of intermediate nodes by offloading the packet processing workload on the host, and in particular, we present a traffic shaper and packet prioritizer implemented on the Intel IXP2400.
+},
+  booktitle = {International Network Conference (INC 2006)},
+  editor = {Steven Furnell and Paul Dowland},
+  pages = {97--104},
+  publisher = {University of Plymouth},
+  isbn = {1-84102-157-1}
+}
+
+@Inproceedings{Griwodz.2006.2,
+  author = {Griwodz, Carsten and Vik, Knut-Helge and Halvorsen, P{\r a}l},
+  title = {Multicast Tree Reconfiguration in Distributed Interactive Applications },
+  year = {2006},
+  abstract = {Communication in highly interactive distributed applications, such as massive multiplayer online games, can often be performed efficiently using multicast, i.e., application level multicast. However, in applications with a very dynamic group management, the multicast tree will have frequent changes, and in applications that have stringent latency requirement, this operation needs to be fast. Current multicast approaches either have no notion of reconfiguration, they do not care about tree reconstruction latency or wrongly assume that this is a fast, atomic operation. In this paper, we have focused on dynamic reconfiguration and have tested different ways for a node to join a tree. Our results show that this is an important issue for the class of  highly interactive distributed applications.
+},
+  booktitle = {Networking Issues in Multimedia Entertainment (NIME 2006)},
+  editor = {Marco Roccetti and Giovanni Pau and Abdennour El-Rhalibi},
+  pages = {1219--1223},
+  publisher = {IEEE},
+  isbn = {1-4244-0086-4}
+}
+
+@Book{Chandra.2006.1,
+  editor = {Chandra, Surendar and Griwodz, Carsten},
+  title = {Multimedia Computing and Networking 2006},
+  year = {2006},
+  abstract = {This year's MMCN is the 13th conference in the series and we have an
+exciting program that comprises a keynote speech by Klaus Hofrichter of
+Sony Playstation Corporation, a panel organized by Roger Zimmermann of USC
+that addresses the technological and societal challenges of multimedia
+sensors, and the presentations of 17 full papers and 6 short papers. We
+would like to thank the authors of all submissions to MMCN for
+contributing to the conference and allowing us to create this program. We
+also want to thank SPIE, IS\&T and ACM SIG Multimedia for making MMCN
+possible again this year.
+
+Our publicity co-chairs Andreas Mauthe, Wei Tsang Ooi and Michael Zink did
+a great job making the conference known and with the additional support of
+the ACM SIG Multimedia, the program committee had a good number of papers
+to chose from. The average quality of the submissions was very high, so
+that we allowed for an acceptance rate of 25.1\% this year.
+
+Each original submission was reviewed by at least three reviewers,
+conflicting review results were addressed in emails discussions, and all
+papers that received favorable reviews were intensely discussed during the
+program committee's one-day meeting on August 6th that committee members
+attended either in person, by video conference, or IP or POTS audio
+conference. We would like to express our gratitude to the Computer Science
+and Engineering Department of the University of Notre Dame that hosted the
+PC meeting, and the Systems Group in particular for providing these most
+flexible means of participation and being gracious hosts in all other
+respects as well. Our thanks go also to the program committee members and
+the external reviewers for their excellent job in evaluating the
+submissions, and discussing the evaluations before and during the program
+committee meeting.
+
+We have come up with a program that addresses multimedia systems issues
+under the topics streaming, distribution, peer-to-peer, and
+application-dependent transfer. We hope that you find the program
+attractive and the presentations instructive, and that you enjoy MMCN
+2006!
+
+Surendar Chandra
+Carsten Griwodz
+},
+  publisher = {SPIE},
+  address = {Bellingham, WA, USA},
+  volume = {6071},
+  isbn = {0-8194-6111-3}
+}
+
+@Article{halvorsen-dsonline-2004a,
+  author = {Halvorsen, Pl and Griwodz, Carsten and Goebel, Vera and Lund, Ketil and Plagemann, Thomas and Walpole, Jonathan},
+  title = {Storage System Support for Continuous-Media Applications, Part 1: Requirements and Single-Disk Issues},
+  year = {2004},
+  abstract = {},
+  journal = {IEEE Distributed Systems Online},
+  volume = {5},
+  number = {1}
+}
+
+@Article{halvorsen-dsonline-2004b,
+  author = {Halvorsen, Pl and Griwodz, Carsten and Goebel, Vera and Lund, Ketil and Plagemann, Thomas and Walpole, Jonathan},
+  title = {Storage System Support for Continuous-Media Applications, Part 2: Multiple Disks, Memory, and Integration},
+  year = {2004},
+  abstract = {},
+  journal = {IEEE Distributed Systems Online},
+  volume = {5},
+  number = {2}
+}
+
+@Inproceedings{Vik.2006.1,
+  author = {Vik, Knut-Helge and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Applicability of Group Communication for Increased Scalability in MMOGs},
+  year = {2006},
+  abstract = {Massive multiplayer online games (MMOGs) are today the driving factor for the development of distributed interactive applications, and they are increasing in size and complexity. Even a small MMOG supports thousands of players, the biggest support hundreds of thousands of concurrent players. Since they are typically built as strict client-server systems, they suffer from the inherent scalability problem of the architecture. Computing power and bandwidth limitations close to the server limit the possible number of players. Also, the latency of communication between players through the server will be higher than using direct communication. In the paper, we address these issues and investigate improvement options.
+
+A typical MMOG consists of a virtual world with a concept of time and space that is similar to the real world. In it, players are represented by avatars. Only subsets of these avatars interact with each other at any given time. This allows us to divide them into groups, and communication among group members becomes a multi-party communication problem. Thus, to reduce resource consumption, we compare the performance of several algorithms for group communication with the current central server approach. We use overlay multicast as the means of providing group communication, and research algorithms for creating shortest path trees, spanning trees, delay-bounded spanning trees and, more specific, applying Steiner tree heuristics. 
+
+Our experimental results indicate that different approaches are useful to reduce resource consumption while achieving a good perceived quality under varying conditions, such as frequent changes in group membership and the demand for low latency.
+
+},
+  booktitle = {Network \& System Support for Games (NetGames 2006)},
+  editor = {Adrian David Cheok, Yutaka Ishibashi, Stephane Natkin and Keiichi Yasumoto},
+  pages = {1--12},
+  publisher = {ACM Press},
+  edition = {Fifth},
+  isbn = {1-59593-589-4}
+}
+
+@Inproceedings{Pedersen.2006.1,
+  author = {Pedersen, Jon and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Considerations for SCTP Retransmission Delays for Thin Streams},
+  year = {2006},
+  abstract = {The popularity of distributed interactive applications has exploded in
+the last few years. For example, massive multi-player online games
+have become a fast growing, multi-million industry with a very high
+user mass supporting hundreds or thousands of concurrent players.
+Today, such games are usually client-server applications that use TCP
+for time-dependent communication. Similar multimedia applications also
+choose TCP frequently. Very thin data streams are sent over
+each of these TCP connections, which means that they consume very
+little bandwidth. TCP has several shortcomings with respect to the
+latency requirements of such thin streams because of its retransmission
+handling.
+
+An alternative to TCP may be SCTP which was developed
+to answer the requirements for signaling transport. SCTP has
+subsequently also been considered more appropriate than TCP for
+congestion controlled streaming of other time-dependent data.
+Important reasons are its maintenance of packet boundaries and partial
+reliability.
+
+In this paper, we evaluate the performance of the Linux SCTP
+implementation for thin streams. Like others before, we identify
+latency challenges. We also propose some enhancements for reducing the
+latency compared to the original Linux implementation. We argue for
+separate handling of thin and thick data streams in SCTP.
+},
+  booktitle = {Local Computer Networks (LCN 2006)},
+  editor = {Ken Christensen and Matthias Frank},
+  pages = {135 -- 142},
+  publisher = {IEEE},
+  isbn = {1-4244-0419-3},
+  note = {(best paper award)}
+}
+
+@Inproceedings{Griwodz.2006.3,
+  author = {Griwodz, Carsten and Johnsen, Frank T and Rekkedal, Simen and Halvorsen, P{\r a}l},
+  title = {Caching of Interactive Multiple Choice MPEG-4 Presentations},
+  year = {2006},
+  abstract = {},
+  booktitle = {International Workshop on Multimedia Systems and Networking (WMSN 2006)},
+  editor = {Hossam Hassanein and Golden G. Richards III},
+  pages = {659--666},
+  publisher = {IEEE},
+  edition = {25th},
+  isbn = {1-4244-0198-4},
+  note = {In proceedings of IEEE International Performance Computing and Communications Conference (IPCCC 2006)}
+}
+
+@Inproceedings{Johnsen.2006.1,
+  author = {Johnsen, Frank T and Hafs{\o}e, Trude and Griwodz, Carsten},
+  title = {Analysis of Server Workload and Client Interactions in a News-on-Demand Streaming System},
+  year = {2006},
+  abstract = {Internet services are continuing to grow along with the number of
+clients connecting to the Internet and the transfer rates of their
+connections. News is one of the main areas of usage of clients today.  We
+investigate several aspects of streaming in News-on-Demand services on the
+Internet today by analyzing log files of a news service from one of Norway's
+largest online newspapers.  These logs span almost two years of streaming,
+with a total of 4.6 million client requests after cleaning the logs. These
+requests are for over 3000 unique audio and video files.
+
+In this paper we investigate both short-term and long-term effects of client
+usage of the streaming material.  We examine the users' interaction with the
+content, in particular user behavior and object popularity in terms of news
+streaming media. By comparing our results with earlier work, we found that
+variations in server load depends strongly on local culture.  Furthermore,
+we found that there are slight variations between client usage of the audio
+and video material.  We also investigated traffic peaks, and how rapidly
+they form.
+},
+  booktitle = {International Symposium on Multimedia (ISM 2006)},
+  editor = {Philipp Sheu and Max M{\"u}hlh{\"a}user and Kinji Mori},
+  pages = {724--727},
+  publisher = {IEEE},
+  isbn = {0-7695-2746-9},
+  note = {accepted for poster}
+}
+
+@Inproceedings{Palant.2006.2,
+  author = {Palant, Wladimir and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Consistency requirements in Multiplayer Online Games},
+  year = {2006},
+  abstract = {Multi-player online games are becoming increasingly popular as
+broadband internet connections replace the old modems. However,
+while available bandwidth grows steadily according to Moore's law,
+the latency of the internet connections remains almost constant,
+making it difficult to maintain a consistent game state over a large
+number of clients that have to be synchronized with each other and
+with the server(s). This paper introduces a possible solution to
+the problem by defining the necessary level of consistency through
+user's perception of the game. While the resulting set of
+requirements is somewhat difficult to formalize, it is not too
+restrictive and leaves many options open, some of which are
+discussed here. Ideally a game where all the requirements are met
+will appear like a local game to the user.},
+  booktitle = {Network \& System Support for Games (NetGames 2006)},
+  editor = {Adrian David Cheok, Yutaka Ishibashi, Stephane Natkin and Keiichi Yasumoto},
+  pages = {1--4},
+  publisher = {ACM Press},
+  isbn = {1-59593-589-4}
+}
+
+@Inproceedings{Palant.2006.3,
+  author = {Palant, Wladimir and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {GLS: Simulator for Online Multi-Player Games},
+  year = {2006},
+  abstract = {  One of the most difficult tasks when creating an online multi-player game is
+  to provide the players with a consistent view of the virtual world despite the
+  network delays. Most current games use prediction algorithms to achieve this,
+  however measuring the effect of different approaches is difficult. To solve
+  this problem we introduce a simulator called GLS that gives us a
+  fully controlled environment and allows large-scale experiments to evaluate
+  different aspects of the algorithms.},
+  booktitle = {ACM Multimedia (MM 2006)},
+  editor = {Kenji Mase},
+  pages = {805--806},
+  publisher = {ACM Press},
+  isbn = {1-59593-498-7}
+}
+
+@Article{Simula.ND.8,
+  author = {Halvorsen, P{\r a}l and Dalseng, Tom Anders and Griwodz, Carsten},
+  title = {Assessment of Linux' Data Path Components for Download and Streaming},
+  year = {2007},
+  abstract = {Distributed multimedia streaming systems are increasingly popular due to technological advances, and numerous streaming services are available today. On servers or proxy caches, there is a huge scaling challenge in supporting thousands of concurrent users that request delivery of high-rate, time-dependent data like audio and video, because this requires transfers of large amounts of data through several sub-systems within a streaming node.
+Unnecessary copy operations in the data path can therefore contribute significantly to the resource consumption of streaming operations. Despite previous research, off-the-shelf operating systems have only limited support for data paths that have been optimized for streaming. Additionally, system call overhead has grown with newer operating systems editions, adding to the cost of data movement. Frequently, it is argued that these issues can be ignored because of the continuing growth of CPU speeds.
+However, such an argument fails to take problems of modern streaming systems into account. The dissipation of heat generated by disks and high-end CPUs is a major problem of data centers, which would be alleviated if less power-hungry CPUs could be used. The power budget of mobile devices, which are increasingly used for streaming as well, is tight, and reduced power consumption an important issue.
+In this paper, we prove that these operations consume a large amount of resources, and we therefore revisit the data movement problem and provide a comprehensive evaluation of possible streaming data I/O paths in the Linux 2.6 kernel. We have implemented and evaluated several enhanced mechanisms and show how to provide support for more efficient memory usage and reduction of user/kernel space switches for content download and streaming applications. In particular, we are able to reduce the CPU usage by approximately 27\% compared to the best approach without kernel modifications, by removing copy operations and system calls for a streaming scenario in which RTP headers must be added to stored data for sequence numbers and timing.
+},
+  journal = {The International Journal of Software Engineering and Knowledge Engineering},
+  volume = {17},
+  number = {4},
+  pages = {456--481}
+}
+
+@Inproceedings{Simula.ND.211,
+  author = {Kaspar, Dominik and Hansen, Audun F and Griwodz, Carsten},
+  title = {Multilink Transfer over Heterogeneous Networks},
+  year = {2008},
+  abstract = {Multilink transfer is the method of connecting a single host over multiple access networks to the Internet, with the potential of increasing communication quality. However, link heterogeneity causes severe challenges on end-to-end traffic. We explain the problems in more detail and how we intend to solve them using a proxy solution.},
+  booktitle = {IEEE International Conference on Network Protocols (ICNP), Poster Session}
+}
+
+@Inproceedings{Simula.ND.221,
+  author = {Vik, Knut-Helge and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Constructing Low-Latency Overlay Networks: Tree vs. Mesh Algorithms},
+  year = {2008},
+  abstract = {Distributed interactive applications may have stringent latency requirements and dynamic user groups. These applications may benefit  from a group communication system, and to improve the system support for such applications, we investigate graph algorithms that construct low-latency overlay networks for application-layer multicast.  In particular, we focus on reducing the diameter and the pair-wise latencies in the overlay.  The overlay construction time is also considered,  as it is often time-dependent in our dynamic target applications.  Here, we have implemented and experimentally analyzed spanning-tree heuristics and mesh construction heuristics, and compared their performance and applicability to distributed interactive applications. We found that trees are faster to construct and save considerable amounts of resources in the network. Meshes, on the other hand, yield lower pair-wise latencies and increases the fault tolerance, but at the expense of increased resource consumption.},
+  booktitle = {Proceedings of IEEE Conference on Local Computer Networks (LCN)}
+}
+
+@Inproceedings{Simula.ND.219,
+  author = {Vik, Knut-Helge and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {On the Influence of Latency Estimation on Dynamic Group Communication using Overlays},
+  year = {2009},
+  abstract = {Distributed interactive applications tend to have stringent latency requirements and some may have high bandwidth demands. Many of them have also very dynamic user groups for which all-to-all communication is needed. In online multiplayer games, for example, such groups are determined through region-of-interest management in the application. We have investigated a variety of group management approaches for overlay networks in earlier work and shown that several useful tree heuristics exist. However, these heuristics require full knowledge of all overlay link latencies. Since this is not scalable, we investigate the effects that latency estimation techniques have on the quality of overlay tree constructions. We do this by evaluating one example of our group management approaches in Planetlab and examining how latency estimation techniques influence their quality. Specifically, we investigate how two well-known latency estimation techniques, \textit{Vivaldi} and \textit{Netvigator}, affect the quality of tree building.},
+  booktitle = {Proceedings of Multimedia Computing and Networking (MMCN'09)}
+}
+
+@Inproceedings{Simula.ND.225,
+  author = {Beskow, Paul B and Vik, Knut-Helge and Halvorsen, P{\r a}l and Griwodz, Carsten},
+  title = {Latency Reduction by Dynamic Core Selection and Partial Migration of Game State },
+  year = {2008},
+  abstract = {Massively multi-player online games (MMOGs) require low latency while supporting a large number of concurrent players, often sharing one worldwide instance of the game. As these are conflicting requirements, a common way of distributing load is by dividing the virtual environment into virtual regions. As MMOGs are world-spanning games, it is plausible to disperse these regions on geographically distributed servers. As such, we propose the use of core selection for finding an optimal server for placing a region, and support for migrating the game state to that server. The first goal relies on a set of servers and measurement of the interacting players latencies. In locating an optimal server, we anticipate a decrease in the overall latency for the majority of players. This reduction occurs by migrating the region to a server closer in proximity to the majority of players in that virtual region, thereby lowering the response time of any interaction.},
+  booktitle = {Proceedings of Workshop on Network and Systems Support for Games (NetGames)}
+}
+
+@Inproceedings{Simula.ND.185,
+  author = {Petlund, Andreas and Evensen, Kristian and Halvorsen, P{\r a}l and Griwodz, Carsten},
+  title = {Improving application layer latency for reliable thin-stream game traffic },
+  year = {2008},
+  abstract = {A wide range of networked games send data with very high interarrival-time between packets and with small payloads in  each packet. We call these transmission patterns ``thin streams''.  Reliability, when needed for game traffic,  is usually achieved through TCP or by using retransmission  schemes modelled on TCP. These retransmission schemes can  result in very large delays if the stream is  thin.  Viewed in the light of the time-dependent nature of game  traffic, large delays can be severely impeding  to the game experience. In order to reduce application-layer latency when packets  are lost, we have implemented modifications to TCP in the  Linux kernel. The changes are only active when thin-stream  properties are detected, thus not affecting TCP behaviour  when the stream is not thin. In this paper, we show the latency improvements from these  thin-stream modifications. As a case study, we have used  the game BZFlag to test the mechanisms, and present statistics  from these tests. The experimental results show that our modifications allow TCP  to recover earlier from packet loss. This latency reduction was then shown to improve the difference between perceived and actual player positions in the BzFlag game.},
+  booktitle = {Netgames, Worcester, Ma. US, 2008}
+}
+
+@Inproceedings{Simula.ND.43,
+  author = {Birkedal, Erlend and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Implementation and Evaluation of Late Data Choice for TCP in Linux},
+  year = {2007},
+  abstract = {Real-time delivery of time-dependent data over the Internet is challenging. UDP
+has often been used to transport data in a timely manner, but its lack of
+congestion control is often criticized. This criticism is a reason that the vast
+majority of applications today use TCP. The downside of this is that TCP has
+problems with the timely delivery of data. A transport protocol that adds
+congestion control to an otherwise UDP-like behaviour is DCCP. For this protocol
+,
+{\it late data choice} (LDC)\~\cite{lai++2005} has been proposed to allow
+adaptive applications control over data packets up to the actual transmission
+time. We find, however, that application developers appreciate other TCP
+features as well, such as its reliability. We have therefore implemented and
+tested the LDC ideas for TCP. It allows the application to modify or drop
+packets that have been handed to TCP until they are
+actually transmitted to the network. This is achieved with a shared
+packet ring and indexes to hold the current status. Our experiments show that we
+can send more useful data with LDC than without in a streaming scenario. We can
+therefore claim that we achieve a better utilization of the throughput, giving u
+s a
+higher \textit{goodput} with LDC than without.},
+  booktitle = { IEEE International Symposium on Multimedia (ISM2007)},
+  editor = { ?},
+  pages = {221 -- 228},
+  publisher = { IEEE Computer Society},
+  address = {10662 Los Vaqueros Circle, P.O. Box 3014, Los Alamitos, CA 90720-1314},
+  isbn = {ISBN 0-7695-3058-3}
+}
+
+@Inproceedings{Simula.ND.51,
+  author = {Beskow, Paul and Halvorsen, P{\r a}l and Griwodz, Carsten},
+  title = {Latency Reduction in Massively Multi-player Online Games by Partial Migration of Game State},
+  year = {2007},
+  abstract = {With the increasing popularity of massively multi-player online games
+(MMOGs), developers are continually forced to deal with the
+conflicting requirements of supporting a large number of concurrent
+users, while simultaneously providing low latency. As a result, a
+common way of distributing load is by dividing the virtual environment
+into logical regions. Geographically coupled users in such regions can
+be distinguished by analyzing IP addresses, RTTs or similar. This
+paper proposes the architecture for a decentralized middleware capable
+of utilizing such information, with the intent of decreasing the
+overall latency for the majority of users in that region. The latency
+reduction is accomplished by migrating a game region to a server
+closer in locality to the users, thereby lowering the response time of
+remote procedure calls. Due to the characteristics of MMOGs, the
+middleware implements a distributed name service, made possible by
+activating the system from a single node in the system.},
+  booktitle = {Second International Conference on Internet Technologies and Applications},
+  editor = {Vic Grout, Denise Oram and Rich Picking},
+  pages = {153--163},
+  publisher = {Centre for Applied Internet Research (CAIR)},
+  address = {University of Wales, NEWI, Wrexham, UK.},
+  isbn = {978-0-946881-54-3}
+}
+
+@Inproceedings{Simula.ND.117,
+  author = {Espeland, H{\r a}vard and Lunde, Carl Henrik and Stensland, H{\r a}kon Kvale and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Transparent Protocol Translation and Load Balancing on a Network Processor in a Media Streaming Scenario},
+  year = {2008},
+  abstract = {Today, major newspapers and TV stations make live and
+on-demand audio/video content available, video-on-demand
+services are becoming common and even personal media
+are frequently uploaded to streaming sites. The discussion
+about the best transport protocol for streaming has been
+going on for years. Currently, HTTP-streaming is usual although the transport of streaming media data over TCP is
+hindered by TCP{\textquoteright}s probing behavior, which results in the
+rapid reduction and slow recovery of the packet rates. On
+the other hand, UDP has been criticized for being unfair
+against TCP, and it is therefore often blocked by access network providers.
+To exploit benefits of both TCP and UDP, we have implemented a proxy that performs 
+transparent protocol translation in such a way that the video stream is delivered to
+clients in a TCP-compatible and TCP-friendly way, but
+with UDP-like smoothness. The translation is related to
+multicast-to-unicast translation and to voice-over-IP proxies 
+that translate between UDP and TCP. Furthermore, it is
+also similar to the use of proxy caching that ISPs employ to
+reduce bandwidth demands. The unique advantage of our
+approach is that we avoid full-featured TCP handling on
+the proxy server but still achieve live protocol translation at
+line-speed in a TCP-compliant, TCP-friendly manner. Although 
+we discard packets just like a sender of non-adaptive
+video over TCP, we achieve higher user-perceived quality
+because our proxy can avoid receive queue underflows in the
+proxy, while also achieving the same average bandwidth as
+a TCP connection between proxy and client.
+In this demo, we present our prototype implemented on
+an Intel IXP2400 network processor. The prototype proxy
+does not buffer outgoing packets, yielding data loss in case
+of a congested TCP side. Comparing HTTP-streaming from
+a web-server and RTP/UDP-streaming from a video server
+shows that, in case of some loss, our solution using UDP
+from the server and a proxy that translates to TCP delivers
+a smoother stream at playout rate while the end-to-end TCP stream oscillates heavily.},
+  booktitle = {Network and Operating System Support for Digital Audio and Video (NOSSDAV 2008)},
+  publisher = {ACM}
+}
+
+@Inproceedings{Simula.ND.119,
+  author = {Boudko, Svetlana and Leister, Wolfgang and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {A Benchmarking System for Multipath Overlay Multimedia Straming},
+  year = {2008},
+  abstract = {The rapid growth of the Internet multimedia services brings new
+challenges to how multimedia streams can be delivered to the users
+over bandwidth-constraint networks.  Different strategies
+that exploit multipath streaming
+in order to provide better utilization of the Internet resources
+have been
+proposed by the research community.
+However, there exists no metric that allows us to evaluate how close
+these strategies are to the optimal resource utilization.  
+This
+paper proposes a static benchmarking system that models the best possible
+distribution of streams along multiple paths in an overlay
+network that is shared by several senders and receivers.
+We have tested it with several different network topologies, and present
+the test results in this paper. 
+
+},
+  booktitle = {IEEE International Conference on Multimedia \& Expo (ICME)}
+}
+
+@Inproceedings{Simula.ND.159,
+  author = {Petlund, Andreas and Evensen, Kristian and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {TCP mechanisms for improving the user experience  for time-dependent thin-stream applications},
+  year = {2008},
+  abstract = {A wide range of Internet-based services that use reliable transport protocols display what we call thin-stream properties. This means that the application sends data with such a low rate that the retransmission mechanisms of the transport protocol are not fully effective. In time-dependent scenarios where the user experience depends on the data delivery latency, packet loss can be devastating for the service quality. In order to reduce application-layer latency when packets are lost, we have implemented modifications to the TCP retransmission mechanisms in the Linux kernel. The changes are only active when thin-stream properties are detected, thus not affecting TCP behaviour when the stream is not thin. In this paper, we show the latency improvements from these thin-stream modifications. We have tested several thin-stream applications like remote terminals (SSH) and audio conferencing (Skype), and we evaluate the user experience with and without the TCP modifications. Our experimental results show that our modifications allow TCP to recover earlier from packet loss. Furthermore, user surveys indicate that the majority of users easily detect improvements in the perceived quality of the tested applications.},
+  booktitle = {The 33rd Annual IEEE Conference on Local Computer Networks (LCN)}
+}
+
+@Article{Simula.ND.83,
+  author = {Evensen, Kristian R and Petlund, Andreas and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Redundant Bundling in TCP to Reduce Perceived  Latency for Time-Dependent Thin Streams},
+  year = {2008},
+  abstract = {TCP and UDP are the dominant transport protocols today, with TCP
+being preferred because of the lack of fairness mechanisms in
+UDP. Some time-dependent applications with small bandwidth 
+requirements, however, occationally suffer from unnecessarily 
+high latency due to TCP retransmission mechanisms that are 
+optimized for high-throughput streams. Examples of such 
+thin-stream  applications are Internet telephony and multiplayer 
+games. For such interactive applications, the high delays can be 
+devastating to the experience of the service.
+To address the latency issues, we explored application-transparent, 
+sender-side modifications. We investigated whether it is possible 
+to bundle unacknowledged data to preempt the experience of packet 
+loss and improve the perceived latency in time-dependent systems. 
+We implemented and tested this idea in Linux. Our results show
+that we can reduce the application latency by trading it against
+bandwidth.},
+  journal = {IEEE Communications Letters},
+  volume = {12},
+  number = {4},
+  pages = {334 -- 336}
+}
+
+@Inproceedings{Simula.ND.111,
+  author = {Stensland, H{\r a}kon Kvale and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Evaluation of Multi-Core Scheduling Mechanisms for Heterogeneous Processing Architectures},
+  year = {2008},
+  abstract = {General-purpose CPUs with multiple cores are established
+products, and new heterogeneous technology like the Cell
+broadband engine and general-purpose GPUs bring an even
+higher degree of true multi-processing into the market. However, 
+means for utilizing the processing power is immature.
+Current tools typically assume that exclusive use of these
+resources is sufficient, but this assumption will soon be invalid 
+because the interest in using their processing power
+for general-purpose tasks. Among the applications that can
+benefit from such technology is transcoding support for distributed 
+media applications, where remote participants join
+and leave dynamically. Transcoding consists of several clearly
+separated processing operations that consume a lot of resources, 
+such that individual processing units are unable to
+handle all operations of a session of arbitrary size. The
+individual operations can then be distributed over several
+processing units, and data must be moved between them
+according to the dependencies between operations. Many
+multi-processor scheduling approaches exist, but to the best
+of our knowledge, a challenge is still to find mechanisms that
+can schedule dynamic workloads of communicating operations 
+while taking both the processing and communication
+requirements into account. For such applications, we believe
+that feasible scheduling can be performed in two levels, i.e., 
+divided into the task of placing a job onto a processing unit
+and the task of multitasking time-slices within a single processing 
+unit. We have implemented some simple high-level
+scheduling mechanisms and simulated a video conferencing
+scenario running on topologies inspired by existing systems
+from Intel, AMD, IBM and nVidia. Our results show the
+importance of using an efficient high-level scheduler.},
+  booktitle = {Network and Operating System Support for Digital Audio and Video (NOSSDAV 2008)},
+  publisher = {ACM}
+}
+
+@Inproceedings{Simula.ND.73,
+  author = {Vik, Knut-Helge and Halvorsen, P{\r a}l and Griwodz, Carsten},
+  title = {Multicast tree diameter for dynamic distributed interactive applications},
+  year = {2008},
+  abstract = {Considerable attention has been given to latency reduction in distributed interactive applications. Such applications may have stringent latency requirements and dynamic user groups. In this paper, our focus has been on using application layer multicast with a centralized approach to the group management. The groups are organized in overlay networks that are created using graph algorithms. We investigate many spanning tree problems with particular focus on reducing the diameter of a tree, i.e., the maximum pairwise latency between users. In addition, we focus on reducing the time it takes to execute membership changes. In that context, we use core selection heuristics to find well located group nodes, and edge pruning algorithms to reduce the number of edges in an otherwise fully meshed overlay. Our edge pruning algorithms strongly connect well located group nodes to the remaining group members, to create new and pruned group graphs. Such that, when a tree algorithm is given a pruned group graph, it is manipulated into creating trees with lower diameter. In the investigation presented here, we have implemented and experimentally analyzed spanning tree heuristics, core selection heuristics and edge pruning algorithms. We find that faster heuristics that do not explicitly optimize the diameter are able to compete with slower heuristics that optimize the diameter.},
+  booktitle = {IEEE International Conference on Computer Communications - IEEE INFOCOM},
+  publisher = {IEEE},
+  edition = {27th}
+}
+
+@Article{Simula.ND.102,
+  author = {Vik, Knut-Helge and Halvorsen, P{\r a}l and Griwodz, Carsten},
+  title = {Evaluating Steiner tree heuristics and diameter variations for Application Layer Multicast},
+  year = {2008},
+  abstract = {Latency reduction in distributed interactive applications has been studied intensively. Such applications may have stringent latency requirements and dynamic user groups. We focus on application-layer multicast with a centralized approach to the group management. The groups are organized in overlay networks that are created using graph algorithms that create a tree structure for the group. A tree has no cycles and uses a small routing table, as opposed to a connected overlay mesh. We investigate a group of spanning tree problems that are referred to as Steiner tree problems, and we have a particular focus on reducing the diameter of a tree, which is the maximum pairwise latency in a tree. In addition, we focus on reducing the time it takes to execute membership changes. In that context, we use core-selection heuristics to find well-placed client nodes, and edge-pruning algorithms to reduce the number of edges in an otherwise fully meshed overlay. Our edge-pruning algorithms strongly connect well-placed client nodes to the remaining group members, to create new and pruned group graphs. Consequently, when a tree algorithm is applied to a pruned group graph, it is manipulated into creating trees with a smaller diameter.We devised new Steiner-tree heuristics that reduced the diameter, and also proposed new edge-pruning algorithms to make the tree construction faster. These heuristics and algorithms were implemented and analyzed experimentally along with several spanning-tree and core-selection heuristics found in the literature. We found
+that a full-mesh of shortest paths makes it difficult for Steiner-tree heuristics to find better trees than spanning tree algorithms. The network seen from the application layer is in fact a full mesh of shortest paths. In addition, we found that faster Steiner-tree heuristics that do not explicitly optimize the diameter are able to compete with slower heuristics that do optimize it.},
+  journal = {Special issue of the international journal Computer Networks on Complex Computer and Communication Networks, Elsevier}
+}
+
+@Inproceedings{Simula.ND.112,
+  author = {Petlund, Andreas and Evensen, Kristian R and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {TCP Enhancements For Interactive Thin-Stream Applications},
+  year = {2008},
+  abstract = {TCP is frequently used for interactive multimedia applications like online games and voice-over-IP (VoIP) due to firewall issues and fairness considerations. However, traffic analysis shows that these streams usually have small packets and a low packet rate, and that in case of loss, severe latency penalties occur for all existing TCP variations in Linux. In this demonstration, we show how small, efficient TCP enhancements greatly improve the perceived quality of such low latency, interactive applications.},
+  booktitle = {NOSSDAV 2008},
+  isbn = {978-1-60588-157-6/05/2008}
+}
+
+@Inproceedings{Simula.ND.33,
+  author = {Vik, Knut-Helge and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Dynamic Group Membership Management for Distributed Interactive Applications},
+  year = {2007},
+  abstract = {Distributed interactive applications have become increasingly popular, making it important to address their communication needs, where, one of the needs is group communication. In this paper, we consider the applications in which it is at any given time possible to divide its users into groups. The group membership changes over time and the group division is unrelated to the physical proximity. As a way of enabling the group communication in distributed interactive applications we choose application layer multicast. We use simulation to evaluate several dynamic algorithms for managing overlay multicast trees. They are compared with respect to four metrics that can be relevant for a distributed interactive application. These are total tree cost, diameter, reconfiguration time and stability. We demonstrate algorithms that perform well for these metrics although they do not consider all users during reconfiguration.},
+  booktitle = {32nd IEEE Conference on Local Computer Networks (LCN)},
+  editor = {Ken Christensen and Matthias Frank},
+  pages = {141--148},
+  publisher = {IEEE},
+  isbn = {978-0-7695-3000-0}
+}
+
+@Book{Simula.ND.32,
+  editor = {Griwodz, Carsten and Zimmermann, Roger},
+  authorURLs = {/people/griff and http://www.comp.nus.edu.sg/\~rogerz/roger.html},
+  title = {Multimedia Computing and Networking 2007},
+  year = {2007},
+  abstract = {It is our great pleasure to welcome you  to  the  Multimedia  Computing  and
+Networking Conference (MMCN) 2007 at Electronic Imaging!
+
+This year's MMCN is the 14th installment of the conference series. MMCN  has
+traditionally served as an opportunity for researchers and practitioners  to
+share their perspectives with others interested in the  various  aspects  of
+multimedia systems and networks. Thanks to the outstanding  efforts  of  our
+publicity co-chairs Andreas Mauthe, Wei-Tsang  Ooi,  and  Michael  Zink  and
+with  the  additional  support  of  the  ACM  SIG  Multimedia,  the  program
+committee had a good number of papers to choose from.
+
+Each  original  submission  was  reviewed  by  at  least  three   reviewers,
+conflicting review results were addressed in email discussions, and all  the
+papers that received favorable reviews were intensely discussed  during  the
+program committee's day-long meeting on  August  26,  2006,  that  committee
+members attended either in person, or by IP or POTS  audio  conference.  The
+average quality of submission was very high, so that we were able to  accept
+18 full and seven short papers this year.
+
+Putting together MMCN 2007 was a team effort. First of all,  we  would  like
+to thank the  authors  for  their  submissions  and  for  choosing  MMCN  to
+highlight their work. Our thanks also go to the  program  committee  members
+and the external  reviewers  for  their  excellent  job  in  evaluating  the
+submissions.  We  also  thank  the  following  colleagues  who   contributed
+additional reviews: Sakire Arslan Ay, Jacob  Chakareski,  Beomjoo  Seo,  and
+Leslie S. Liu. We would  further  like  to  express  our  gratitude  to  the
+Computer Science department of the University of Massachusetts  that  hosted
+the PC meeting, and Michael Zink in particular for being gracious  hosts  in
+all aspects. We also want to thank SPIE, IS\&T, and ACM  SIG  Multimedia  for
+making MMCN possible again this year.
+
+The program addresses multimedia systems issues under the  topics  of  video
+coding, systems and  measurements,  user  perception,  resource  management,
+streaming scalability, multimedia systems,  and  multimedia  middleware.  In
+addition to the presentation of the research papers, the program features  a
+keynote speech by Ramesh Sarukkai of Yahoo! Inc.,  and  a  panel  that  will
+discuss Getting in Touch with  the  Real  World  -  how  multimedia  systems
+interact with physical objects. We hope  that  you  will  find  the  program
+interesting and thought-provoking and that the conference will  provide  you
+with a valuable opportunity to  share  ideas  with  other  researchers  from
+institutions around the world!
+
+                                                             Carsten Griwodz
+                                                            Roger Zimmermann
+},
+  publisher = {SPIE},
+  address = {Bellingham, WA, USA},
+  volume = {6504},
+  isbn = {9780819466174}
+}
+
+@Inproceedings{Simula.ND.16,
+  author = {Johnsen, Frank T and Hafs{\o}e, Trude and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Workload Characterization for News-on-Demand Streaming Services},
+  year = {2007},
+  abstract = {This paper focuses on design issues for multimedia distribution
+architectures and the impact workload characteristics have on
+architecture design. Our contribution is an analysis of server load
+and user behavior in a News-on-Demand environment, with focus on
+access patterns, popularity modeling, and the formation of traffic
+peaks. Finally, we evaluate an existing synthetic workload generator,
+MediSyn, and suggest some enhancements which will improve its
+suitability for News-on-Demand workload modeling.
+},
+  booktitle = {International Performance Computing and Communications Conference (IPCCC)},
+  editor = {?},
+  pages = {314-323},
+  publisher = {IEEE},
+  isbn = {1-4244-1138-6}
+}
+
+@Inproceedings{Simula.ND.36,
+  author = {Espeland, H{\r a}vard and Lunde, Carl Henrik and Stensland, H{\r a}kon Kvale and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Transparent Protocol Translation for Streaming},
+  year = {2007},
+  abstract = {The transport of streaming media data over TCP
+is hindered by TCP's probing behavior that results in
+the rapid reduction and slow recovery of the packet rates.
+On the other side, UDP has been criticized for being unfair
+against TCP connections, and it is
+therefore often blocked out in the access networks.
+In this paper, we try to benefit from a combined approach using a proxy
+that transparently performs transport protocol translation.
+We translate HTTP requests by the client transparently into RTSP requests,
+and translate the corresponding RTP/UDP/AVP stream into the corresponding
+HTTP response. This enables
+the server to use UDP on the server side and TCP on the client side.
+This is beneficial for the server side that scales to a higher load
+when it doesn't have to deal with TCP.
+On the client side, streaming over TCP has the advantage that
+connections can be established from the client side, and data streams
+are passed through firewalls.
+Preliminary tests demonstrate that our protocol translation delivers a
+smoother stream compared to HTTP-streaming where the
+TCP bandwidth oscillates heavily.
+},
+  booktitle = {ACM International Multimedia Conference (ACM MM)},
+  editor = {Rainer Lienhart and Anand R. Prasad},
+  pages = {771 - 774},
+  publisher = {ACM},
+  isbn = {978-1-59593-702-5},
+  note = {(short paper)
+{\textcopyright} ACM, (2007). This is the author's version of the work. It is posted
+here by permission of ACM for your personal use. Not for redistribution.
+The definitive version was published in Proceedings of the 15th
+international conference on Multimedia (2007), http://doi.acm.org/10.1145/1291233.1291407}
+}
+
+@Inproceedings{Simula.ND.35,
+  author = {Harcsik, Szabolcs and Petlund, Andreas and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Latency Evaluation of Networking Mechanisms for  Game Traffic},
+  year = {2007},
+  abstract = {Large improvements in computer technology allow thousands of users to
+concurrently interact in a virtual game. Due to this development, the
+body of work analyzing game traffic has grown considerably in the
+recent past. However, little work has been done to examine and
+compare networking techniques with respect to meeting the stringent
+latency requirements that are common for networked games. Most interactive
+games need response times between 100 and 1000 ms depending on the
+game genre.
+
+In this paper, we evaluate different techniques for
+delivering packets in a timely manner. In
+particular, we compare existing user-space middleware running on top
+of UDP and reliable, fair transport protocols like TCP and SCTP. In
+addition, we evaluate some "low latency" extensions
+to TCP, SCTP and one of the middleware platforms.
+We present results concerning packet latency
+and bandwidth requirements for the different approaches.
+},
+  booktitle = {Network \& System Support for Games (NetGames 2007)},
+  editor = {Grenville Armitage},
+  pages = {129--134},
+  publisher = {ACM},
+  isbn = { ISBN 978-0-9804460-0-5}
+}
+
+@Article{Griwodz.2004.1,
+  author = {Griwodz, Carsten and Fiksdal, Steffen and Halvorsen, P{\r a}l},
+  title = { Translating Scalable Video Streams from Wide-Area to Access Networks},
+  year = {2004},
+  abstract = {},
+  journal = {Campus Wide Information Systems},
+  volume = {21},
+  number = {5},
+  pages = {205--210}
+}
+
+@Article{Zink.2004.1,
+  author = {Zink, Michael and Schmitt, Jens and Griwodz, Carsten},
+  title = { Layer-encoded video streaming: A proxy's perspective },
+  year = {2004},
+  abstract = {},
+  journal = {IEEE Communications Magazine},
+  volume = {42},
+  number = {8},
+  pages = {96--103}
+}
+
+@Inproceedings{Amundsen.2005.1,
+  author = {Amundsen, Sten Lundesgaard and Lund, Ketil and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {QoS-aware Mobile Middleware for Video Streaming},
+  year = {2005},
+  abstract = {},
+  booktitle = {31st EUROMICRO Conference on Software Engineering and Advanced Applications (SEAA), Portugal August 30-September 3 },
+  pages = {54-61},
+  publisher = {IEEE Computer Society}
+}
+
+@Inproceedings{Halvorsen.2005.1,
+  author = {Halvorsen, P{\r a}l and Tom Anders, Dalseng and Griwodz, Carsten},
+  title = {Assessment of Data Path Implementations for Download and Streaming},
+  year = {2005},
+  abstract = {Distributed multimedia streaming systems are increasingly popular due to technological advances, and numerous streaming services are available today. On servers or proxy caches, there is a huge scaling challenge in supporting thousands of concurrent users that request delivery of high-rate, time-dependent data like audio and video, because this requires transfers of large amounts of data through several sub-systems within a streaming node. Since the speed increase for memory accesses does not follow suite with the CPU speed, copy operations can be a severe limiting factor on the streaming performance of off-the-shelf operating systems, which still have only limited support for data paths that have been optimized for streaming despite previous research proposals. We observe furthermore that while CPU speed continues to increase, system call overhead has grown as well, adding to the cost of data movement. In this paper, we therefore revisit the data movement problem and provide a comprehensive evaluation of possible streaming data I/O paths in Linux 2.6 kernel. We have implemented and evaluated enhanced mechanisms and show how to provide support for more ef cient memory usage and reduction of user/kernel space switches for streaming applications.},
+  booktitle = {International Conference on Distributed Multimedia Systems (DMS)},
+  editor = {Shi-Kuo Chang and Timothy Arndt},
+  pages = {228--233},
+  publisher = {Knowledge Systems Institute},
+  address = {3420 Main Street, Skokie, IL  60076, USA},
+  isbn = {1-891706-17-9}
+}
+
+@Inproceedings{Oyvind.2005.1,
+  author = {Hvamstad, {\O}yvind and Griwodz, Carsten and Halvorsen, P{\r a}l},
+  title = {Offloading Multimedia Proxies using Network Processors},
+  year = {2005},
+  abstract = {In this paper, we present a system that aims at of oading multimedia proxies using network processing technology for applications like media-on-demand and distributed on-line games. In particular, we have designed, implemented and evaluated a proof-of-concept prototype on the Intel IXP1200 network processor. Our results show that the prototype succeeds in of oading the host machine as no data packets have to be processed by the host CPU, and the prototype is able to perform application layer forwarding using only a fraction of the cycles compared to a traditional architecture, where all packets are processed by the host CPU.},
+  booktitle = {International Network Conference (INC)},
+  editor = {S. M. Furnell and P. S. Dowland and G. Kormentzas},
+  pages = {113--120},
+  publisher = {University of Plymouth},
+  isbn = {960-7475-32-1}
+}

@@ -1,0 +1,5 @@
+* Add documentation for new features:
+  - Key generation
+  - PDF file storage
+  - HTML output
+  - Key "private"

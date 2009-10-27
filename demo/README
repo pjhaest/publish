@@ -1,0 +1,19 @@
+This directory contains a number of example BibTeX files.
+
+To get started, try the following commands:
+
+1. Import into database
+
+  publish import lysne.bib
+
+2. Validate database
+
+  publish validate
+
+3. Export to PDF and HTML
+
+  publish export lysne.pdf
+  publish export lysne.html
+
+Note that the example files contain some errors. Publish should
+catch these errors and suggest suitable corrections.

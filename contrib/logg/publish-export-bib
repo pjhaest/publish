@@ -1,0 +1,23 @@
+#!/usr/bin/env python
+
+HTML_DIR="/home/logg/work/www/current"
+
+import os
+import time
+
+# Set headline
+t = time.localtime()
+headline = "Publications for Anders Logg %.4d-%.2d-%.2d" % (t[0], t[1], t[2])
+
+# Set filename prefix
+prefix = "logg-bibliography"
+
+# Export PUB, BiBTeX and PDF
+formats = ("pub", "bib", "pdf")
+for format in formats:
+    os.system('publish export category!=courses headline="%s" %s.%s' % (headline, prefix, format))
+    os.system('cp %s.%s %s/pub/bibliography/' % (prefix, format, HTML_DIR))
+
+# Publish
+os.system("cd %s && ./publish.sh" % HTML_DIR)
+

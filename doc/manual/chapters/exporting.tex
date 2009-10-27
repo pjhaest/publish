@@ -1,0 +1,87 @@
+\chapter{Exporting}
+\label{export}
+\index{exporting}
+
+\section{Overview}
+
+Publication records may be exported from the system using the \emp{export} command
+(here to a file in PDF format):
+\begin{code}
+# publish export outputfile.pdf
+\end{code}
+
+One or more filters may also be specified to extract only papers
+matching (or not matching) a number of attributes, for example:
+\begin{code}
+# publish export year=2008 category=talks \
+  author=langtangen outputfile.pdf
+\end{code}
+
+During export, all papers are read from the database
+(\emp{papers.pub}), validated, filtered, and then formatted in the
+desired output format as determined by the filename suffix (see
+Figure~\ref{fig:export}).
+
+\section{Supported File Formats}
+
+\package{} currently exports to the following file formats:
+\begin{itemize}
+  \item
+    \emp{pub}
+  \item
+    BibTeX
+  \item
+    \LaTeX
+  \item
+    PDF
+\end{itemize}
+
+The \LaTeX format may be useful for generating publication records
+for inclusion in a CV or an annual report.
+
+\section{Filtering}
+\index{filter}
+
+Filters may be specified in one of two ways. Either, one may
+specify an attribute that must be satisfied by all papers to be
+exported, or one may specify an attribute that \emph{must not} be
+satisfied by the papers to be exported. It is also possible to list
+several attributes and mix the two types of filters. The exported
+papers must then satisfy each one of the listed filters.
+
+The following example demonstrates how to export all journal papers
+from the year 2008 which are \emph{not} written by H. P. Langtangen:
+\begin{code}
+# publish export year=2008 category=articles \
+  author!="H. P. Langtangen" papers.pdf
+\end{code} 
+
+When filtering on author names, it is possible to either list only the
+author's last name, the name with initials, or the full name. Thus,
+the following examples are all valid, but they may or may not give the
+same result, depending on how many authors are named ``Langtangen'',
+whether or not papers have been entered only with initials or with
+full names:
+\begin{code}
+# publish export author=langtangen papers.pdf
+# publish export author="H. P. Langtangen" papers.pdf
+# publish export author="Hans Petter Langtangen" papers.pdf
+\end{code}
+In all of these examples, the filter will match all papers where the
+given author name matches at least one author in the author list (for
+papers with more than one author).
+
+\section{Options}
+\index{PDF viewer}
+
+The following additional options may be given to the \emp{export} command:
+\begin{itemize}
+\item
+  \emp{view\_pdf=no} \\
+
+  Don't display generated PDF files when exporting to PDF.
+\item
+  \emp{pdf\_viewer=<command>} \\
+
+  Specify command that should be used to display PDF files.
+\end{itemize}

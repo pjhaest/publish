@@ -1,0 +1,93 @@
+\chapter{Basic Usage}
+\index{usage}
+
+This chapter contains installation instructions. It
+also contains basic information on how to use the command-line
+interface.
+ 
+\section{Installation}
+\index{installation}
+\package{} follows the standard installation procedure for Python packages. 
+Enter the source directory of \package{} and issue the following command:
+\begin{code}
+# sudo python setup.py install
+\end{code}
+
+See Appendix \ref{installation} for a more detailed description.
+
+\section{Command-Line Interface}
+\index{command-line interface}
+
+The synopsis for the \package{} command-line interface looks as follows:
+
+\begin{code}
+# publish <command> [command/global option]... [filename]
+\end{code}
+
+The command always starts with \emp{publish} followed by a
+\emp{<command>} which may be be either \emp{import}, \emp{validate},
+or \emp{export}. Import and export can be used with some global
+option, such as \emp{year=2008}, or
+\emp{author=name\_of\_choice}. Import and export always require
+a filename to import from or export to.
+
+Examples:
+
+\begin{code}
+# publish import category=books bookfile.bib
+
+# publish export year=2002 output.pdf
+\end{code}
+
+The command \emp{validate} can be used by itself or with a file with
+suffix \emp{.pub}. If used by itself, it is the default database-file
+\emp{papers.pub} that is validated.
+
+Examples:
+
+\begin{code}
+# publish validate
+
+# publish validate inputfile.pub
+\end{code}
+
+The command \emp{export} may be used to export a publication record,
+for example:
+
+\begin{code}
+# publish export papers.pdf
+\end{code}
+
+This will be discussed in more detail below in Chapters \ref{import}
+(importing), \ref{validate} (validation), and \ref{export}
+(exporting).
+
+\section{Global Options}
+\index{options}
+
+The following global options are recognized by all three commands:
+\begin{itemize}
+\item
+  \emp{debug=yes} \\
+
+  Enable debugging output. With this option, Python exceptions are not
+  caught, resulting in a full Traceback on errors.
+\item
+  \emp{autofix=yes} \\
+
+  Automatically choose the default option when an error is
+  encountered. This is useful (but dangerous) when importing large
+  amounts of data into the database.
+\end{itemize}
+
+\section{Configuration of the System}
+\index{configuration}
+
+In the file \emp{publish/config/general.py}, it is possible to make
+some configuration options.  For example, it is possible to change the
+name of the default database file, the venues-file, and the file were
+invalid papers are stored.  It is also possible to change how picky
+the system is when judging the closeness between papers that are
+considered as duplicates (\emp{matching\_\-distance\_strong}) and how
+far the system will look to suggest a venue name when a venue (journal
+name) is not recognized (\emp{matching\_distance\_weak}).

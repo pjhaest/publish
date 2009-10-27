@@ -1,0 +1,23 @@
+\chapter{Emacs Org-Mode}
+\label{orgmode}
+
+Emacs Org-Mode makes it convinient to edit the files that are saved in
+the internal \emp{pub} format. Emacs Org-Mode folds and unfolds sections
+of a file indicated with one or more \emp{*} at the press of the TAB
+key.
+
+Thus, one may easily fold/unfold paper categories and paper attributes
+which simplifies editing of large publication database files.
+
+For download and installation instructions, visit
+\emp{http://orgmode.org/}.
+
+To activate Org-Mode when \emp{.pub} files are opened, the following
+lines should be added to the user's \emp{.emacs} file:
+
+\begin{code}
+(setq auto-mode-alist
+      (append '(("\\.org$" . org-mode))
+              '(("\\.pub$" . org-mode))
+              auto-mode-alist))
+\end{code}

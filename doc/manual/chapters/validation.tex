@@ -1,0 +1,106 @@
+\chapter{Validation}
+\label{validate}
+\index{validation}
+\section{Overview}
+
+Papers will automatically be validated when imported into the system
+(including papers already present in the database), and when exported
+from the system.
+Validation can also be performed separately by the following command:
+\begin{code}
+# publish validate
+\end{code}
+This validates all papers found in the database (\emp{papers.pub}).
+
+One may also validate papers in other files, which must then be stored
+in the \emp{pub} format:
+\begin{code}
+# publish validate inputfile.pub
+\end{code}
+
+If a paper is valid, it is saved back to the database. Otherwise, it
+is marked as invalid and saved to a separate file storing invalid
+papers.
+
+\section{Checks Performed}
+\index{validation check}
+
+\package{} checks each paper for a number of common errors:
+\begin{itemize}
+\item
+  Status (status specified)
+\item
+  Attributes (no required attributes missing)
+\item
+  Venues (matching against known venues)
+\item
+  Titles (formatting, capitalization)
+\item
+  Page range (formatting)
+\item
+  Typos (some common typos)
+\end{itemize}
+We discuss each of these checks below.
+
+\subsection{Status}
+\index{status}
+
+All papers must be marked with a status. If the status is missing, it
+will automatically be set to \emp{published}. The following values
+should typically be used:
+\begin{itemize}
+  \item
+    \emp{inpreparation}
+  \item
+    \emp{submitted}
+  \item
+    \emp{accepted}
+  \item
+    \emp{published}
+  \item
+    \emp{withdrawn}
+  \item
+    \emp{rejected}
+\end{itemize}
+
+\subsection{Attributes}
+\index{categories}
+
+For each category, a number of attributes are required. For all
+categories, the attributes \emp{title} and \emp{author} are always
+required. For a list of which attributes are required for which
+category, refer to Appendix~\ref{pubformat}.
+
+\subsection{Venues}
+\index{venue}
+
+The venue (journal, conference, booktitle, etc.) for each paper is
+validated against a database of known venues. If an exact match is not
+found, the system tries to find a close match and suggests a
+correction.
+
+If not found, or if the suggested choice is incorrect, the user may
+choose to accept the venue name as is. It will then be added to a
+local file of known venues (\emp{venues.list}), which will be used for
+subsequent validations.
+
+\subsection{Titles}
+\index{title}
+
+Paper titles are validated for correct capitalization. The system
+keeps a list of common words (``and'', ``or'', ``for'' etc.) that
+should not be capitalized, and also a list of words that should be
+capitalized. These may be configured by editing
+\emp{publish/config/capitalization.py}.
+
+\subsection{Page Range}
+\index{page range}
+
+Page ranges must be formatted \emp{x--y}. Illegally formatted page
+ranges are automatically detected and fixed.
+
+\subsection{Typos}
+\index{typos}
+
+A number of typos are also detected. These may be configured by
+editing \emp{publish/config/typos.py}.

@@ -1,0 +1,994 @@
+
+@Misc{Hansen.2004.1,
+  author = {Hansen, Audun Fosselie and Cicic, Tarik and Gjessing, Stein and Lysne, Olav},
+  title = {A Method for Recovery in Packet Networks },
+  year = {2004},
+  abstract = {},
+  howpublished = {Norwegian Network Research Seminar 2004},
+  note = {The same content as the Simula Technical Report 2004-13}
+}
+
+@Article{Petrini.2006.1,
+  author = {Petrini, Fabrizio and Lysne, Olav and Brightwell, Ron},
+  title = {High Performance Interconnects. Guest Editors Introduction},
+  year = {2006},
+  abstract = {},
+  journal = {IEEE Micro},
+  volume = {26},
+  number = {3},
+  pages = {7--9}
+}
+
+@Inproceedings{Sem-jacobsen.2006.1,
+  author = {Sem-Jacobsen, Frank Olaf and Skeie, Tor and Lysne, Olav and Duato, Jose},
+  title = {Dynamic Fault Tolerance with Misrouting in Fat Trees},
+  year = {2006},
+  abstract = {Fault tolerance is critical for efficient utilisation of large computer systems.  Dynamic fault tolerance allows the network to remain available through the occurance of faults as opposed to static fault tolerance which requires the network to be halted to reconfigure it.  Although dynamic fault tolerance may lead to less efficient solutions than static fault tolerance, it allows for a much higher availability of the system.  In this paper we devise a dynamic fault tolerant adaptive routing algorithm for the fat tree, a much used interconnect topology, which relies on misrouting around link faults. We show that we are guaranteed to tolerate any combination of less than (num\_switch\_ports/2) link faults without the need for additional network resources for deadlock freedom. There is also a high probability of tolerating an even larger number of link faults. Simulation results show that network performance degrades very little when faults are dynamically tolerated.},
+  booktitle = {Proceedings of the International Conference on  Parallel Processing (ICPP)},
+  editor = {Wu-chi Feng},
+  pages = {33-45},
+  publisher = {IEEE Computer Society},
+  isbn = {22}
+}
+
+@Inproceedings{Sem-jacobsen.2006.2,
+  author = {Sem-Jacobsen, Frank Olaf and Lysne, Olav and Skeie, Tor},
+  title = {Combining Source Routing and Dynamic Fault Tolerance},
+  year = {2006},
+  abstract = {An increasing amount of current and emerging interconnect technologies rely on source routing to forward packets through the network.  It is therefore important to develop methods for fault tolerance that are well suited for source routed networks.  Dynamic fault tolerance allows the network to remain available through the occurrence of faults, as opposed to static fault tolerance which requires the network to be halted to reconfigure it. Source routing readily supports the source node choosing a different path when a fault occurs, but using this approach, packets already in the network will be lost.  Local dynamic fault tolerance, where the packet is routed around the fault locally, would prevent much of the traffic being lost during failures, but this is cumbersome to achieve in source routed networks since packets encountering a fault will need to follow a path different from that encoded in the packet header.  In this paper we present a mechanism to achieve local dynamic fault tolerance in source routed fat trees, a topology that has widespread use in supercomputer systems, and compare it with endpoint dynamic fault tolerance. We also show that by combining the two approaches we achieve performance superior to any of the two individually.},
+  booktitle = {Proceedings of The 18'th International Symposium on Computer Architecture and High Performance Computing (SBAC-PAD)},
+  editor = {Alberto F. De Souza, Rajkumar Buyya, and Wagner Meira Jr.},
+  pages = {151--158},
+  publisher = {IEEE Computer Society},
+  address = {Washington, DC, USA},
+  isbn = {0-7695-2704-3}
+}
+
+@Article{Theiss.2006.1,
+  author = {Theiss, Ingebj{\o}rg Thelin Thelin and Lysne, Olav},
+  title = {FRoots, A Fault Tolerant and Topology Agnostic Routing Technique},
+  year = {2006},
+  abstract = {Existing solutions for fault tolerant routing in interconnection networks either work for only one given regular topology, or they require slow and costly network reconfigurations which cannot allow full and continuous network access. In this paper we present FRroots, a routing method for fault tolerance in topology-agnostic network technologies. Our method is based on redundant paths, and it can handle single dynamic faults without the need for sending control messages. In the fault-free networks under non-uniform traffic it performs comparable to, or even better than, topology specific and non-fault tolerant routing algorithms in regular networks like meshes and tori. FRoots does not require any other features in the switches than a flexible routing table, and a modest number of virtual channels. For that reason it can be directly applied to several present day technologies like InfiniBand and Advanced Switching.},
+  journal = {IEEE Transactions on Parallel and Distributed Systems},
+  volume = {17},
+  number = {10},
+  pages = {1136-1150}
+}
+
+@Inproceedings{Mora.2006.1,
+  author = {Mora, Gaspar and Flich, Jos{\a\'e} and Duato, Jos{\a\'e} and Lopez, Pedro and Lysne, Olav},
+  title = {Towards and Efficient Switch Architecture for High-Radix Switches},
+  year = {2006},
+  abstract = {},
+  booktitle = {ACM/IEEE Symposium on Architectures for Networking and Communications Systems},
+  editor = {Michel Dubois and Will Eatherton},
+  pages = {11-20},
+  publisher = {ACM Press},
+  isbn = {1-59593-580-0}
+}
+
+@Article{Simula.ND.4,
+  author = {Kvalbein, Amund and Hansen, Audun Fosselie and Cicic, Tarik and Gjessing, Stein and Lysne, Olav},
+  title = {Multiple Routing Configurations for Fast IP Network Recovery},
+  year = {2008},
+  abstract = {  As the Internet takes an increasingly central role in our
+  communications infrastructure, the slow convergence of routing
+  protocols after a network failure becomes a growing problem. To
+  assure fast recovery from link and node failures in IP networks, we
+  present a new recovery scheme called Multiple Routing Configurations
+  (MRC). Our proposed scheme guarantees recovery in all single failure
+  scenarios, using a single mechanism to handle both link and node
+  failures, and without knowing the root cause of the failure. MRC is
+  strictly connectionless, and assumes only destination based
+  hop-by-hop forwarding. MRC is based on keeping additional routing
+  information in the routers, and allows packet forwarding to continue
+  on an alternative output link immediately after the detection of a
+  failure.  It can be implemented with only minor changes to existing
+  solutions.  In this paper we present MRC, and analyze its
+  performance with respect to scalability, backup path lengths, and
+  load distribution after a failure. We also show how an estimate of
+  the traffic demands in the network can be used to improve the
+  distribution of the recovered traffic, and thus reduce the chances
+  of congestion when MRC is used.},
+  journal = {IEEE Transactions on Networking}
+}
+
+@Inproceedings{Simula.ND.7,
+  author = {Hansen, Audun Fosselie and Lysne, Olav and Cicic, Tarik and Gjessing, Stein},
+  title = {Fast Proactive Recovery from Concurrent Failures},
+  year = {2007},
+  abstract = {Recovery of traffic in connectionless pure IP networks
+has traditionally been handled by a full re-convergence of
+the network state. This process operates in a time scale that is not
+compatible with new real time and highly dependable services.
+Recently, schemes for fast local and proactive recovery in connectionless
+IP networks have been proposed. All these schemes are
+designed to guarantee recovery of the failure of one component.
+As IP protocols are used to carry more highly dependable services
+and new wireless infrastructures are approaching, guaranteed
+failure coverage of more than one failure becomes necessary. In
+this paper we present and evaluate a scheme that guarantees to
+handle any two concurrent failures in a network. We are not
+aware of any other schemes that addresses such guarantees. We
+evaluate and compare it with other known recovery schemes, and
+we show how it gives substantially better recovery success rates
+than the schemes designed for one fault tolerance, also for more
+than two failures.},
+  booktitle = {IEEE International Conference on Communications (ICC 2007)},
+  editor = {IEEE},
+  publisher = {IEEE},
+  isbn = {1-4244-0353-7}
+}
+
+@Misc{SC.8.Daehlen.2003.b,
+  author = {D{\ae}hlen, M and Lysne, O},
+  title = {Internett og trafikkork},
+  year = {2003},
+  abstract = {},
+  howpublished = {Sommer{\r a}pent, NRK, 2. Juli}
+}
+
+@Article{Simula.ND.41,
+  author = {Flich, Jos{\a\'e} and Skeie, Tor and Mejia, Andres and Lysne, Olav and L{\a\'o}pez, Pedro and Robles, Antonio and Duato, Jos{\a\'e} and Koibuchi, Michihiro and Rokicki, Tomas and Sancho, Jos{\a\'e}},
+  title = {A Survey and Evaluation of Topology Agnostic Routing Algorithms},
+  year = {2008},
+  abstract = {Most standard interconnect technologies that have emerged over the last decade, mainly for clusters,
+are flexible with respect to network topology. This has spawned a substantial amount of research on
+topology agnostic routing algorithms, and some of the developed algorithms are widely deployed. These
+algorithms make no assumption about the structure of the network, thus they provide the flexibility
+needed to route on a network in the presence of faulty components.
+
+On the other hand, the advent of massive multi-core chips challenges the state of the art in
+interconnection networks. The topology of choice for point to point Networks on-chip (NoC) is the
+two dimensional mesh which is well understood, but the need of high yield, out of a production line for
+such chips requires that they should be functional even if some components suffer from manufacturing
+defects. Such defects will turn the regular topology into a slightly irregular one, making topology
+dependent routing algorithms inapplicable. Also, heterogeneous multi-core chips, where different cores
+could have different sizes and shapes, naturally lead to (slightly) irregular topologies.
+
+Therefore, topology agnostic routing algorithms proposed for clusters find a new environment to be
+applied since they provide the flexibility needed to route on a NoC in the presence of faulty or missing
+components. Moreover, in some cases, they have been shown to perform comparably to special purpose
+algorithms for regular topologies.
+
+Unfortunately, the existing topology agnostic routing algorithms have been developed for varying
+purposes, giving them different and not always comparable properties. Furthermore, the information on
+these routing algorithms is scattered on different papers where they have been evaluated under different
+and not comparable conditions.
+
+In this paper, we present a comprehensive overview of the topology agnostic routing algorithms that
+have been proposed to date. The algorithms are classified with respect to their most important properties,
+and their performance under equal, but varying conditions is analyzed. Thereby, we provide significant
+new insight into the properties of the different routing algorithms, and give substantial support for, given
+a set of requirements, finding the most suitable both for the on and off-chip environments.},
+  journal = {ACM Computing Surveys}
+}
+
+@Inproceedings{Simula.ND.71,
+  author = {Flich, Jose and Duato, Jose and S{\o}dring, Thomas and Solheim, {\r A}shild Gr{\o}nstad and Skeie, Tor and Lysne, Olav and Rodrigo, Samuel},
+  title = {On the Potential of NoC Virtualization for Multicore Chips},
+  year = {2008},
+  abstract = {As the  end of Moores-law is on the horizon, power becomes a limiting
+factor to the continuous increases in performance gains for
+single-core processors. Processor engineers have shifted to the
+multicore paradigm and many-core processors are reality. Within the
+context of these multi-core, three key metrics point themselves out as
+being of major importance, performance, fault-tolerance
+(including yield), and power consumption.  A solution that
+optimizes all three of these metric is challenging. As the number of
+cores increases the importance of the interconnection network-on-chip
+(NoC) grows as well, and chip designers should aim to optimize these
+three key metrics.
+
+In this paper we identify and discuss the main properties that a NoC
+must exhibit in order to enable such optimizations. In particular, we
+propose the use of virtualization techniques at the NoC level. The
+implementation of routing algorithms for NoC is a key design parameter
+in order to achieve an effective virtualization of the chip that
+should also support broadcast within the virtualized context.
+
+The intention behind this paper is for it to serve a position paper on the
+topic of virtualization for NoC and the challenges that should be met
+at the routing layer in order to maximize performance, fault-tolerance
+and power consumption.
+
+},
+  booktitle = {International Workshop on Multi-Core Computing Systems (MuCoCoS'08)},
+  publisher = {IEEE}
+}
+
+@Techreport{Simula.ND.24,
+  author = {Kvalbein, Amund and Lysne, Olav},
+  title = {Robust Load Balancing using Multi-Topology Routing},
+  year = {2007},
+  abstract = {Current methods for traffic engineering with traditional link state
+  routing protocols like OSPF and IS-IS are based on optimizing link
+  weights to fit a given estimate of the traffic demands. These
+  methods are not good at handling natural changes in the traffic over
+  time. In this paper, we introduce new methods for IGP load balancing
+  based on the upcoming standard for Multi-Topology routing. The main
+  advantage of our approach is that it is far more robust to changes
+  in the traffic demands. Our initial evaluations indicate that our
+  method significantly reduces the chances of losing packets due to
+  congestion.},
+  institution = {Simula},
+  number = {2007-03}
+}
+
+@Misc{Simula.ND.19,
+  author = {Lysne, Olav and Reinemo, Sven-Arne and Skeie, Tor and Solheim, {\r A}shild Gr{\o}nstad and S{\o}dring, Thomas},
+  title = {The realization of virtual compute resources in a Utility Computing Data Center (UCDC) in the many core era},
+  year = {2006},
+  abstract = {},
+  howpublished = {2006 Workshop on On- and Off-Chip Interconnection Networks for Multicore Systems}
+}
+
+@Inproceedings{Simula.ND.61,
+  author = {Sem-Jacobsen, Frank Olaf and Lysne, Olav},
+  title = {Fault Tolerance with Shortest Paths in Regular and Irregular Networks},
+  year = {2008},
+  abstract = {Fault tolerance has become an important part of current supercomputers.  Local dynamic fault tolerance is the most expedient way of tolerating faults by preconfiguring the network with multiple paths from every node/switch to every destination.  In this paper we present a local shortest path dynamic fault-tolerance mechanism inspired by a solution developed for the Internet that can be applied to any shortest path routing algorithm such as Dimension Ordered Routing, Fat Tree Routing, Layered Shortest Path, etc., and provide a solution for achieving deadlock freedom in the presence of faults.   Simulation results show that 1) for fat trees this yields the to this day highest throughput and lowest requirements on virtual layers for dynamic one-fault tolerance, 2) we require in general few layers to achieve deadlock freedom, and 3) for irregular topologies it gives at most a 10 times performance increase compared to FRoots.},
+  booktitle = {22nd IEEE International Parallel \& Distributed Processing Symposium}
+}
+
+@Article{Simula.ND.64,
+  author = {Sem-Jacobsen, Frank Olaf and Skeie, Tor and Lysne, Olav and Duato, Jose},
+  title = {Dynamic Fault Tolerance with Adaptive Routing in Fat Trees},
+  year = {2007},
+  abstract = {With the curren tlarg-scale interconenction networks necessary to support tens of thousands of processors, it is no longer acceptable to require that all of the
+components of the interconnection network are fault-free at all
+times. Thus, the ability to handle multiple faulty and unstable links
+without interrupting the operation of the computer is more
+important than ever.  This is best acheived by having the local
+network nodes around the fault to transparently reroute the
+traffic affected by the fault, hiding both permanent and short-lived faults.
+
+In this paper, we present such a local dynamic
+fault-tolerant routing algorithm for fat trees, and show that
+it remains connected and deadlock free for up to and including
+radix/2-1 arbitrary simultaneous faults.  The method requires only a simple misrouting
+functionality in the downward phase and a small modification
+of the selection function in the upward phase. No control messages
+are required.
+
+To the best of our knowledge, this is the first reported
+method for fat trees that provides local dynamic fault
+tolerance of several simultaneous network faults,  without adding
+additional hardware or additional
+virtual channels. Our simulation results display a very graceful
+degradation as faults appear.},
+  journal = {IEEE Transactions on Computers}
+}
+
+@Article{Simula.ND.63,
+  author = {Sem-Jacobsen, Frank Olaf and Skeie, Tor and Lysne, Olav},
+  title = {Dynamic Fault Tolerance in Multistage Interconnection Networks},
+  year = {2007},
+  abstract = {Deterministically routed fat trees are a very common
+communication architecture in large-scale parallel computers. We present a routing method for deterministically routed, both distributed and source routed, fat
+trees that is able to handle several concurrent
+faults and that transparently returns to the original routing
+strategy once the faulty components have recovered.  The method is
+completely local and dynamic. It only requires a
+small extra functionality in the switches to handle misrouting
+around a fault. The method guarantees connectedness and
+deadlock and livelock freedom for one fault, without
+additional virtual channels.  By adding only one virtual
+channel, the method guarantees a fully functional network with
+up to radix/2-1 arbitrary simultaneous faults. Our simulation experiments show a
+graceful degradation of performance as faults are added.
+Furthermore, they demonstrate that for most fault
+combinations, our method will be able to handle significantly
+more faults than it can give a 100\\% guarantee for.
+
+To the best of our knowledge, this is the first reported
+method for local dynamic fault tolerance for deterministically
+routed Fat-Trees that does not require additional hardware.
+Furthermore, it is the first reported algorithm for local
+rerouting around faults that work in a source-routed
+environment.},
+  journal = {IEEE Transactions on Computers}
+}
+
+@Inproceedings{Simula.ND.29,
+  author = {Kvalbein, Amund and Lysne, Olav},
+  title = {How can Multi-Topology routing be used for intradomain Traffic Engineering?},
+  year = {2007},
+  abstract = {The concept of Multi-Topology routing allows each router in a
+  network to maintain several valid routes to each destination. This
+  increases the possibilities to spread traffic towards a destination
+  over multiple paths with connectionless routing protocols like OSPF
+  or IS-IS. In this paper, we report early ideas on how this can be
+  utilized as a Traffic Engineering tool. We look at both offline and
+  online approaches, and argue that a Multi-Topology based solution
+  has advantages over previous solutions in both paradigms.},
+  booktitle = {ACM SIGCOMM Workshop on Internet Network Management 2007},
+  editor = {unknown},
+  publisher = {ACM sigcomm},
+  isbn = {unknown}
+}
+
+@Article{Simula.ND.22,
+  author = {Lysne, Olav and Montanana, Jose Miguel and Flich, Jose and Duato, Jose and Pinkston, Timothy Mark and Skeie, Tor},
+  title = {An Efficient and Deadlock-free Network Reconfiguration Protocol},
+  year = {2008},
+  abstract = {Component failures and planned component replacements cause changes in the topology and routing paths  supplied by the interconnection network of a parallel processor system over time. Such changes may require  the network to be reconfigured such that the existing routing function is replaced by one which enables packets  to reach their intended destinations amid the changes. Efficient reconfiguration methods are desired that allow  the network to function uninterruptedly over the course of the reconfiguration process while remaining free  from deadlocking behavior. In this paper, we propose, evaluate, and prove deadlock freedom of a new network  reconfiguration protocol that overlaps various phases of {\textquotedblleft}static{\textquotedblright} reconfiguration processes traditionally used in  commercial and research systems to provide performance efficiency on par with that of recently proposed {\textquotedblleft}dynamic{\textquotedblright}  reconfiguration processes, but without their complexity. Simulation results show that the proposed Overlapping  Static Reconfiguration protocol can reduce reconfiguration time by up to 50\%, reduce packet latency by several  orders of magnitude, reduce packet dropping by an order of magnitude, and provide unhalted packet injection as  compared to traditional static reconfiguration while allowing network throughput similar to dynamic reconfiguration.},
+  journal = {IEEE Transactions of Computers},
+  volume = {57},
+  number = {6},
+  pages = {762-779}
+}
+
+@Article{Simula.ND.18,
+  author = {Lysne, Olav and Reinemo, Sven-Arne and Skeie, Tor and Solheim, {\r A}shild Gr{\o}nstad and S{\o}dring, Thomas and Huse, Lars Paul and Johnsen, Bj{\o}rn Dag},
+  title = {The Interconnection Network - Architectural Challenges for Utility Computing Data Centres},
+  year = {2008},
+  abstract = {The mode of operation employed by Computational Data Centres that offer Utility Computing differs significantly from that of traditional supercomputers and server clusters and as such present new architectural problems that should be studied and solved. In this paper we concentrate on issues facing the interconnection network. We argue that this is a part of the overall architecture where shortcomings in present day solutions are most severe and present a model for the mode of operation of a Utility Computing Data Centre where virtualisation is a main ingredient. Based on this model we identify several areas where the interconnection network faces new challenges and needs new solutions. In each of these areas we give a brief introduction to previous results before we identify the new challenges.},
+  journal = {IEEE Computer},
+  volume = {41},
+  number = {9},
+  pages = {62-69}
+}
+
+@Inproceedings{Simula.ND.25,
+  author = {Solheim, {\r A}shild Gr{\o}nstad and Lysne, Olav and S{\o}dring, Thomas and Skeie, Tor and Libak, Jakob Aleksander},
+  title = {Routing-Contained Virtualization based on Up*/Down* Forwarding},
+  year = {2007},
+  abstract = {Virtualization of computing resources is becoming increasingly important both in high-end servers and
+in multi-core CPUs. In a virtualized system, the set of resources that constitute a virtual compute entity should be
+spatially separated from each other. Dividing the cores on a chip, or the CPUs in a high end server into disjoint sets
+for each task is a trivial problem. Ensuring that they use disjoint parts of the interconnection network is, however,
+complex, and in existing methods the requirement of routing-containment of each virtual partition severely degrades
+the utilization of the system. In this paper, we present an allocation strategy that is based on Up*/Down* routing.
+Through simulations, we demonstrate increases (in some cases above 30\%) in system utilization relative to state-of-
+the-art in a Dimension Order routed mesh - a topology that is assumed to be widely deployed in Networks on
+Chip.},
+  booktitle = {High Performance Computing - HiPC 2007},
+  editor = {S. Aluru et al.},
+  pages = {500--513},
+  publisher = {Springer-Verlag},
+  address = {Berlin Heidelberg},
+  edition = {4873},
+  series = {LNCS 4873},
+  isbn = {978-3-540-77219-4}
+}
+
+@Inproceedings{ND.5.Horn.2003,
+  author = {Horn, G and Lysne, O and Skeie, T},
+  title = {A Criterion for Cost Optimal Construction of Irregular Networks},
+  year = {2003},
+  abstract = {},
+  booktitle = {IPDPS'03: 17th International Parallel and},
+  editor = {Michel Cosnard and Allan Gottlieb and Jack},
+  publisher = {IEEE},
+  address = {Nice, France},
+  note = {Workshop on Communication Architecture for
+                   Clusters (D. K. Panda, J. Duato and C.
+                   Stunkel eds.)}
+}
+
+@Techreport{ND.7.Lysne.2003,
+  author = {Lysne, O and Duato, J and Pinkston, T},
+  title = {A Methodology for Developing Deadlock-Free Dynamic Network Reconfiguration Proceses},
+  year = {2003},
+  abstract = {},
+  institution = {Simula Research Laboratory},
+  number = {10}
+}
+
+@Inproceedings{ND.5.Lysne.2003,
+  author = {Lysne, O and Pinkston, T and Duato, J},
+  title = {A Methodology for Developing Dynamic Network Reconfiguration Processes},
+  year = {2003},
+  abstract = {},
+  booktitle = {Proceedings of the 2003 International Conference
+                   on Parallel Processing},
+  pages = {77-86},
+  publisher = {IEEE Computer Society}
+}
+
+@Inproceedings{ND.5.Reinemo.2003.b,
+  author = {Reinemo, S -A and Sem-Jacobsen, F O and Skeie, T and Lysne, O},
+  title = {Admission Control for DiffServ based Quality of Service in Cut-through Networks},
+  year = {2003},
+  abstract = {Previous work on Quality of Service in Cut-through networks shows that resource reservation mechanisms are only effective below the saturation point. Admission control in these networks will therefore need to keep network utilization below the saturation point, while still utilising the network resources to the maximum extent possible. In this paper we propose and evaluate three admission control schemes. Two of these use a centralised bandwidth broker, while the third is a distributed measurement based approach. We combine these admission control schemes with a DiffServ based QoS scheme for virtual cut-through networks to achieve class based bandwidth and latency guarantees. Our simulations show that the measurement based approach favoured in the Internet communities performs poorly in cut-through networks. Furthermore it demonstrates that detailed knowledge on link utilization improves performance significantly.},
+  booktitle = {Proceedings of the 10th International Conference on High Performance Computing (HiPC 2003)},
+  editor = {Timothy Mark Pinkston and Viktor K. Prasanna},
+  pages = {118-129},
+  publisher = {Springer},
+  address = {Heidelberg},
+  series = {Lecture Notes in Computer Science}
+}
+
+@Inproceedings{ND.5.Reinemo.2003.a,
+  author = {Reinemo, S -A and Skeie, T and Lysne, O},
+  title = {Applying the DiffServ Model on Cut-through Networks},
+  year = {2003},
+  abstract = {Understanding the nature of traffic in high-speed communication systems is essential for achieving QoS in these networks. A first step towards this goal is understanding how basic QoS mechanisms work and affects the network predictability before we introduce more complex mechanisms such as admission control. In this paper we analyse the effect of a DiffServ inspired QoS concept applied to virtual cut-through networks. The main findings from our study are that (i) throughput differentiation can be achieved by weighting of virtual lanes (VL) and by classifying VLs as either low or high priority, (ii) the balance between VL weighting and VL load is not crucial when the network is operating below the saturation point, (iii) jitter, however, is large and good jitter characteristics seems unachievable with such a relative scheme.},
+  booktitle = {Proceedings of the 2003 International Conference
+                   on Parallel and Distributed Processing
+                   Techniques and Applications (PDPTA2003)},
+  editor = {H.R. Arabnia and Youngsong Mun},
+  pages = {1089-1095},
+  publisher = {CSREA Press},
+  address = {Las Vegas, Nevada}
+}
+
+@Inproceedings{ND.5.Granmo.2001,
+  author = {Granmo, O C and Eliassen, F and Lysne, O},
+  title = {Dynamic Object-Oriented Bayesian Networks for Flexible Resource-Aware Content-based Indexing of Media Streams},
+  year = {2001},
+  abstract = {},
+  booktitle = {12th Scandinavian Conference on Image Analysis
+                   (SCIA2001)},
+  address = {Bergen}
+}
+
+@Inproceedings{ND.5.Skeie.2002.c,
+  author = {Skeie, T and Theiss, I and Lysne, O},
+  title = {Evaluation of Minimal Deterministic Routing in Irregular Networks},
+  year = {2002},
+  abstract = {},
+  booktitle = {Proceedings of the SSGRR International
+                   Conference on Infrastructure for e-Business,
+                   e-education, e-Science, and e-Medicine (SSGRR)}
+}
+
+@Techreport{ND.7.Eide.2003,
+  author = {Eide, V SW and Eliassen, F and Lysne, O and Granmo, O C},
+  title = {Extending Content-based Publish/Subscribe Systems with Multicast Support},
+  year = {2003},
+  abstract = {},
+  institution = {Simula Research Laboratory},
+  number = {2003-03}
+}
+
+@Inproceedings{ND.5.Theiss.2003,
+  author = {Theiss, I and Lysne, O},
+  title = {FROOTS - Fault handling in Up*/Down* routed networks with multiple roots},
+  year = {2003},
+  abstract = {},
+  booktitle = {Proceedings of the International Conference on
+                   High Performance Computing HiPC},
+  publisher = {Springer-Verlag}
+}
+
+@Inproceedings{ND.5.Skeie.2002.a,
+  author = {Skeie, T and Lysne, O and Theiss, I},
+  title = {Layered Shortest Path (LASH) Routing in Irregular System Area Networks},
+  year = {2002},
+  abstract = {},
+  booktitle = {Proceedings of Communication Architecture for
+                   Clusters (CAC'02)},
+  publisher = {IEEE Computer Society}
+}
+
+@Inproceedings{ND.5.Lysne.2001,
+  author = {Lysne, O and Skeie, T},
+  title = {Load balancing of irregular system area networks through multiple roots},
+  year = {2001},
+  abstract = {},
+  booktitle = {Proceedings of the International Conference on
+                   Communication in Computing, CIC 2001},
+  pages = {165 -171},
+  publisher = {CSREA Press}
+}
+
+@Inproceedings{ND.5.Theiss.2002,
+  author = {Theiss, I and Skeie, T and Lysne, O},
+  title = {Minimal Routing in Irregular Networks},
+  year = {2002},
+  abstract = {},
+  booktitle = {Proceedings of the International Conference on
+                   Communications in Computing (CIC)},
+  publisher = {CSREA Press}
+}
+
+@Article{ND.4.Krogdahl.2002,
+  author = {Krogdahl, S and Lysne, O},
+  title = {On verification of parallel message-passing processes},
+  year = {2002},
+  abstract = {},
+  journal = {Formal Aspects of Computing},
+  volume = {13},
+  number = {6},
+  pages = {471-492}
+}
+
+@Inproceedings{ND.5.Eide.2002.a,
+  author = {Eide, V SW and Eliassen, F and Lysne, O and Granmo, O C},
+  title = {Real-time Processing of Media Streams: A Case for Event-based Interaction},
+  year = {2002},
+  abstract = {},
+  booktitle = {Proceedings of 1st International Workshop on
+                   Distributed Event-Based Systems (DEBS'02),
+                   IEEE},
+  pages = {555-562},
+  address = {Vienna, Austria},
+  note = {ISBN 0-7695-1588-6}
+}
+
+@Inproceedings{ND.5.Eide.2002.b,
+  author = {Eide, V SW and Eliassen, F and Granmo, O C and Lysne, O},
+  title = {Scalable Independent Multi-level Distribution in Multimedia Content Analysis},
+  year = {2002},
+  abstract = {},
+  booktitle = {Joint International Workshops on Interactive
+                   Distributed Multimedia Systems and Protocols
+                   for Multimedia Systems (IDMS/PROMS 2002)},
+  pages = {37-48},
+  publisher = {Springer-Verlag},
+  address = {Coimbra, Portugal},
+  series = {Lecture Notes in Computer Science},
+  note = {ISBN 3-540-00169-7}
+}
+
+@Inproceedings{ND.5.Eide.2001,
+  author = {Eide, V SW and Eliassen, F and Lysne, O},
+  title = {Supporting Distributed Processing of Time-based Media Streams},
+  year = {2001},
+  abstract = {},
+  booktitle = {Proceedings of Distributed Objects and
+                   Applications (DOA'01), IEEE},
+  pages = {281-288},
+  address = {Rome, Italy}
+}
+
+@Inproceedings{ND.5.Eide.2003,
+  author = {Eide, V S. Wold and Eliassen, F and Granmo, O C and Lysne, O},
+  title = {Supporting Timeliness and Accuracy in Real-time Content-based Video Analysis},
+  year = {2003},
+  abstract = {},
+  booktitle = {Proceedings of the 11th ACM International
+                   Conference on Multimedia},
+  pages = {21-32},
+  publisher = {ACM},
+  address = {Berkeley, California, USA}
+}
+
+@Inproceedings{ND.5.Granmo.2003,
+  author = {Granmo, O C and Eliassen, F and Lysne, O and Eide, V SW},
+  title = {Techniques for Parallel Execution of the Particle Filter},
+  year = {2003},
+  abstract = {},
+  booktitle = {Proceedings of Scandinavian Conference on Image
+                   Analysis (SCIA 2003)},
+  publisher = {Springer-Verlag},
+  series = {Lecture Notes in Computer Science}
+}
+
+@Inproceedings{ND.5.Pinkston.2002,
+  author = {Pinkston, T and Duato, J and Lysne, O and Pang, R},
+  title = {Theoretical Support for Dynamic Network Reconfiguration},
+  year = {2002},
+  abstract = {},
+  booktitle = {Proceedings of the ICS Workshop on
+                   Self-Healing, Adaptive and Self-Managed
+                   Systems (SHAMAN)},
+  publisher = {ACM Press}
+}
+
+@Inproceedings{ND.5.Reinemo.2001,
+  author = {Reinemo, S -A and Dobinson, B and Haas, S and Lysne, O and Martin, B and Skeie, T},
+  title = {Topologies and Routing in Gigabit Switching Fabrics},
+  year = {2001},
+  abstract = {Cluster networks will serve as the future access networks for multimedia streaming, massive multiplayer online gaming, e-commerce, network storage etc. And for those application areas provisioning of Quality of Service (QoS) is becoming and important issue. DiffServ as specified by the IETF is foreseen to be the most prominent concept for providing predictability in the future Internet. To enable seamless interoperation with the higher level IETF concepts the QoS architecture of the lower layers should comply with the DiffServ paradigm as well. Previous work on predictability in cut-through networks has only studied class based QoS. In this paper we set out to achieve flow level QoS using flow aware admission control in combination with a flow negligent DiffServ inspired QoS mechanism. Our results show that flow level bandwidth guarantees are achievable with the use of the Link-by-Link and the Probe based schemes. In addition we are able to achieve an order of magnitude improvement in jitter and latency in individual flows.},
+  booktitle = {Proceedings of 2nd International Conference on
+                   Communications in Computing (CIC2001)},
+  editor = {Brian J. d'Auriol, Abdullah Abonamah  and Abdel-Elah Al-Ayyoub},
+  pages = {142-149},
+  publisher = {CSREA Press},
+  address = {Las Vegas, Nevada}
+}
+
+@Inproceedings{ND.5.Manzke.2001,
+  author = {Manzke, M and Kenny, S and Coghlan, B and Lysne, O},
+  title = {Tuning and Verification of Simulation Models for High Speed Interconnect Fabrics},
+  year = {2001},
+  abstract = {},
+  booktitle = {Proceedings of PDPTA},
+  address = {Las Vegas (USA)}
+}
+
+@Article{ND.4.Gomez.2004,
+  author = {G{\a\'o}mez, M E and Duato, J and Flich, J and Lopez, P and Robles, A and Nordbotten, N A and Lysne, O and Skeie, T},
+  title = {An Efficient Fault-Tolerant Routing Methodology for Meshes and Tori},
+  year = {2004},
+  abstract = {In this paper we present a methodology to design fault-tolerant routing algorithms for regular direct interconnection networks. It supports fully adaptive routing, does not degrade performance in the absence of faults, and supports a reasonably large number of faults without significantly degrading performance. The methodology is mainly based on the selection of an intermediate node (if needed) for each source-destination pair. Packets are adaptively routed to the intermediate node and, at this node, without being ejected, they are adaptively forwarded to their destinations. In order to allow deadlock-free minimal adaptive routing, the methodology requires only one additional virtual channel (for a total of three), even for tori. Evaluation results for a 4x4x4 torus network show that the methodology is 5-fault tolerant. Indeed, for up to 14 link failures, the percentage of fault combinations supported is higher than 99.96\%. Additionally, network throughput degrades by less than 10\% when injecting three random link faults without disabling any node. In contrast, a mechanism similar to the one proposed in the BlueGene/L, that disables some network planes, would strongly degrade network throughput by 79\%.},
+  journal = {Computer Architecture Letters},
+  volume = {3}
+}
+
+@Inproceedings{ND.5.Theiss.2004,
+  author = {Theiss, I and Lysne, O},
+  title = {LORE - Local Reconfiguration for Fault Management in Irregular Interconnects},
+  year = {2004},
+  abstract = {},
+  booktitle = {International Parallel and Distributed
+                      Processing Symposium},
+  publisher = {IEEE Computer Society Press}
+}
+
+@Techreport{ND.7.Hansen.2004,
+  author = {Hansen, A F and Cicic, T and Gjessing, S and Lysne, O},
+  title = {Resilient Routing Layers: A Simple and Flexible Approach for Resilience in Packet Networks},
+  year = {2004},
+  abstract = {},
+  institution = {Simula Research Laboratory},
+  type = {Research Report},
+  number = {2004-13},
+  note = {This report has later been updated and refined as "Resilient Routing Layers for Recovery in Packet Networks".}
+}
+
+@Inproceedings{ND.5.Skeie.2004,
+  author = {Skeie, T and Lysne, O and Flich, J and Lopez, P and Robles, A and Duato, J},
+  title = {LASH-TOR: A Generic Transition-Oriented Routing Algorithm},
+  year = {2004},
+  abstract = {},
+  booktitle = {Proceedings of the IEEE International                      Conference on Parallel and Distributed Systems                      (ICPADS)},
+  pages = {595--604},
+  publisher = {IEEE Computer Society Press}
+}
+
+@Inproceedings{ND.5.Gomez.2004,
+  author = {G{\a\'o}mez, M E and Flich, J and Lopez, P and Robles, A and Duato, J and Nordbotten, N A and Lysne, O and Skeie, T},
+  title = {An Effective Fault-Tolerant Routing Methodology for Direct Networks},
+  year = {2004},
+  abstract = {Current massively parallel computing systems are being built with thousands of nodes, which significantly affect the probability of failure. M. E. Gomex proposed a methodology to design fault-tolerant routing algorithms for direct interconnection networks. The methodology uses a simple mechanism: for some source-destination pairs, packets are first forwarded to an intermediate node, and later, from this node to the destination node. Minimal adaptive routing is used along both subpaths. For those cases where the methodology cannot find a suitable intermediate node, it combines the use of intermediate nodes with two additional mechanisms: disabling adaptive routing and using misrouting on a per-packet basis. While the combination of these three mechanisms tolerates a large number of faults, each one requires adding some hardware support in the network and also introduces some overhead. In this paper, we perform an in-depth detailed analysis of the impact of these mechanisms on network behaviour. We analyze the impact of the three mechanisms separately and combined. The ultimate goal of this paper is to obtain a suitable combination of mechanisms that is able to meet the trade-off between fault-tolerance degree, routing complexity, and performance.},
+  booktitle = {Proceedings of International Conference on Parallel Processing},
+  pages = {222--231},
+  publisher = {IEEE Computer Society Press}
+}
+
+@Inproceedings{ND.5.Sem-Jacobsen.2004,
+  author = {Sem-Jacobsen, F O and Reinemo, Sven-Arne and Skeie, T and Lysne, O},
+  title = {Achieving Flow Level QoS in Cut-through Networks through Admission Control and DiffServ},
+  year = {2004},
+  abstract = {Cluster networks will serve as the future access networks for multimedia streaming, massive multiplayer online gaming, e-commerce, network storage etc. And for those application areas provisioning of Quality of Service (QoS) is becoming and important issue. DiffServ as specified by the IETF is foreseen to be the most prominent concept for providing predictability in the future Internet. To enable seamless interoperation with the higher level IETF concepts the QoS architecture of the lower layers should comply with the DiffServ paradigm as well. Previous work on predictability in cut-through networks has only studied class based QoS. In this paper we set out to achieve flow level QoS using flow aware admission control in combination with a flow negligent DiffServ inspired QoS mechanism. Our results show that flow level bandwidth guarantees are achievable with the use of the Link-by-Link and the Probe based schemes. In addition we are able to achieve an order of magnitude improvement in jitter and latency in individual flows.},
+  booktitle = {Proceedings of the International Conference on Parallel and Distributed Processing
+ Techniques and Applications (PDPTA)},
+  editor = {Hamid R. Arabnia},
+  pages = {1084--1090},
+  publisher = {CSREA Press},
+  address = {Las Vegas, Nevada}
+}
+
+@Inproceedings{ND.5.Gjessing.2004,
+  author = {Gjessing, S and Lysne, O and Hansen, A F and Kvalbein, A},
+  title = {The Vine Project: Towards Predictable Communication in Heterogeneous Networks},
+  year = {2004},
+  abstract = {},
+  booktitle = {Proceedings of the 3rd International Conference on
+                      Networking (ICN'04)},
+  pages = {830--837},
+  publisher = {IEEE Computer Society Press},
+  address = {Guadeloupe, French Caribbean}
+}
+
+@Inproceedings{ND.5.Nordbotten.2004,
+  author = {Nordbotten, N A and G{\a\'o}mez, M E and Flich, J and Lopez, P and Robles, A and Skeie, T and Lysne, O and Duato, J},
+  title = {A Fully Adaptive Fault-Tolerant Routing Methodology Based on Intermediate Nodes},
+  year = {2004},
+  abstract = {Massively parallel computing systems are being built with thousands of nodes. Because of the high number of components, it is critical to keep these systems running even in the presence of failures. Interconnection networks play a key-role in these systems, and this paper proposes a fault-tolerant routing methodology for use in such networks. The methodology supports any minimal routing function (including fully adaptive routing), does not degrade performance in the absence of faults, does not disable any healthy node, and is easy to implement both in meshes and tori. In order to avoid network failures, the methodology uses a simple mechanism: for some source-destination pairs, packets are forwarded to the destination node through a set of intermediate nodes (without being ejected from the network). The methodology is shown to tolerate a large number of faults (e.g., five/nine faults when using two/three intermediate nodes in a 3D torus). Furthermore, the methodology offers a gracious performance degradation: in an 8 {\texttimes} 8 {\texttimes} 8 torus network with 14 faults the throughput is only decreased by 6.49\%.},
+  booktitle = {Proceedings of IFIP International Conference on Network and Parallel Computing},
+  pages = {341--356},
+  publisher = {Springer-Verlag},
+  series = {Lecture Notes in Computer Science 3222}
+}
+
+@Inproceedings{ND.5.Gomez.2004.b,
+  author = {G{\a\'o}mez, M E and Duato, J and Flich, J and Lopez, P and Robles, A and Nordbotten, N A and Skeie, T and Lysne, O},
+  title = {A New Adaptive Fault-Tolerant Routing Methodology for Direct Networks},
+  year = {2004},
+  abstract = {Interconnection networks play a key role in the fault tolerance of massively parallel computers, since faults may isolate a large fraction of the machine containing many healthy nodes. In this paper, we present a methodology to design fully adaptive fault-tolerant routing algorithms for direct interconnection networks that can be applied to different regular topologies. The methodology is mainly based on the selection of an intermediate node (if needed) for each source-destination pair. Packets are adaptively routed to the intermediate node and, from this node, they are adaptively forwarded to their destination. This methodology requires only one additional virtual channel, even for tori. Evaluation results show that the methodology is 7-fault tolerant, and for up to 14 faults, more than 99\% of the combinations are tolerated, also without significantly degrading performance in the presence of faults.},
+  booktitle = {Proceedings of the International Conference on High Performance Computing},
+  pages = {462--473},
+  publisher = {Springer-Verlag},
+  series = {Lecture Notes in Computer Science 3296}
+}
+
+@Inproceedings{ND.5.Horn.2004,
+  author = {Horn, G and Lysne, O and Skeie, T},
+  title = {The existence of a network of fixed-sized switches that satisfies any communication needs},
+  year = {2004},
+  abstract = {},
+  booktitle = {The 2004 International Conference},
+  pages = {1056--1062},
+  publisher = {CSREA Press},
+  address = {Las Vegas, Nevada, USA}
+}
+
+@Misc{ND.8.Musunoori.2004.d,
+  author = {Lysne, O and Skeie, T and Theiss, I and Rognved, B DJohnsenandE and T{\o}rudbakken, O},
+  title = {The Interconnection Network: Architectural Challenges for Datacenters in the Computational GRID},
+  year = {2004},
+  abstract = {},
+  howpublished = {Presented at the eVITA Workshop},
+  note = {Presented at the eVITA Workshop on
+                      eScience and Applications}
+}
+
+@Inproceedings{Cicic.2005.2,
+  author = {Cicic, Tarik and Hansen, Audun Fosselie and Gjessing, Stein and Lysne, Olav},
+  title = {Applicability of Resilient Routing Layers for k-Fault Network Recovery},
+  year = {2005},
+  abstract = {Most networks experience several failures every day, and often multiple failures occur simultaneously. Still, most recovery mechanisms are not designed to handle multiple failures. We recently proposed a versatile recovery method called Resilient Routing Layers, and in this paper we analyze its suitability for handling multiple failures of network components. We propose a simple probabilistic algorithm for RRL layer creation, and evaluate its performance by comparing it with the Redundant Trees recovery mechanism. We show that not only does RRL provide better fault tolerance, but it also has qualitative advantages that make it very interesting in network systems design.},
+  booktitle = {Proceedings of International Conference on Networking (ICN), Reunion, France April 17-21},
+  pages = {173 - 183},
+  publisher = {Springer-Verlag GmbH },
+  edition = {Vol. 3421},
+  note = {ISSN 0302-9743,  ISBN 3-540-25339-4, }
+}
+
+@Article{Lysne.2005.2,
+  author = {Lysne, Olav and Pinkston, Timothy Mark and Duato, Jos{\a\'e}},
+  title = {A Methodology for Developing Deadlock-Free Dynamic Network Reconfiguration Processes},
+  year = {2005},
+  abstract = {Dynamic network reconfiguration is defined as the process of changing from one routing function
+to another while the network remains up and running. The main challenge is in avoiding
+deadlock anomalies while keeping restrictions on packet injection and forwarding minimal. Current
+approaches either require virtual channels in the network or they work only for a limited set
+of routing algorithms and/or fault patterns. In this paper, we present a methodology for devising
+deadlock free and dynamic transitions between old and new routing functions that is consistent
+with recently proposed theory. The methodology is independent of topology, can be applied
+to any deadlock-free routing function, and puts no restrictions on the routing function changes that
+can be supported. Furthermore, it does not require any virtual channels to guarantee deadlock
+freedom. This research is motivated by current trends toward using increasingly larger Internet
+and transaction processing servers based on clusters of PCs that have very high availability and
+dependability requirements, as well as other local, system, and storage area network-based computing
+systems.},
+  journal = {IEEE Transactions on Parallel and Distibuted Systems},
+  volume = {16},
+  number = {5},
+  pages = {428-443}
+}
+
+@Article{Duato.2005.1,
+  author = {Duato, Jos{\a\'e} and Lysne, Olav and Pang, Ruoming and Pinkston, Timothy Mark},
+  title = {A Theory for Deadlock-Free Dynamic Network Reconfiguration},
+  year = {2005},
+  abstract = {This paper develops theoretical support useful for determining deadlock properties of dynamic
+network reconfiguration techniques and serves as a basis for the development of design methodologies
+useful for deriving such techniques. It is applicable to interconnection networks typically
+used in multiprocessor servers, network-based computing clusters and distributed storage systems,
+and also has potential application to system-on-chip networks. This theory builds on basic principles
+established by previous theories while pioneering new concepts fundamental to the case of
+dynamic reconfiguration.},
+  journal = {IEEE Transactions on Parallel and Distributed Systems},
+  volume = {16},
+  number = {5},
+  pages = {412-427}
+}
+
+@Inproceedings{Kvalbein.2005.1,
+  author = {Kvalbein, Amund and Hansen, Audun Fosselie and Cicic, Tarik and Gjessing, Stein and Lysne, Olav},
+  title = {Fast Recovery from Link Failures using Resilient Routing Layers},
+  year = {2005},
+  abstract = {We present a novel scheme for network recovery, named Resilient
+Routing Layers (RRL). Our proposed scheme is based on calculating
+fully connected topology subsets, termed layers, which are used to
+forward traffic in case of a network failure. For the purpose of this
+work, the layers are created to protect against link failures only.
+RRL keeps pre-calculated backup routing information in the network
+stations. This allows local response to network failures, which gives
+recovery in the order of milliseconds.
+
+The main strengths of our approach are its flexibility, as it is
+independent of the network technology used, and its simplicity, as it
+offers the network operator a simple and coherent view of the
+resources available after a link failure. We also show that our scheme
+scales well for networks of several hundred nodes.
+},
+  booktitle = {10th IEEE Symposium on Computers and Communications (ISCC 2005)},
+  pages = {554--560},
+  publisher = {IEEE Communications Society},
+  address = {Cartagena, Spain, June 27-30},
+  note = {ISSN 1530-1346, ISBN 0-7695-2373-0}
+}
+
+@Inproceedings{Hansen.2005.1,
+  author = {Hansen, Audun Fosselie and Kvalbein, Amund and Cicic, Tarik and Gjessing, Stein and Lysne, Olav},
+  title = {Resilient Routing Layers for Recovery in Packet Networks},
+  year = {2005},
+  abstract = {The existing methods for network recovery are often complex and seldom used by network administrators. In 
+this paper we present a novel approach for global and local recovery named Resilient Routing Layers (RRL). The 
+method is supported by algorithms, but also simple enough for a network administrator to implement by hand for 
+reasonably sized networks. The idea in our approach is that for each node in the network there is a topology subset 
+called a {\textquotedblleft}safe layer{\textquotedblright}, which can handle any traffc affected by a fault in the node itself, or any of its links. 
+By analysis using different network topologies, we demonstrate that our approach performs well compared 
+to other comparable methods. Particularly, we demonstrate RRLs performance for backup-path lengths and state 
+information overhead that are assumed to be the weakest parameters for our method. We discuss implementation 
+issues of RRL, and demonstrate its applicability to MPLS networks.},
+  booktitle = {International Conference on Dependable Systems and Networks (DSN 2005) Yokohama, Japan, June 28-July 1},
+  editor = {Bob Werner},
+  publisher = {IEEE Computer Society},
+  note = {ISBN 0-7695-2282-3}
+}
+
+@Inproceedings{Hansen.2005.3,
+  author = {Hansen, Audun Fosselie and Kvalbein, Amund and Cicic, Tarik and Gjessing, Stein and Lysne, Olav and Jensen, Terje and {\O}sterb{\o}, Olav Norvald},
+  title = {Fast, Effective and Stable IP Recovery using Resilient Routing Layers},
+  year = {2005},
+  abstract = {Recovery at the IP layer is hampered by the slow convergence of IP rerouting. Recovery times
+in the range of seconds do not adhere to the requirements of many Internet applications today. To
+offer fast, pre-configured and loop-free IP recovery we have proposed a new method named Resilient
+Routing Layers (RRL). In this paper we demonstrate how RRL also can provide resource-effective
+recovery in IP networks. We compare the performance of RRL with what intuitively should be the
+most resource-effective method: Full global rerouting.},
+  booktitle = {The 19th International Teletraffic Congress (ITC19) Beijing, China, August 29-September 2},
+  editor = {Xiongjian Liang, Zhanhong Xin, V. B. Iversen and G. S. Kuo},
+  pages = {1631--1640},
+  publisher = {Beijing University of Posts and Telecommunications Press},
+  note = {ISBN 7-5635-1141-5}
+}
+
+@Inproceedings{Hansen.2005.4,
+  author = {Hansen, Audun Fosselie and Kvalbein, Amund and Cicic, Tarik and Gjessing, Stein and Lysne, Olav},
+  title = {Resilient Routing Layers: an Overview of Technology and Applications},
+  year = {2005},
+  abstract = {A thorough study of the network recovery
+methods available today reveals that there still exist a great
+potential for improvements. Most methods are optimized
+for handling single link failures, thus providing inadequate
+protection for node failures. Methods are often too complex
+to be adopted by network administrators in practice.
+Recovery in connectionless IP networks is still hampered
+by inappropriate delayed recovery due to slow convergence
+of IP rerouting.
+The authors have recently proposed Resilient Routing
+Layers (RRL) as an answer to some of the deficiencies
+observed from current methods. In this paper we will
+describe main features of RRL, present some recent
+research results and sketch our plans for future work.},
+  booktitle = {EURO NGI Workshop on Traffic Engineering, Protection and Restoration, Rome April 18-20},
+  publisher = {EuroNGI}
+}
+
+@Inproceedings{Kvalbein.2006.1,
+  author = {Kvalbein, Amund and Hansen, Audun Fosselie and Cicic, Tarik and Gjessing, Stein and Lysne, Olav},
+  title = {Fast IP Network Recovery using Multiple Routing Configurations},
+  year = {2006},
+  abstract = {  As the Internet takes an increasingly central role in our
+  communications infrastructure, the slow convergence of routing
+  protocols after a network failure becomes a growing problem. To
+  assure fast recovery from link and node failures in IP networks, we
+  present a new recovery scheme called Multiple Routing Configurations
+  (MRC). MRC is based on keeping additional routing information in the
+  routers, and allows packet forwarding to continue on an alternative
+  output link immediately after the detection of a failure.  Our
+  proposed scheme guarantees recovery in all single failure scenarios,
+  using a single mechanism to handle both link and node failures, and
+  without knowing the root cause of the failure. MRC is strictly
+  connectionless, and assumes only destination based hop-by-hop
+  forwarding. It can be implemented with only minor changes to
+  existing solutions.  In this paper we present MRC, and analyze its
+  performance with respect to scalability, backup path lengths, and
+  load distribution after a failure.
+},
+  booktitle = {INFOCOM 2006},
+  editor = {Arturo Azcorra, Joe Touch, Zhili Zhang},
+  pages = {23--29},
+  publisher = {IEEE},
+  address = {Barcelona, Spain},
+  isbn = {1-4244-0222-0}
+}
+
+@Inproceedings{Sem-jacobsen.2005.1,
+  author = {Sem-Jacobsen, Frank Olaf and Skeie, Tor and Lysne, Olav and T{\o}rudbakken, Ola and Rongved, Eivind and Johnsen, Bj{\o}rn},
+  title = {Siamese-Twin: A Dynamically Fault-Tolerant Fat Tree},
+  year = {2005},
+  abstract = {Fat-trees are a special case of multistage interconnection
+networks with quite good static fault tolerance capabilities.
+They are however straightforwardly unable to provide
+local dynamic fault tolerance. In this paper we propose
+a network topology based on the fat-tree using two parallel
+networks with crossover links between them in an effort
+to enable dynamic fault tolerance. We evaluate and compare
+this topology with two other similar fat-tree topologies
+and show through simulations that the new topology is
+able to improve slightly upon the ability to tolerate faults
+statically. More importantly, we show that the new network
+topology is the only one of the evaluated topologies able to
+tolerate one fault dynamically, with a superior network performance
+in the face of dynamically handled faults.},
+  booktitle = {International Parallel and Distributed Processing Symposium (IPDPS), Denver, Colorado, USA, April 4-8},
+  editor = {Unknown},
+  publisher = {IEEE Computer Society},
+  isbn = {0-7695-2312-9}
+}
+
+@Inproceedings{Sem-jacobsen.2005.2,
+  author = {Sem-Jacobsen, Frank Olaf and Skeie, Tor and Lysne, Olav},
+  title = {A Dynamic Fault-Torlerant Routing Algorithm for Fat-trees},
+  year = {2005},
+  abstract = {The fat tree is a network topology well suited for use as
+the interconnection network in systems such as parallel computers.
+Its large number of paths between every source/destination
+pair gives the fat tree the ability to provide high throughput.
+This also gives it a high probability of tolerating network faults
+statically, but few algorithms to dynamically tolerate faults in fattrees
+have previously been proposed. In this paper we present
+a deadlock free routing method for providing dynamic fault
+tolerance through misrouting downwards in the network. We
+show that the algorithm is one fault-tolerant, and that it with a
+certain probability can tolerate a large number of faults.},
+  booktitle = {International Conference on Parallel and Distributed Processing Techniques and Applications, Las Vegas, Nevada, USA, June 27-30},
+  editor = {Hamid R. Arabnia},
+  pages = {318-324},
+  publisher = {CSREA Press},
+  isbn = {1-932415-58-0}
+}
+
+@Techreport{Hansen.2005.6,
+  author = {Hansen, Audun Fosselie and Kvalbein, Amund and Cicic, Tarik and Gjessing, Stein and Lysne, Olav},
+  title = {A Comparison of Different Approaches for Calculating Resilient Routing Layers and Multiple Routing Configurations},
+  year = {2005},
+  abstract = {Fast proactive recovery has for years been a very import-
+ant research field due to increased reliability in the Internet for business
+critical and real-time communications. Resilient Routing Layers (RRL)
+and Multiple Routing Configurations (MRC) has been proposed as a
+new approach providing local and proactive recovery. RRL and MRC
+also provides a network manager with a simple set of sub-topologies as
+abstractions for the recovery routing. This paper will compare different
+methods for generating such layers and configurations along two para-
+meters, scalability and effects on routing of the recovered traffic.},
+  institution = {Simula Research Laboratory},
+  type = {Technical Report},
+  number = {2005-15}
+}
+
+@Article{Lysne.2006.1,
+  author = {Lysne, Olav and Skeie, Tor and Reinemo, Sven-Arne and Theiss, Ingebj{\o}rg Thelin},
+  title = {Layered Routing in Irregular Networks},
+  year = {2006},
+  abstract = {Freedom from deadlock is a key issue in Cut-Through, Wormhole and Store and Forward networks, and such freedom is usually obtained through careful design of the routing algorithm. Most existing deadlock-free routing methods for irregular topologies do, however, impose severe limitations on the available routing paths.  We present a method called Layered Routing, which gives rise to a series of routing algorithms, some of which perform considerably better than previous ones.  Our method groups virtual channels into network layers, and to each layer it assigns a limited set of source/destination address pairs. This separation of traffic yields a significant increase in routing efficiency.  We show how the method can be used to improve the performance of irregular networks, both through load balancing and by guaranteeing shortest-path routing. The method is simple to implement, and its application does not require any features in the switches other than the existence of a modest number of virtual channels.  The performance of the approach is evaluated through extensive experiments within three classes of technologies. These experiments reveal a need for virtual channels as well as an improvement in throughput for each technology class.},
+  journal = {IEEE Transactions on Parallel and Distributed Systems},
+  volume = {17},
+  number = {1},
+  pages = {51-65}
+}
+
+@Article{Gomez.2006.1,
+  author = {G{\a\'o}mez, Maria Engracia and Nordbotten, Nils Agne and Flich, Jose and L{\a\'o}pez, Pedro and Robles, Antonio and Duato, Jose and Skeie, Tor and Lysne, Olav},
+  title = {A Routing Methodology for Achieving Fault Tolerance in Direct Networks},
+  year = {2006},
+  abstract = {Massively parallel computing systems are being built with thousands of nodes. The interconnection network plays a key role for the performance of such systems. However, the high number of components significantly increases the probability of failure. Additionally, failures in the interconnection network may isolate a large fraction of the machine. It is therefore critical to provide an efficient fault-tolerant mechanism to keep the system running, even in the presence of faults. This paper presents a new fault-tolerant routing methodology that does not degrade performance in the absence of faults and tolerates a reasonably large number of faults without disabling any healthy node. In order to avoid faults, for some source-destination pairs, packets are first sent to an intermediate node and then from this node to the destination node. Fully adaptive routing is used along both subpaths. The methodology assumes a static fault model and the use of a checkpoint/restart mechanism. However, there are scenarios where the faults cannot be avoided solely by using an intermediate node. Thus, we also provide some extensions to the methodology. Specifically, we propose disabling adaptive routing and/or using misrouting on a per-packet basis. We also propose the use of more than one intermediate node for some paths. The proposed fault-tolerant routing methodology is extensively evaluated in terms of fault tolerance, complexity, and performance.},
+  journal = {IEEE Transactions on Computers},
+  volume = {55},
+  number = {4},
+  pages = {400-415}
+}
+
+@Inproceedings{Lysne.2004.1,
+  author = {Lysne, Olav and Montanana, Jose Miguel and Pinkston, Timothy Mark and Duato, Jose and Skeie, Tor and Flich, Jose},
+  title = {Simple Deadlock-Free Dynamic Network Reconfiguration},
+  year = {2004},
+  abstract = {},
+  booktitle = {High Performance Computing - HiPC 2004: 11th International Conference, Bangalore, India, December 19-22, 2004},
+  editor = {Luc Bouge, Victor Prasanna},
+  pages = {504-515},
+  publisher = {Springer Verlag},
+  series = {Lecture Notes in Computer Science}
+}
+
+@Article{Reinemo.2006.2,
+  author = {Reinemo, Sven-Arne and Skeie, Tor and S{\o}dring, Thomas and Lysne, Olav and T{\o}rudbakken, Ola},
+  title = {An overview of QoS capabilities in InfiniBand, Advanced Switching Interconnect, and Ethernet},
+  year = {2006},
+  abstract = {A recent trend in interconnection network technologies is the inclusion of various mechanisms to support a variety of Quality of Service concepts. This has been necessitated by an increasing number of application areas that require some level of performance guarantees from the network for parts of its traffic. In this paper we describe and compare the capabilities and support for Quality of Service of the three most important interconnection network technology standards of today. Equalities between the technologies are explained and differences are clarified.},
+  journal = {IEEE Communications Magazine},
+  volume = {44},
+  number = {7},
+  pages = {32--38}
+}
+
+@Article{Solheim.2006.1,
+  author = {Solheim, {\r A}shild Gr{\o}nstad and Lysne, Olav and Skeie, Tor and S{\o}dring, Thomas and Theiss, Ingebj{\o}rg Thelin and Johnsen, Ian},
+  title = {Routing for the ASI Fabric Manager},
+  year = {2006},
+  abstract = {},
+  journal = {IEEE Communications Magazine},
+  volume = {44},
+  number = {7},
+  pages = {39--44}
+}

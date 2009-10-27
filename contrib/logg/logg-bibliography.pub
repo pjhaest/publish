@@ -1,0 +1,1342 @@
+* articles
+** Multi-Adaptive {G}alerkin Methods for {ODE}s {I}
+   author:    Anders Logg
+   journal:   SIAM J. Sci. Comput.
+   year:      2003
+   status:    published
+   issn:      1064-8275
+   number:    6
+   simula:    ok
+   volume:    24
+   duplicate: True
+   key:       Logg2003a
+   pdf:       papers/Logg2003a.pdf
+   pages:     1879--1902
+   tags:      final
+** Multi-Adaptive {G}alerkin Methods for {ODE}s {II}: {I}mplementation and Applications
+   author:  Anders Logg
+   journal: SIAM J. Sci. Comput.
+   year:    2003
+   status:  published
+   issn:    1064-8275
+   number:  4
+   simula:  ok
+   volume:  25
+   key:     Logg2003b
+   pdf:     papers/Logg2003b.pdf
+   pages:   1119--1141
+   tags:    final
+** Explicit Time-Stepping for Stiff {ODE}s
+   author:    Kenneth Eriksson, Claes Johnson, Anders Logg
+   journal:   SIAM J. Sci. Comput.
+   year:      2003
+   status:    published
+   issn:      1064-8275
+   number:    4
+   simula:    ok
+   volume:    25
+   duplicate: True
+   key:       ErikssonJohnsonEtAl2003a
+   pdf:       papers/ErikssonJohnsonEtAl2003a.pdf
+   pages:     1142--1157
+   tags:      final
+** Multi-Adaptive Time-Integration
+   author:    Anders Logg
+   journal:   Applied Numerical Mathematics
+   year:      2004
+   status:    published
+   issn:      0168-9274
+   number:    3--4
+   simula:    ok
+   volume:    48
+   duplicate: True
+   key:       Logg2004a
+   pdf:       papers/Logg2004a.pdf
+   pages:     339--354
+   tags:      final
+** Computational Modeling of Dynamical Systems
+   author:    Johan Jansson, Claes Johnson, Anders Logg
+   journal:   Mathematical Models and Methods in Applied Sciences
+   year:      2005
+   status:    published
+   issn:      0218-2025
+   number:    3
+   simula:    ok
+   volume:    15
+   duplicate: True
+   key:       JanssonJohnsonEtAl2005a
+   pdf:       papers/JanssonJohnsonEtAl2005a.pdf
+   pages:     471--481
+   tags:      final
+** Optimizing the Evaluation of Finite Element Matrices
+   author:  Robert C. Kirby, Matthew G. Knepley, Anders Logg, L. Ridgway Scott
+   journal: SIAM J. Sci. Comput.
+   year:    2005
+   status:  published
+   issn:    1064-8275
+   number:  3
+   simula:  ok
+   volume:  27
+   key:     KirbyKnepleyEtAl2005a
+   pdf:     papers/KirbyKnepleyEtAl2005a.pdf
+   pages:   741--758
+   tags:    final
+** Multi-Adaptive {G}alerkin Methods for {ODE}s {III}: {A} Priori Error Estimates
+   author:    Anders Logg
+   journal:   SIAM J. Numer. Anal.
+   year:      2006
+   status:    published
+   issn:      0036-1429
+   number:    6
+   simula:    ok
+   volume:    43
+   duplicate: True
+   key:       Logg2006a
+   pdf:       papers/Logg2006a.pdf
+   pages:     2624--2646
+   tags:      final
+** A Compiler for Variational Forms
+   author:    Robert C. Kirby, Anders Logg
+   journal:   ACM Transactions on Mathematical Software
+   year:      2006
+   status:    published
+   issn:      0098-3500
+   number:    3
+   simula:    ok
+   volume:    32
+   duplicate: True
+   key:       KirbyLogg2006a
+   pdf:       papers/KirbyLogg2006a.pdf
+   pages:     417--444
+   tags:      final
+** Topological Optimization of the Evaluation of Finite Element Matrices
+   author:    Robert C. Kirby, Anders Logg, L. Ridgway Scott, Andy R. Terrel
+   journal:   SIAM J. Sci. Comput.
+   year:      2006
+   status:    published
+   issn:      1064-8275
+   number:    1
+   simula:    ok
+   volume:    28
+   duplicate: True
+   key:       KirbyLoggEtAl2006a
+   pdf:       papers/KirbyLoggEtAl2006a.pdf
+   pages:     224--240
+   tags:      final
+** Automating the Finite Element Method
+   author:    Anders Logg
+   journal:   Arch. Comput. Methods Eng.
+   year:      2007
+   status:    published
+   tags:      final
+   number:    2
+   volume:    14
+   key:       Logg2007a
+   simula:    ok
+   pdf:       papers/Logg2007a.pdf
+   pages:     93--138
+   issn:      1134-3060
+   duplicate: True
+** Efficient Compilation of a Class of Variational Forms
+   author:    Robert C. Kirby, Anders Logg
+   journal:   ACM Transactions on Mathematical Software
+   year:      2007
+   status:    published
+   fixme:     page range
+   issn:      0098-3500
+   number:    3
+   simula:    ok
+   volume:    33
+   duplicate: True
+   key:       KirbyLogg2007a
+   pdf:       papers/KirbyLogg2007a.pdf
+   tags:      final
+** Algorithms and Data Structures for Multi-Adaptive Time-Stepping
+   author:    Johan Jansson, Anders Logg
+   journal:   ACM Trans. Math. Software
+   year:      2008
+   status:    published
+   tags:      final
+   number:    3
+   volume:    35
+   key:       JanssonLogg2008a
+   simula:    ok
+   pdf:       papers/JanssonLogg2008a.pdf
+   pages:     1--24
+   issn:      0098-3500
+   duplicate: True
+** Benchmarking Domain-Specific Compiler Optimizations for Variational Forms
+   author:    Robert C. Kirby, Anders Logg
+   journal:   ACM Transactions on Mathematical Software
+   year:      2008
+   status:    published
+   tags:      final
+   number:    2
+   volume:    35
+   key:       KirbyLogg2008a
+   simula:    ok
+   pdf:       papers/KirbyLogg2008a.pdf
+   pages:     1--18
+   doi:       http://doi.acm.org/10.1145/1377612.1377614
+   issn:      0098-3500
+   duplicate: True
+** Automated Code Generation for Discontinuous Galerkin Methods
+   author:  Kristian B. Oelgaard, Anders Logg, Garth N. Wells
+   journal: SIAM J. Sci. Comput.
+   year:    2008
+   status:  published
+   tags:    final
+   number:  2
+   volume:  31
+   key:     OelgaardLoggEtAl2008a
+   simula:  ok
+   pdf:     papers/OelgaardLoggEtAl2008a.pdf
+   pages:   849--864
+   doi:     10.1137/070710032
+   url:     http://link.aip.org/link/?SCE/31/849
+   issn:    1064-8275
+** Unified Framework for Finite Element Assembly
+   author:  Martin S. Aln{\ae}s, Anders Logg, Kent-Andre Mardal, Ola Skavhaug, Hans Petter Langtangen
+   journal: International Journal of Computational Science and Engineering
+   year:    2009
+   status:  accepted
+   key:     AlnaesLoggEtAl2009a
+   simula:  ok
+   pdf:     papers/AlnaesLoggEtAl2009a.pdf
+** Efficient Representation of Computational Meshes
+   author:    Anders Logg
+   journal:   International Journal of Computational Science and Engineering
+   year:      2009
+   status:    accepted
+   duplicate: True
+   key:       Logg2009a
+   simula:    ok
+   pdf:       papers/Logg2009a.pdf
+** Efficient Assembly of $H(\mathrm{div})$ and $H(\mathrm{curl})$ Conforming Finite Elements
+   author:  M. Rognes, Robert C. Kirby, Anders Logg
+   journal: SIAM J. Sci. Comput.
+   year:    2008
+   status:  submitted
+   key:     RognesKirbyEtAl2008a
+   simula:  ok
+   pdf:     papers/RognesKirbyEtAl2008a.pdf
+** DOLFIN: Automated Finite Element Computing
+   author:  A. Logg, Garth N. Wells
+   journal: ACM Transactions on Mathematical Software
+   year:    2009
+   status:  submitted
+   url:     http://www.dspace.cam.ac.uk/handle/1810/214787
+   key:     LoggWells2009a
+   simula:  ok
+   pdf:     papers/LoggWells2009a.pdf
+* books
+** Dreams of Calculus: Perspectives on Mathematics Education
+   author:    Johan Hoffman, Claes Johnson, Anders Logg
+   publisher: Springer-Verlag
+   year:      2004
+   status:    published
+   isbn:      3-540-21976-5
+   key:       HoffmanJohnsonEtAl2004a
+   simula:    ok
+   pdf:       missing
+* chapters
+** Adaptive Computational Methods for Parabolic Problems
+   author:    Kenneth Eriksson, Claes Johnson, Anders Logg
+   chapter:   24
+   editor:    E. Stein, R. de Borst, T. J. R. Hughes
+   publisher: Wiley Press
+   year:      2004
+   status:    published
+   isbn:      0-470-84699-2
+   booktitle: Encyclopedia of Computational Mechanics
+   volume:    1
+   duplicate: True
+   key:       ErikssonJohnsonEtAl2004a
+   simula:    ok
+   pdf:       missing
+** A Hybrid Approach to Efficient Finite Element Code Development
+   author:    Anders Logg, Kent-Andre Mardal, Martin S. Aln{\ae}s, Hans Petter Langtangen, Ola Skavhaug
+   chapter:   19
+   editor:    D. A. Bader
+   publisher: Chapman and Hall
+   year:      2007
+   status:    published
+   isbn:      978-1584889090
+   series:    Computational Science
+   booktitle: Petascale Computing: Algorithms and Applications
+   key:       LoggMardalEtAl2007a
+   simula:    ok
+   pdf:       missing
+** Att L\"osa En Differentialekvation
+   author:    Anders Logg
+   pages:     95--109
+   editor:    Ola Helenius, Karin Wallby
+   publisher: Nationellt centrum f{\"o}r matematikutbildning, NCM
+   year:      2008
+   status:    published
+   isbn:      978--91--85143--08--5
+   booktitle: M\"anniskor och matematik
+   key:       Logg2008a
+   simula:    ok
+   pdf:       papers/Logg2008a.pdf
+** Past and Future Perspectives on Scientific Software
+   author:    Anders Logg, Hans Petter Langtangen, Xing Cai
+   chapter:   x
+   editor:    Aslak Tveito, Are Magnus Bruaset, Olav Lysne
+   publisher: Springer-Verlag
+   year:      2009
+   status:    accepted
+   url:       http://www.springer.com/math/cse/book/978-3-642-01155-9
+   booktitle: Simula Research Laboratory - by thinking constantly about it
+   key:       LoggLangtangenEtAl2009a
+   pdf:       missing
+* refproceedings
+** Efficient Representation of Computational Meshes
+   author:      Anders Logg
+   booktitle:   MekIT'07
+   year:        2007
+   status:      published
+   isbn:        9788259122357
+   total_pages: 332
+   note:        http://www.ntnu.no/mekit07, http://butikk.tapirforlag.no/no/node/1073
+   duplicate:   True
+   editor:      B. Skallerud, H. I. Andersson
+   key:         Logg2007b
+   publisher:   Tapir Akademisk Forlag
+   simula:      ok
+   pdf:         missing
+** Multiscale Modeling of the Acoustic Properties of Lung Parenchyma
+   author:    Malin Siklosi, Oliver E. Jensen, Richard H. Tew, Anders Logg
+   booktitle: Mathematical and numerical modelling of the human lung
+   year:      2008
+   status:    published
+   note:      http://www.esaim-proc.org/index.php?option=toc&url=/articles/proc/abs/2008/02/contents/contents.html
+   issn:      1270-900X
+   simula:    ok
+   volume:    23
+   key:       SiklosiJensenEtAl2008a
+   pdf:       papers/SiklosiJensenEtAl2008a.pdf
+   pages:     78--97
+** Simulating Heart Valve Dynamics in FEniCS
+   author:    Kristoffer Selim, Anders Logg
+   booktitle: MekIT'07
+   year:      2009
+   status:    published
+   publisher: Tapir Akademisk Forlag
+   editor:    B. Skallerud, H. I. Andersson
+   key:       SelimLogg2009a
+   pdf:       papers/SelimLogg2009a.pdf
+* proceedings
+** Topics in Adaptive Computational Methods for Differential Equations
+   author:    Claes Johnson, Johan Hoffman, Anders Logg
+   booktitle: CEDYA 2001: Congreso de Ecuaciones Diferenciales y Aplicaciones
+   year:      2001
+   status:    published
+   duplicate: True
+   key:       JohnsonHoffmanEtAl2001a
+   simula:    ok
+   pdf:       missing
+** Mathematics and Computation
+   author:    Johan Hoffman, Claes Johnson, Anders Logg
+   booktitle: Stockholm Intelligencer: Fourth European Congress of Mathematics
+   year:      2004
+   status:    published
+   key:       HoffmanJohnsonEtAl2004b
+   simula:    ok
+   pdf:       papers/HoffmanJohnsonEtAl2004b.pdf
+** Automated Solution of Differential Equations
+   author:    Anders Logg
+   booktitle: Sixth International Congress on Industrial Applied Mathematics (ICIAM07) and GAMM Annual Meeting, Z\"urich 2007
+   year:      2007
+   status:    published
+   journal:   Proceedings in Applied Mathematics and Mechanics
+   number:    1
+   volume:    7
+   key:       Logg2007c
+   simula:    ok
+   pdf:       papers/Logg2007c.pdf
+   pages:     1010601--1010602
+   issn:      1617-7061
+   note:      http://dx.doi.org/10.1002/pamm.200700234
+   duplicate: True
+** Automated Computational Modelling for Solid Mechanics
+   author:    Kristian B. Oelgaard, Garth N. Wells, Anders Logg
+   booktitle: IUTAM Symposium on Theoretical, Modelling and Computational Aspects of Inelastic Media
+   year:      2008
+   status:    published
+   key:       OelgaardWellsEtAl2008a
+   simula:    ok
+   pdf:       missing
+** Trends in Computational Mechanics Software
+   author:    Hans Petter Langtangen, Anders Logg
+   booktitle: 21st Nordic Seminar on Computational Mechanics
+   year:      2008
+   status:    published
+   key:       LangtangenLogg2008a
+   simula:    ok
+   pdf:       missing
+   journal:   21st Nordic Seminar on Computational Mechanics
+** Collaborative Computational Frameworks and the Growth Problem
+   author:    Harish Narayanan, Krishna Garikipati, Anders Logg
+   booktitle: The mathematics of growth and remodelling of soft biological tissues
+   year:      2008
+   status:    published
+   volume:    39
+   publisher: European Mathematical Society Publishing House
+   note:      presented by Harish at Mathematisches Forschungsinstitut Oberwolfach
+   editor:    D. Ambrosi, K. Garikipati, E. Kuhl
+   key:       NarayananGarikipatiEtAl2008a
+   simula:    ok
+   pdf:       papers/NarayananGarikipatiEtAl2008a.pdf
+   pages:     29--31
+** An Overview of the FEniCS Project
+   author:    Anders Logg
+   booktitle: 21st Nordic Seminar on Computational Mechanics
+   year:      2008
+   status:    published
+   duplicate: True
+   key:       Logg2008b
+   simula:    ok
+   pdf:       missing
+   journal:   21st Nordic Seminar on Computational Mechanics
+* reports
+** Multi-Adaptive Error Control for {ODE}s
+   author:      Anders Logg
+   institution: Oxford University Computing Laboratory NA Group
+   year:        1998
+   status:      published
+   number:      98/20
+   key:         Logg1998a
+   pdf:         missing
+** A Multi-Adaptive {ODE}-Solver
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2000
+   status:      published
+   number:      2000--02
+   duplicate:   True
+   key:         Logg2000a
+   pdf:         papers/Logg2000a.pdf
+** Multi-Adaptive Error Control for {ODE}s
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2000
+   status:      published
+   number:      2000--03
+   key:         Logg2000b
+   pdf:         papers/Logg2000b.pdf
+** Multi-Adaptive {G}alerkin Methods for {ODE}s {I}: {T}heory and Algorithms
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2001
+   status:      published
+   number:      2001--09
+   key:         Logg2001a
+   pdf:         papers/Logg2001a.pdf
+** Multi-Adaptive {G}alerkin Methods for {ODE}s {II}: {A}pplications
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2001
+   status:      published
+   number:      2001--10
+   key:         Logg2001b
+   pdf:         papers/Logg2001b.pdf
+** Topics in Adaptive Computational Methods for Differential Equations
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2001
+   status:      published
+   number:      2001--20
+   duplicate:   True
+   key:         Logg2001c
+   pdf:         papers/Logg2001c.pdf
+** {DOLFIN}: {D}ynamic {O}bject Oriented {L}ibrary for {FIN}ite Element Computation
+   author:      Johan Hoffman, Anders Logg
+   institution: Finite Element Center
+   year:        2002
+   status:      published
+   number:      2002--06
+   key:         HoffmanLogg2002a
+   pdf:         papers/HoffmanLogg2002a.pdf
+** Explicit Time-Stepping for Stiff {ODE}s
+   author:      Kenneth Eriksson, Claes Johnson, Anders Logg
+   institution: Finite Element Center
+   year:        2002
+   status:      published
+   number:      2002--07
+   duplicate:   True
+   key:         ErikssonJohnsonEtAl2002a
+   pdf:         papers/ErikssonJohnsonEtAl2002a.pdf
+** Multi-Adaptive Time Integration
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2003
+   status:      published
+   number:      2003--19
+   duplicate:   True
+   key:         Logg2003c
+   pdf:         papers/Logg2003c.pdf
+** Adaptive Computational Methods for Parabolic Problems
+   author:      Kenneth Eriksson, Claes Johnson, Anders Logg
+   institution: Finite Element Center
+   year:        2003
+   status:      published
+   number:      2003--20
+   duplicate:   True
+   key:         ErikssonJohnsonEtAl2003b
+   pdf:         papers/ErikssonJohnsonEtAl2003b.pdf
+** The {FE}ni{CS} Project
+   author:      Todd Dupont, Johan Hoffman, Claes Johnson, Robert C. Kirby, Mats G. Larson, Anders Logg, L. Ridgway Scott
+   institution: Finite Element Center
+   year:        2003
+   status:      published
+   number:      2003--21
+   key:         DupontHoffmanEtAl2003a
+   pdf:         papers/DupontHoffmanEtAl2003a.pdf
+** Interpolation Estimates for Piecewise Smooth Functions in One Dimension
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2004
+   status:      published
+   number:      2004--02
+   key:         Logg2004b
+   pdf:         papers/Logg2004b.pdf
+** Estimates of Derivatives and Jumps Across Element Boundaries for Multi-Adaptive {G}alerkin Solutions of {ODE}s
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2004
+   status:      published
+   number:      2004--03
+   key:         Logg2004c
+   pdf:         papers/Logg2004c.pdf
+** Multi-Adaptive {G}alerkin Methods for {ODE}s {III}: {E}xistence and Stability
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2004
+   status:      published
+   number:      2004--04
+   key:         Logg2004d
+   pdf:         papers/Logg2004d.pdf
+** Multi-Adaptive {G}alerkin Methods for {ODE}s {IV}: {A} Priori Error Estimates
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2004
+   status:      published
+   number:      2004--05
+   duplicate:   True
+   key:         Logg2004e
+   pdf:         papers/Logg2004e.pdf
+** Multi-Adaptive {G}alerkin Methods for {ODE}s {V}: {S}tiff Problems
+   author:      Johan Jansson, Anders Logg
+   institution: Finite Element Center
+   year:        2004
+   status:      published
+   number:      2004--12
+   key:         JanssonLogg2004a
+   pdf:         missing
+** Algorithms for Multi-Adaptive Time-Stepping
+   author:      Johan Jansson, Anders Logg
+   institution: Finite Element Center
+   year:        2004
+   status:      published
+   number:      2004--13
+   key:         JanssonLogg2004b
+   pdf:         papers/JanssonLogg2004b.pdf
+** Simulation of Mechanical Systems With Individual Time Steps
+   author:      Johan Jansson, Anders Logg
+   institution: Finite Element Center
+   year:        2004
+   status:      published
+   number:      2004--14
+   key:         JanssonLogg2004c
+   pdf:         papers/JanssonLogg2004c.pdf
+** Computational Modeling of Dynamical Systems
+   author:      Johan Jansson, Claes Johnson, Anders Logg
+   institution: Finite Element Center
+   year:        2004
+   status:      published
+   number:      2004--15
+   duplicate:   True
+   key:         JanssonJohnsonEtAl2004a
+   pdf:         papers/JanssonJohnsonEtAl2004a.pdf
+** A Compiler for Variational Forms
+   author:      Robert C. Kirby, Anders Logg
+   institution: Finite Element Center
+   year:        2005
+   status:      published
+   number:      2005--05
+   duplicate:   True
+   key:         KirbyLogg2005a
+   simula:      ok
+   pdf:         papers/KirbyLogg2005a.pdf
+** Topological Optimization of the Evaluation of Finite Element Matrices
+   author:      Robert C. Kirby, Anders Logg, L. Ridgway Scott, Andy R. Terrel
+   institution: Finite Element Center
+   year:        2005
+   status:      published
+   number:      2005--06
+   duplicate:   True
+   key:         KirbyLoggEtAl2005a
+   simula:      ok
+   pdf:         papers/KirbyLoggEtAl2005a.pdf
+** Automating the Finite Element Method
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2006
+   status:      published
+   number:      2006--01
+   duplicate:   True
+   key:         Logg2006b
+   simula:      ok
+   pdf:         papers/Logg2006b.pdf
+** Algorithms and Data Structures for Multi-Adaptive Time-Stepping
+   author:      Johan Jansson, Anders Logg
+   institution: Finite Element Center
+   year:        2006
+   status:      published
+   number:      2006--06
+   duplicate:   True
+   key:         JanssonLogg2006a
+   simula:      ok
+   pdf:         papers/JanssonLogg2006a.pdf
+** Efficient Compilation of a Class of Variational Forms
+   author:      Robert C. Kirby, Anders Logg
+   institution: Finite Element Center
+   year:        2006
+   status:      published
+   number:      2006--07
+   duplicate:   True
+   key:         KirbyLogg2006b
+   simula:      ok
+   pdf:         papers/KirbyLogg2006b.pdf
+** Efficient Representation of Computational Meshes
+   author:      Anders Logg
+   institution: Finite Element Center
+   year:        2007
+   status:      published
+   number:      2007--03
+   key:         Logg2007d
+   simula:      ok
+   pdf:         papers/Logg2007d.pdf
+** Benchmarking Domain-Specific Compiler Optimizations for Variational Forms
+   author:      Robert C. Kirby, Anders Logg
+   institution: Finite Element Center
+   year:        2007
+   status:      published
+   number:      2007--04
+   duplicate:   True
+   key:         KirbyLogg2007b
+   simula:      ok
+   pdf:         papers/KirbyLogg2007b.pdf
+* manuals
+** {UFC} Specification and User Manual
+   author: Martin S. Aln{\ae}s, Anders Logg, Kent-Andre Mardal, Ola Skavhaug, Hans Petter Langtangen
+   status: published
+   note:   URL: \url{http://www.fenics.org/ufc/}
+   key:    AlnaesLoggEtAl2009b
+   year:   2009
+   simula: ok
+   pdf:    missing
+** Puffin User Manual
+   author: Johan Hoffman, Anders Logg
+   status: published
+   note:   URL: \url{http://www.fenics.org/puffin/}
+   key:    HoffmanLogg2004a
+   year:   2004
+   simula: ok
+   pdf:    missing
+** {FFC} User Manual
+   author: Anders Logg
+   status: published
+   note:   URL: \url{http://www.fenics.org/ffc/}
+   key:    Logg2007e
+   year:   2007
+   simula: ok
+   pdf:    missing
+** DOLFIN User Manual
+   author: Anders Logg, Garth N. Wells
+   status: published
+   note:   URL: \url{http://www.fenics.org/dolfin/}
+   key:    LoggWells2007a
+   year:   2007
+   simula: ok
+   pdf:    missing
+* theses
+** A Multi-Adaptive {ODE}-Solver
+   author:     Anders Logg
+   school:     Chalmers University of Technology
+   year:       1998
+   thesistype: msc
+   status:     published
+   duplicate:  True
+   key:        Logg1998b
+   simula:     ok
+   pdf:        papers/Logg1998b.pdf
+** Multi-Adaptive {G}alerkin Methods for {ODE}s
+   author:     Anders Logg
+   school:     Chalmers University of Technology
+   year:       2001
+   thesistype: lic
+   status:     published
+   duplicate:  True
+   key:        Logg2001d
+   simula:     ok
+   pdf:        papers/Logg2001d.pdf
+** Automation of Computational Mathematical Modeling
+   author:     Anders Logg
+   school:     Chalmers University of Technology
+   year:       2004
+   thesistype: phd
+   status:     published
+   duplicate:  True
+   key:        Logg2004f
+   simula:     ok
+   pdf:        papers/Logg2004f.pdf
+* talks
+** Mechlab
+   author:  Anders Logg
+   meeting: Nordic Computational Differential Equations Circus, Chalmers G{\"o}teborg
+   year:    1998
+   status:  published
+   key:     Logg19980110a
+   date:    1998-01-10
+   pdf:     missing
+** A Multi-Adaptive {ODE}-Solver
+   author:  Anders Logg
+   meeting: Nordic Computational Differential Equations Circus, Helsinki
+   year:    1999
+   status:  published
+   key:     Logg1999a
+   date:    1999
+   pdf:     missing
+** Multiadaptivity in Pictures
+   author:  Anders Logg
+   meeting: Nordic Computational Differential Equations Circus, Bergen
+   year:    2000
+   status:  published
+   key:     Logg20000310a
+   date:    2000-03-10
+   pdf:     missing
+** Strategies for Multi-Adaptive Time-Stepping
+   author:  Anders Logg
+   meeting: Finite Element Center Workshop, Chalmers G{\"o}teborg
+   year:    2000
+   status:  published
+   note:    date may be wrong, could have been 2000-06-02
+   key:     Logg20000608a
+   date:    2000-06-08
+   pdf:     missing
+** Higher-Order Elements and the {L}orenz System
+   author:  Anders Logg
+   meeting: Nordic Computational Differential Equations Circus, Tampere
+   year:    2001
+   status:  published
+   note:    date may be wrong, could have been 2001-03-16
+   key:     Logg20010317a
+   date:    2001-03-17
+   pdf:     missing
+** Computability of the {L}orenz System and the Solar System
+   author:  Anders Logg
+   meeting: Computational and Applied Mathematics Seminar, Chalmers G{\"o}teborg
+   year:    2001
+   status:  published
+   key:     Logg20010404a
+   date:    2001-04-04
+   pdf:     missing
+** Multi-Adaptive {G}alerkin Methods for {ODE}s
+   author:  Anders Logg
+   meeting: Licentiate Seminar, Chalmers G{\"o}teborg
+   year:    2001
+   status:  published
+   key:     Logg20010606a
+   date:    2001-06-06
+   pdf:     missing
+** Multi-Adaptive {G}alerkin Methods for {ODE}s
+   author:  Anders Logg
+   meeting: International Conference on Scientific Computation and Differential Equations (SciCADE 2001), Vancouver
+   year:    2001
+   status:  published
+   key:     Logg20010803a
+   date:    2001-08-03
+   pdf:     missing
+** On the Computability of the Incompressible Navier-Stokes Equations
+   author:  Anders Logg, Johan Hoffman, Claes Johnson
+   meeting: AMFLOW, Heidelberg
+   year:    2001
+   status:  published
+   key:     LoggHoffmanEtAl20011022a
+   date:    2001-10-22
+   pdf:     missing
+** Ber\"akningsmatematik
+   author:    Anders Logg
+   meeting:   Birger Sj{\"o}berggymnasiet, V\"anersborg
+   year:      2001
+   status:    published
+   duplicate: True
+   key:       Logg20011116a
+   date:      2001-11-16
+   pdf:       missing
+** Two Topics in Adaptivity
+   author:  Claes Johnson, Johan Hoffman, Anders Logg
+   meeting: Congreso de Ecuaciones Diferenciales y Aplicaciones (CEDYA 2001), Salamanca
+   year:    2001
+   status:  published
+   key:     JohnsonHoffmanEtAl20011210a
+   date:    2001-12-10
+   pdf:     missing
+** Ber\"akningsmatematik
+   author:  Anders Logg
+   meeting: Burg{\aa}rdsgymnasiet, G{\"o}teborg
+   year:    2002
+   status:  published
+   note:    date may be wrong, could be 2003-03-11
+   key:     Logg20020311a
+   date:    2002-03-11
+   pdf:     missing
+** Dynamic Object-Oriented Library for FINite Element Computation
+   author:  Johan Hoffman, Anders Logg
+   meeting: Computational and Applied Mathematics Seminar, Chalmers G{\"o}teborg
+   year:    2002
+   status:  published
+   key:     HoffmanLogg20020412a
+   date:    2002-04-12
+   pdf:     missing
+** Explicit Time-Stepping for Stiff {ODE}s
+   author:  Anders Logg, Kenneth Eriksson, Claes Johnson
+   meeting: Finite Element Center Workshop, Chalmers G{\"o}teborg
+   year:    2002
+   status:  published
+   key:     LoggErikssonEtAl20020607a
+   date:    2002-06-07
+   pdf:     missing
+** Explicit Time-Stepping for Stiff {ODE}s
+   author:  Anders Logg, Kenneth Eriksson, Claes Johnson
+   meeting: Third China-Sweden Workshop on Computational Mathematics, Chalmers G{\"o}teborg
+   year:    2002
+   status:  published
+   key:     LoggErikssonEtAl20020611a
+   date:    2002-06-11
+   pdf:     missing
+** Matematisk Modellering Och Ber\"akning
+   author:  Anders Logg
+   meeting: Centre of Chemical Process Engineering (CPE), Chalmers G{\"o}teborg
+   year:    2002
+   status:  published
+   key:     Logg20021010a
+   date:    2002-10-10
+   pdf:     missing
+** A Priori Error Analysis of Multi-Adaptive {G}alerkin Methods
+   author:  Anders Logg
+   meeting: Computational and Applied Mathematics Seminar, Chalmers G{\"o}teborg
+   year:    2002
+   status:  published
+   key:     Logg20021107a
+   date:    2002-11-07
+   pdf:     missing
+** Matematisk Modellering Och Ber\"akning
+   author:  Anders Logg
+   meeting: Chalmers Day, Chalmers G{\"o}teborg
+   year:    2002
+   status:  published
+   key:     Logg20021120a
+   date:    2002-11-20
+   pdf:     missing
+** Multi-Adaptive Time Integration
+   author:  Anders Logg, Kenneth Eriksson, Claes Johnson
+   meeting: Innovative Time Integrators for PDEs Workshop (IIPDE 2002), CWI Amsterdam
+   year:    2002
+   status:  published
+   key:     LoggErikssonEtAl20021125a
+   date:    2002-11-25
+   pdf:     missing
+** Computational Mathematical Modelling
+   author:    Anders Logg
+   meeting:   Seminar, Chalmers G{\"o}teborg
+   year:      2002
+   status:    published
+   duplicate: True
+   key:       Logg20021218a
+   date:      2002-12-18
+   pdf:       missing
+** The {DOLFIN} Project - a Platform for Finite Element Computation
+   author:  Claes Johnson, Johan Hoffman, Anders Logg
+   meeting: Isaac Newton Institute, Cambridge
+   year:    2003
+   status:  published
+   key:     JohnsonHoffmanEtAl20030305a
+   date:    2003-03-05
+   pdf:     missing
+** Adaptive Explicit Time-Stepping for Stiff {ODE}s
+   author:  Anders Logg
+   meeting: First European Finite Element Fair, Cambridge
+   year:    2003
+   status:  published
+   key:     Logg20030508a
+   date:    2003-05-08
+   pdf:     missing
+** Explicit Time-Stepping for Stiff {ODE}s
+   author:  Anders Logg, Kenneth Eriksson, Claes Johnson
+   meeting: CWI Seminar, CWI Amsterdam
+   year:    2003
+   status:  published
+   key:     LoggErikssonEtAl20030512a
+   date:    2003-05-12
+   pdf:     missing
+** Current Status of {DOLFIN} - a Guide for Prospective Developers
+   author:  Anders Logg
+   meeting: Computational and Applied Mathematics Seminar, Chalmers G{\"o}teborg
+   year:    2003
+   status:  published
+   key:     Logg20030911a
+   date:    2003-09-11
+   pdf:     missing
+** Time Integration of {ODE}s and {PDE}s With Multi-Adaptive {G}alerkin Methods
+   author:  Anders Logg
+   meeting: First International Conference on Adaptive Modelling Simulation (ADMOS 2003), Chalmers G{\"o}teborg
+   year:    2003
+   status:  published
+   key:     Logg20030929a
+   date:    2003-09-29
+   pdf:     missing
+** A General Adaptive Finite Element Solver With Application to Turbulent Reactive Flow
+   author:  Anders Logg
+   meeting: New Era for Chemical Reactors Workshop, Chalmers G{\"o}teborg
+   year:    2003
+   status:  published
+   key:     Logg20031002a
+   date:    2003-10-02
+   pdf:     missing
+** Automation of Computational Mathematical Modeling: the {FE}ni{CS} Project
+   author:  Anders Logg
+   meeting: TTI Seminar, Chicago
+   year:    2003
+   status:  published
+   key:     Logg20031020a
+   date:    2003-10-20
+   pdf:     missing
+** Automation of Computational Mathematical Modeling
+   author:    Anders Logg
+   meeting:   Ph.D. Seminar, Chalmers G{\"o}teborg
+   year:      2004
+   status:    published
+   duplicate: True
+   key:       Logg20040610a
+   date:      2004-06-10
+   pdf:       missing
+** Automation of Computational Mathematical Modeling
+   author:  Anders Logg
+   meeting: TTI Seminar, Chicago
+   year:    2004
+   status:  published
+   key:     Logg20041019a
+   date:    2004-10-19
+   pdf:     missing
+** Automation of Computational Mathematical Modeling
+   author:  Anders Logg
+   meeting: University of Chicago Graduate Seminar, Chicago
+   year:    2004
+   status:  published
+   key:     Logg20041111a
+   date:    2004-11-11
+   pdf:     missing
+** A Compiler for Variational Forms
+   author:  Anders Logg
+   meeting: TTI Seminar, Chicago
+   year:    2004
+   status:  published
+   key:     Logg20041207a
+   date:    2004-12-07
+   pdf:     missing
+** A Compiler for Variational Forms
+   author:  Anders Logg
+   meeting: KTH/NADA, Stockholm
+   year:    2004
+   status:  published
+   key:     Logg20041216a
+   date:    2004-12-16
+   pdf:     missing
+** A Compiler for Variational Forms
+   author:  Anders Logg
+   meeting: Computational and Applied Mathematics Seminar, Chalmers G{\"o}teborg
+   year:    2004
+   status:  published
+   key:     Logg20041220a
+   date:    2004-12-20
+   pdf:     missing
+** {FFC}: a Compiler for Variational Forms
+   author:  Anders Logg
+   meeting: SIAM Conference on Computational Science and Engineering (SIAM CSE 2005), Orlando
+   year:    2005
+   status:  published
+   key:     Logg20050215a
+   date:    2005-02-15
+   pdf:     missing
+** Benchmark Results for the {FE}ni{CS} Form Compiler
+   author:  Anders Logg
+   meeting: TTI Seminar, Chicago
+   year:    2005
+   status:  published
+   key:     Logg20050426a
+   date:    2005-04-26
+   pdf:     missing
+** Automating the Finite Element Method
+   author:  Anders Logg
+   meeting: Computational and Applied Mathematics Seminar, Chalmers G{\"o}teborg
+   year:    2005
+   status:  published
+   key:     Logg20050817a
+   date:    2005-08-17
+   pdf:     missing
+** Automating the Finite Element Method
+   author:  Anders Logg
+   meeting: KTH/NADA, Stockholm
+   year:    2005
+   status:  published
+   key:     Logg20050819a
+   date:    2005-08-19
+   pdf:     missing
+** Automating the Finite Element Method
+   author:  Anders Logg
+   meeting: Simula Research Laboratory, Oslo
+   year:    2005
+   status:  published
+   key:     Logg20050823a
+   date:    2005-08-23
+   pdf:     missing
+** A New Family of Methods for Global Error Control in {ODE} Solvers
+   author:  Anders Logg
+   meeting: Simula Research Laboratory, Oslo
+   year:    2005
+   status:  published
+   key:     Logg20050823b
+   date:    2005-08-23
+   pdf:     missing
+** How to Solve Differential Equations and How to Automate It
+   author:  Anders Logg
+   meeting: TTI Student Seminar, Chicago
+   year:    2005
+   status:  published
+   key:     Logg20050922a
+   date:    2005-09-22
+   pdf:     missing
+** Extending and Optimizing the {FE}ni{CS} Form Compiler
+   author:  Anders Logg
+   meeting: FEniCS'05 Workshop, Chicago
+   year:    2005
+   status:  published
+   key:     Logg20051020a
+   date:    2005-10-20
+   pdf:     missing
+** How Large Is the Error?
+   author:  Anders Logg
+   meeting: TTI Seminar, Chicago
+   year:    2005
+   status:  published
+   key:     Logg20051206a
+   date:    2005-12-06
+   pdf:     missing
+** Automating the Finite Element Method
+   author:  Anders Logg
+   meeting: Lecture series at the Sixth Winter School in Computational Mathematics, Geilo
+   year:    2006
+   status:  published
+   key:     Logg200603a
+   date:    2006-03
+   pdf:     missing
+** Current and Future Plans for {FE}ni{CS}
+   author:  Anders Logg
+   meeting: BIT Circus, Stockholm
+   year:    2006
+   status:  published
+   key:     Logg20060831a
+   date:    2006-08-31
+   pdf:     missing
+** The {FE}ni{CS} Project: Philosophy, Current Status and Future Plans
+   author:  Anders Logg
+   meeting: FEniCS'06 Workshop, Delft
+   year:    2006
+   status:  published
+   key:     Logg20061008a
+   date:    2006-10-08
+   pdf:     missing
+** A New Mesh Library for {DOLFIN}
+   author:  Anders Logg
+   meeting: FEniCS'06 Workshop, Delft
+   year:    2006
+   status:  published
+   key:     Logg20061009a
+   date:    2006-10-09
+   pdf:     missing
+** A New Mesh Library for {DOLFIN}/{P}y{CC}
+   author:  Anders Logg
+   meeting: Simula Scientific Computing Seminar, Tallinn
+   year:    2006
+   status:  published
+   key:     Logg20061120a
+   date:    2006-11-20
+   pdf:     missing
+** Efficient Representation of Computational Meshes
+   author:  Anders Logg
+   meeting: MekIT'07, Trondheim
+   year:    2007
+   status:  published
+   key:     Logg2007052a
+   date:    2007-05-2
+   simula:  ok
+   pdf:     missing
+** Software Components for Solving {PDE}s
+   author:  Anders Logg, O. Skavhaug
+   meeting: Modelling and Computation of Biomedical Processess Workshop, Simula Oslo
+   year:    2007
+   status:  published
+   key:     LoggSkavhaug20070612a
+   date:    2007-06-12
+   simula:  ok
+   pdf:     missing
+** Automated Solution of Differential Equations
+   author:    Anders Logg
+   meeting:   6th International Congress on Industrial and Applied Mathematics (ICIAM 2007), Z\"urich
+   year:      2007
+   status:    published
+   note:      should appear here: http://www3.interscience.wiley.com/journal/91016652/home
+   duplicate: True
+   key:       Logg20070718a
+   date:      2007-07-18
+   simula:    ok
+   pdf:       missing
+** Finite Element Code Generation: Simplicity, Generality, Efficiency
+   author:  Anders Logg
+   meeting: Software Issues in Computational Science and Engineering (SCSE 2007), Uppsala
+   year:    2007
+   status:  published
+   key:     Logg20070811a
+   date:    2007-08-11
+   simula:  ok
+   pdf:     missing
+** Activities at Simula: {FE}ni{CS} and the Center for Biomedical Computing
+   author:  Anders Logg
+   meeting: Computational and Applied Mathematics Seminar, Chalmers G{\"o}teborg
+   year:    2007
+   status:  published
+   key:     Logg20070926a
+   date:    2007-09-26
+   simula:  ok
+   pdf:     missing
+** Solving {PDE}s With {FE}ni{CS}/{DOLFIN}
+   author:  Anders Logg
+   meeting: Simula Scientific Computing Seminar, Berlin
+   year:    2007
+   status:  published
+   key:     Logg20071204a
+   date:    2007-12-04
+   pdf:     missing
+** The FEniCS Project
+   author:  Anders Logg
+   meeting: Workshop on Data Structures for Finite Element and Finite Volume Computations, Freie Universit\"at Berlin
+   year:    2008
+   status:  published
+   note:    invited talk
+   key:     Logg20080229a
+   date:    2008-02-29
+   simula:  ok
+   pdf:     missing
+** A Symbolic Engine for Finite Element Exterior Calculus
+   author:  Anders Logg
+   meeting: Workshop on Automating the Development of Scientific Computing Software (FEniCS'08), Lousiana State University, Baton Rogue
+   year:    2008
+   status:  published
+   key:     Logg20080305a
+   date:    2008-03-05
+   simula:  ok
+   pdf:     missing
+** Just-in-Time Compilation of Finite Element Variational Forms
+   author:  Anders Logg
+   meeting: the Finite Element Circus and Rodeo, Louisiana State University, Baton Rogue
+   year:    2008
+   status:  published
+   key:     Logg20080307a
+   date:    2008-03-07
+   simula:  ok
+   pdf:     missing
+** A Symbolic Engine for Finite Element Exterior Calculus
+   author:  Anders Logg
+   meeting: European Finite Element Fair 2008, Chalmers, G{\"o}teborg
+   year:    2008
+   status:  published
+   key:     Logg20080530a
+   date:    2008-05-30
+   simula:  ok
+   pdf:     missing
+** FSI Development at CBC
+   author:  Anders Logg
+   meeting: Workshop on FSI for Biomedical Applications, Trondheim
+   year:    2008
+   status:  published
+   key:     Logg20080908a
+   date:    2008-09-08
+   simula:  ok
+   pdf:     missing
+** FEniCS Tutorial
+   author:  Anders Logg
+   meeting: CBC Seminar, Oslo
+   year:    2008
+   status:  published
+   key:     Logg20081106a
+   date:    2008-11-06
+   simula:  ok
+   pdf:     missing
+** An Overview of the FEniCS Project
+   author:    Anders Logg
+   meeting:   21st Nordic Seminar on Computational Mechanics, Trondheim
+   year:      2008
+   status:    published
+   duplicate: True
+   key:       Logg20080816a
+   date:      2008-08-16
+   pdf:       missing
+** Automatic Code Generation and the FEniCS Project
+   author:  Anders Logg
+   meeting: Opportunities and Challenges in Computational Geodynamics, Caltech
+   year:    2009
+   status:  published
+   key:     Logg20090330a
+   date:    2009-03-30
+   pdf:     missing
+** FEniCS: Automated Computing
+   author:  Anders Logg
+   meeting: Workshop on Computational Fluid Dynamics, Simula Research Laboratory, Oslo
+   year:    2009
+   status:  published
+   key:     Logg20090504a
+   date:    2009-05-04
+   pdf:     missing
+** Introduction to FEniCS'09
+   author:  Anders Logg
+   meeting: FEniCS'09, Simula Research Laboratory, Oslo
+   year:    2009
+   status:  published
+   key:     Logg20090611a
+   date:    2009-06-11
+   pdf:     missing
+** Parallel Data Structures and Algorithms in DOLFIN
+   author:  Anders Logg, Ola Skavhaug
+   meeting: HPC Workshop, Simula Research Laboratory
+   year:    2009
+   status:  published
+   key:     LoggSkavhaug20090616a
+   date:    2009-06-16
+   pdf:     missing
+** Automated Finite Element Discretization
+   author:  Anders Logg
+   meeting: Workshop on Compatible and Innovative Discretizations for Partial Differential Equations, Oslo
+   year:    2009
+   status:  published
+   key:     Logg20090618a
+   date:    2009-06-18
+   pdf:     missing
+** DOLFIN: Automated Finite Element Computing
+   author:  Anders Logg
+   meeting: ENUMATH'09, Uppsala
+   year:    2009
+   status:  published
+   key:     Logg20090703a
+   date:    2009-07-03
+   pdf:     missing
+* misc
+** V\"atskekristaller: En Kort Introduktion
+   author:       G{\"o}ran Christiansson, Anders Logg
+   status:       published
+   month:        2
+   key:          ChristianssonLogg1996a
+   year:         1996
+   howpublished: Scientium
+   simula:       ok
+   pdf:          papers/ChristianssonLogg1996a.pdf
+** V\"atskekristaller Del 2: {LCD} (v\"atskekristall-Displayer)
+   author:       G{\"o}ran Christiansson, Anders Logg
+   status:       published
+   month:        3--4
+   key:          ChristianssonLogg1996b
+   year:         1996
+   howpublished: Scientium
+   simula:       ok
+   pdf:          papers/ChristianssonLogg1996b.pdf
+** Tanganyika
+   author:       Anders Logg
+   status:       published
+   key:          Logg2001e
+   year:         2001
+   howpublished: URL: \url{http://www.phi.chalmers.se/tanganyika/}
+   pdf:          missing
+** Puffin
+   author:       Johan Hoffman, Anders Logg
+   status:       published
+   key:          HoffmanLogg2006a
+   year:         2006
+   howpublished: URL: \url{http://www.fenics.org/puffin/}
+   pdf:          missing
+** {B}ody and {S}oul Computer Sessions
+   author:       Anders Logg, Johan Jansson, others
+   status:       published
+   key:          LoggJanssonEtAl2006a
+   year:         2006
+   howpublished: URL: \url{http://www.bodysoulmath.org/sessions/}
+   pdf:          missing
+** Automating the Finite Element Method
+   author:       Anders Logg
+   status:       published
+   key:          Logg2006c
+   year:         2006
+   howpublished: Lecture notes for the Sixth Winter School in Computational Mathematics
+   simula:       ok
+   pdf:          missing
+** Ber\"akningsmatematik
+   author:       Anders Logg
+   status:       published
+   duplicate:    True
+   key:          Logg2008c
+   year:         2008
+   howpublished: URL: \url{http://www.forskning.se}
+   pdf:          missing
+** {FE}ni{CS} Project
+   author:       {FE}ni{CS}
+   status:       published
+   key:          FEniCS2009a
+   year:         2009
+   howpublished: URL: \url{http://www.fenics.org/}
+   pdf:          missing
+** {DOLFIN}
+   author:       Anders Logg, Garth N. Wells, others
+   status:       published
+   key:          LoggWellsEtAl2009a
+   year:         2009
+   howpublished: URL: \url{http://www.fenics.org/dolfin/}
+   pdf:          missing
+** {FFC}
+   author:       Anders Logg, others
+   status:       published
+   key:          Loggothers2009a
+   year:         2009
+   howpublished: URL: \url{http://www.fenics.org/ffc/}
+   pdf:          missing
+** {UFC}
+   author:       Martin S. Aln{\ae}s, Anders Logg, Kent-Andre Mardal, Ola Skavhaug, Hans Petter Langtangen
+   status:       published
+   key:          AlnaesLoggEtAl2009c
+   year:         2009
+   howpublished: URL: \url{http://www.fenics.org/ufc/}
+   pdf:          missing
+** {UFL}
+   author:       Martin S. Aln{\ae}s, Anders Logg
+   status:       published
+   key:          AlnaesLogg2009a
+   year:         2009
+   howpublished: URL: \url{http://www.fenics.org/ufl/}
+   pdf:          missing
+** {Exterior}
+   author:       Anders Logg, Kent-Andre Mardal
+   status:       published
+   key:          LoggMardal2009a
+   year:         2009
+   howpublished: URL: \url{http://www.fenics.org/wiki/Finite_Element_Exterior_Calculus}
+   pdf:          missing

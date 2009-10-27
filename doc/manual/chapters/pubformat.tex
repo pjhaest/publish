@@ -1,0 +1,174 @@
+\chapter{Internal Format (\texttt{.pub})}
+\label{pubformat}
+
+\section{Overview}
+
+Papers are stored in the \emp{pub} format according to the following scheme:
+\begin{code}
+* category
+** title
+   attribute: value
+   attribute: value
+   ...
+** title
+   attribute: value
+   attribute: value
+   ...
+* category
+   ...
+\end{code}
+
+Each category is specified by a \emp{*} followed by a single space and
+the name of the category.  Within each category, each paper is
+specified by \emp{**} followed by a single space and the title of the
+paper. Then follows for each paper all attribute-value pairs separated
+by \emp{:} (spaces ignored).
+
+Each category specifies a number of required attributes that must be
+specified for each paper within that category. In addition to the
+required attributes, any number of additional attributes may be
+specified.
+
+Currently, all attribute-value pairs must be entered in a single line
+(multi-line values not supported).
+
+\section{Example}
+
+\tiny
+\begin{code}
+* articles
+** Numerical Methods for Incompressible Viscous Flow
+   author:    H. P. Langtangen, K.-A. Mardal, R. Winther
+   journal:   Advances in Water Resources
+   year:      2002
+   status:    published
+   number:    8
+   pages:     1125--1146
+   volume:    25
+   key:       SC.4.Langtangen.2002.b
+   entrytype: article
+** Unified Framework for Finite Element Assembly
+   author:    Martin Sandve Aln{\ae}s, Anders Logg, Kent-Andre Mardal, Ola Skavhaug, Hans Petter Langtangen
+   journal:   International Journal of Nonlinear Modelling in Science and Engineering
+   year:      2009
+   status:    published
+   entrytype: article
+   key:       Simula.SC.96
+* books
+** Computational Partial Differential Equations - Numerical Methods and Diffpack Programming
+   author:    H. P. Langtangen
+   publisher: Springer-Verlag
+   year:      2003
+   status:    published
+   note:      2nd edition, 855 pages
+   key:       SC.1.Langtangen.2003
+   entrytype: book
+** {P}ython Scripting for Computational Science
+   author:    Hans Petter Langtangen
+   publisher: Springer-Verlag
+   year:      2008
+   status:    published
+   isbn:      978-3-540-73915-9
+   edition:   third
+   duplicate: True
+   key:       Simula.SC.63
+   entrytype: book
+   address:   Heidelberg
+* theses
+** Applications of High Level Software for Parallel Solution of Partial Differential Equations
+   author:     {\AA}smund {\O}deg{\aa}rd
+   school:     Department of Informatics, University of Oslo
+   year:       2006
+   thesistype: phd
+   status:     published
+   key:        Odegard.2006.1
+   entrytype:  phdthesis
+\end{code}
+\normalsize
+
+\section{Required Attributes}
+
+\subsection{Category \emp{articles}}
+
+This category is for refereed articles published in international
+journals.
+
+Required attributes are \emp{author}, \emp{title}, \emp{journal}, \emp{year}, and \emp{status}.
+
+\subsection{Category \emp{books}}
+
+This category is for books.
+
+Required attributes are \emp{author}, \emp{title}, \emp{publisher}, \emp{year}, and \emp{status}.
+
+\subsection{Category \emp{edited}}
+
+This category is for edited books (where the authors are the editors of
+the book).
+
+Required attributes are \emp{author}, \emp{title}, \emp{publisher}, \emp{year}, and \emp{status}.
+
+\subsection{Category \emp{chapters}}
+
+This category is for parts of books, which may be a chapter, a
+section, and/or a range of pages.
+
+Required attributes are \emp{author}, \emp{title}, \emp{chapter}
+and/or \emp{pages}, \emp{editor}, \emp{publisher}, \emp{year}, and
+\emp{status}.
+
+\subsection{Category \emp{refproceedings}}
+
+This category is for \emph{refereed} articles in conference
+proceedings.
+
+Required attributes are \emp{author}, \emp{title}, \emp{booktitle},
+\emp{year}, and \emp{status}.
+
+\subsection{Category \emp{proceedings}}
+
+This category is for articles in conference proceedings without
+referee.
+
+Required attributes are \emp{author}, \emp{title}, \emp{booktitle},
+\emp{year}, and \emp{status}.
+
+\subsection{Category \emp{reports}}
+
+This category is for reports/preprints published by a school or other
+institution, usually numbered within a series.
+
+Required attributes are \emp{author}, \emp{title}, \emp{institution},
+\emp{year}, and \emp{status}.
+
+\subsection{Category \emp{manuals}}
+
+This category is for technical documentation.
+
+Required attributes are \emp{author}, \emp{title}, and \emp{status}.
+
+\subsection{Category \emp{thesis}}
+
+This category is for PhD, Licentiate, Diploma, or Master's theses.
+
+Required attributes are \emp{author}, \emp{title}, \emp{school},
+\emp{year}, \emp{thesistype}, and \emp{status}.
+
+\subsection{Category \emp{courses}}
+
+This category is for courses given at a university or other
+educational institution.
+
+Required attributes are \emp{author}, \emp{title}, \emp{code},
+\emp{institution}, \emp{year}, and \emp{status}.
+
+\subsection{Category \emp{talks}}
+
+This category is for talks at meetings (conference or workshop).
+
+Required attributes are \emp{author}, \emp{title}, \emp{meeting}, \emp{year}, and \emp{status}.
+
+\subsection{Category \emp{misc}}
+
+This category should be used when nothing else fits. Required attributes are
+\emp{author}, \emp{title}, and \emp{status}.
