@@ -57,7 +57,7 @@ def _filter(s):
     "Filter string for special characters."
 
     # List of replacements
-    replacements = [("--", "-"),
+    replacements = [("--", "&ndash;"),
                     ("\\ae", "ae"),
                     ("$", ""),
                     ("\\mathrm", ""),
