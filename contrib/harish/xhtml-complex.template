@@ -1,0 +1,23 @@
+<ul>
+
+<h2>Peer-reviewed journal articles</h2>
+
+{% for p in papers %}
+{% ifequal p.category 'articles' %}
+
+<li>
+{% for author in p.author %}{{ author }}, {% endfor %}
+&#8220;{{ p.title }},&#8221; <em>{{ p.journal }}</em>, 
+{% if p.volume %}vol. {{ p.volume }}{% endif %}
+{% if p.number %}({{ p.number }}), {% endif %}
+{% if p.pages %}pp. {{ p.pages }}, {% endif %}
+{% ifequal p.status 'submitted' %}Submitted in {% endifequal %}
+{% if p.year %}{{ p.year }}. {% endif %}
+{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a>{% endif %}
+{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>{% endif %}
+</li>
+
+{% endifequal %}
+{% endfor %}
+
+</ul>
