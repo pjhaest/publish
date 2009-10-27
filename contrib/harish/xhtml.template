@@ -1,0 +1,1 @@
+<li>{{ title }} in {{ journal }}, {{ year }}.</li>
