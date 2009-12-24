@@ -95,3 +95,26 @@
    doi:       10.1007/0-387-26261-X_8
    pdf:       http://arxiv.org/pdf/q-bio/0312002v1
    pages:     77--84
+
+* proceedings
+** Experimental and computational investigation of viscoelasticity of native and engineered ligament and tendon
+   author:    J. Ma, H. Narayanan, K. Garikipati, K. Grosh and E. M. Arruda
+   booktitle: IUTAM Symposium on Cellular, Molecular and Tissue Mechanics
+   series:    IUTAM Bookseries   
+   volume:    16
+   year:      2010
+   status:    published
+   key:       ma2010
+   doi:       10.1007/978-90-481-3348-2_1
+   pdf:       http://www.springerlink.com/content/m7181575x66t5k12/fulltext.pdf
+   pages:     3--17
+** Collaborative computational frameworks and the growth problem
+   author:    H. Narayanan, K. Garikipati, A. Logg
+   booktitle: The mathematics of growth and remodelling of soft biological tissues
+   series:    Mathematisches Forschungsinstitut Oberwolfach Reports
+   number:    39
+   year:      2008
+   status:    published
+   key:       narayanan2008
+   pdf:       http://www.mfo.de/programme/schedule/2008/36a/OWR_2008_39.pdf
+   pages:     29--31
