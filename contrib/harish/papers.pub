@@ -7,7 +7,7 @@
    status:     published
    doi:        2027.42/57683
    key:        narayanan2007
-   pdf:        http://home.simula.no/~harish/files/papers/dissertation/dissertation.pdf   
+   pdf:        http://home.simula.no/~harish/files/papers/dissertation/dissertation.pdf
 * articles
 ** An adaptive, error-controlled scheme for the Navier-Stokes equations with applications to biomedical flow
    author:  H. Narayanan, A. Logg
@@ -118,3 +118,12 @@
    key:       narayanan2008
    pdf:       http://www.mfo.de/programme/schedule/2008/36a/OWR_2008_39.pdf
    pages:     29--31
+
+* misc
+** Variational level sets in shape reconstruction from unorganised data sets
+   author:     H. Narayanan
+   school:     University of Michigan
+   year:       2005
+   thesistype: phd
+   key:        narayanan2005
+   pdf:        http://home.simula.no/~harish/files/papers/reconstruction.pdf

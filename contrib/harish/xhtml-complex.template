@@ -1,5 +1,4 @@
-<h1>Publications &amp; communications</h1>
-<h2>PhD dissertation</h2>
+<h2>Ph.D. dissertation</h2>
 <ul>{% for p in papers %}{% ifequal p.category 'theses' %}
 <li>
 {% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
@@ -40,3 +39,12 @@
 {% endif %}</li>{% endifequal %}{% endfor %}
 </ul>
 <h2>Unpublished works</h2>
+<ul>{% for p in papers %}{% ifequal p.category 'misc' %}
+<li>
+{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
+&#8220;{{ p.title }},&#8221;
+<em>{{ p.school }}</em>, {% if p.year %}{{ p.year }}.
+{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
+{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
+{% endif %}</li>{% endifequal %}{% endfor %}
+</ul>
