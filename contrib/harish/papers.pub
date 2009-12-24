@@ -14,7 +14,7 @@
    journal: Journal of Fluid Mechanics
    year:    2010
    status:  submitted
-   key:     narayanan2010
+   key:     narayanan2010b
 ** In Silico Estimates of the Free Energy Changes in Growing, Avascular, Tumor Spheroids
    author:  H. Narayanan, S. N. Verner, K. L. Mills, R. Kemkemer, K. Garikipati
    journal: Journal of Physics: Condensed Matter
@@ -65,3 +65,33 @@
    key:     garikipati2004
    pdf:     http://arxiv.org/pdf/q-bio/0312001v3
    pages:   1595--1625
+
+* chapters
+** An automated computational framework for nonlinear elasticity
+   author:    H. Narayanan
+   editor:    A. Logg, K-A. Mardal , G. N. Wells
+   booktitle: Automated Scientific Computing
+   year:      2010
+   status:    submitted
+   key:       narayanan2010b
+** Characterization and modeling of growth and remodeling in tendon and soft tissue constructs
+   author:    E. Arruda, S. Calve, K. Garikipati, K. Grosh, H. Narayanan
+   chapter:   5
+   editor:
+   year:      2006
+   status:    published
+   booktitle: Mechanics of Biological Tissue
+   doi:       10.1007/3-540-31184-X_5
+   pdf:       http://home.simula.no/~harish/files/papers/characterizing-growth-and-remodeling.pdf
+   pages:     63--75
+   key:       arruda2006
+** Material forces in the context of biotissue remodelling
+   author:    K. Garikipati, H. Narayanan, E. Arruda, K. Grosh, S. Calve
+   chapter:   8
+   editor:
+   year:      2005
+   status:    published
+   booktitle: Mechanics of Material Forces
+   doi:       10.1007/0-387-26261-X_8
+   pdf:       http://arxiv.org/pdf/q-bio/0312002v1
+   pages:     77--84
