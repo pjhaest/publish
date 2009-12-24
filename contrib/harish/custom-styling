@@ -10,7 +10,7 @@ if len(sys.argv) != 2:
     sys.exit(2)
 else:
     # Read template
-    django_settings.configure()
+    django_settings.configure(INSTALLED_APPS='/Users/hnarayan/Projects/publish/contrib/harish')
     template_file_name = sys.argv[1]
     template_file      = open(template_file_name)
     template           = Template(template_file.read())

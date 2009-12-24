@@ -1,4 +1,20 @@
+* theses
+** A continuum theory of multiphase mixtures for modelling biological growth
+   author:     H. Narayanan
+   school:     University of Michigan
+   year:       2007
+   thesistype: phd
+   status:     published
+   doi:        2027.42/57683
+   key:        narayanan2007
+   pdf:        http://home.simula.no/~harish/files/papers/dissertation/dissertation.pdf   
 * articles
+** An adaptive, error-controlled scheme for the Navier-Stokes equations with applications to biomedical flow
+   author:  H. Narayanan, A. Logg
+   journal: Journal of Fluid Mechanics
+   year:    2010
+   status:  submitted
+   key:     narayanan2010
 ** In Silico Estimates of the Free Energy Changes in Growing, Avascular, Tumor Spheroids
    author:  H. Narayanan, S. N. Verner, K. L. Mills, R. Kemkemer, K. Garikipati
    journal: Journal of Physics: Condensed Matter
