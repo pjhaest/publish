@@ -1,0 +1,50 @@
+<h2>Ph.D. dissertation</h2>
+<ul>{% for p in papers %}{% ifequal p.category 'theses' %}
+<li>
+{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
+&#8220;{{ p.title }},&#8221;
+<em>{{ p.school }}</em>, {% if p.year %}{{ p.year }}.
+{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
+{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
+{% endif %}</li>{% endifequal %}{% endfor %}
+</ul>
+<h2>Peer-reviewed journal articles</h2>
+<ul>{% for p in papers %}{% ifequal p.category 'articles' %}
+<li>
+{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
+&#8220;{{ p.title }},&#8221;
+<em>{{ p.journal }}</em>, {% if p.volume %}vol. {{ p.volume }}{% endif %}{% if p.number %}({{ p.number }}), {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% ifequal p.status 'submitted' %}Submitted in {% endifequal %}{% if p.year %}{{ p.year }}.
+{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
+{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
+{% endif %}</li>{% endifequal %}{% endfor %}
+</ul>
+<h2>Chapters in books</h2>
+<ul>{% for p in papers %}{% ifequal p.category 'chapters' %}
+<li>
+{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
+&#8220;{{ p.title }},&#8221;
+<em>{{ p.booktitle }}</em>, {% if p.chapter %}chap. {{ p.chapter }}, {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% ifequal p.status 'submitted' %}Submitted in {% endifequal %}{% if p.year %}{{ p.year }}.
+{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
+{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
+{% endif %}</li>{% endifequal %}{% endfor %}
+</ul>
+<h2>Conference proceedings</h2>
+<ul>{% for p in papers %}{% ifequal p.category 'proceedings' %}
+<li>
+{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
+&#8220;{{ p.title }},&#8221;
+<em>{{ p.booktitle }}</em>, {% if p.series %}{{ p.series }}, {% endif %}{% if p.volume %}vol. {{ p.volume }}, {% endif %}{% if p.number %}no. {{ p.number }}, {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% ifequal p.status 'submitted' %}Submitted in {% endifequal %}{% if p.year %}{{ p.year }}.
+{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
+{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
+{% endif %}</li>{% endifequal %}{% endfor %}
+</ul>
+<h2>Unpublished works</h2>
+<ul>{% for p in papers %}{% ifequal p.category 'misc' %}
+<li>
+{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
+&#8220;{{ p.title }},&#8221;
+<em>{{ p.school }}</em>, {% if p.year %}{{ p.year }}.
+{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
+{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
+{% endif %}</li>{% endifequal %}{% endfor %}
+</ul>
