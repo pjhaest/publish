@@ -1,14 +1,3 @@
-<h2>Ph.D. dissertation</h2>
-<ol class="decorated">{% for p in papers %}{% if p.category == 'theses' %}
-<li>{% if p.doi %}
-<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/font-x-generic.png" alt="File icon" title="Download the final article (PDF)" /></a>{% endif %}{% if p.pdf %}
-<a href="{{ p.pdf }}"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/text-x-generic.png" alt="File icon" title="Download a preprint of the article (PDF)" /></a>{% endif %}
-<strong>&#8220;{{ p.title }}&#8221;</strong>
-<br />{% for author in p.author %}{% if author == "H. Narayanan" %}<em>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</em>{% endif %} {% endfor %}
-<br />{{ p.school }}
-<br />{% if p.year %}{{ p.year }}
-{% endif %}</li>{% endif %}{% endfor %}
-</ol>
 <h2>Journal articles</h2>
 <ol class="decorated">{% for p in papers %}{% if p.category == 'articles' %}
 <li>{% if p.doi %}
@@ -40,6 +29,17 @@
 <br />{% for author in p.author %}{% if author == "H. Narayanan" %}<em>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</em>{% endif %}{% if not forloop.last %},{% endif %} {% endfor %}
 <br />{{ p.booktitle }}
 <br />{% if p.series %}{{ p.series }}, {% endif %}{% if p.volume %}vol. {{ p.volume }}, {% endif %}{% if p.number %}no. {{ p.number }}, {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% if p.status == 'submitted' %}Submitted in {% endif %}{% if p.year %}{{ p.year }}
+{% endif %}</li>{% endif %}{% endfor %}
+</ol>
+<h2>Ph.D. dissertation</h2>
+<ol class="decorated">{% for p in papers %}{% if p.category == 'theses' %}
+<li>{% if p.doi %}
+<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/font-x-generic.png" alt="File icon" title="Download the final article (PDF)" /></a>{% endif %}{% if p.pdf %}
+<a href="{{ p.pdf }}"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/text-x-generic.png" alt="File icon" title="Download a preprint of the article (PDF)" /></a>{% endif %}
+<strong>&#8220;{{ p.title }}&#8221;</strong>
+<br />{% for author in p.author %}{% if author == "H. Narayanan" %}<em>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</em>{% endif %} {% endfor %}
+<br />{{ p.school }}
+<br />{% if p.year %}{{ p.year }}
 {% endif %}</li>{% endif %}{% endfor %}
 </ol>
 <h2>Unpublished works</h2>
