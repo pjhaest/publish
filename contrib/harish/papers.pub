@@ -11,9 +11,8 @@
 * articles
 ** An adaptive, error-controlled scheme for the Navier-Stokes equations with applications to biomedical flow
    author:  H. Narayanan, A. Logg
-   journal: Journal of Fluid Mechanics
    year:    2010
-   status:  submitted
+   status:  preparation
    key:     narayanan2010b
 ** In Silico Estimates of the Free Energy Changes in Growing, Avascular, Tumor Spheroids
    author:  H. Narayanan, S. N. Verner, K. L. Mills, R. Kemkemer, K. Garikipati
@@ -72,7 +71,7 @@
    editor:    A. Logg, K-A. Mardal , G. N. Wells
    booktitle: Automated Scientific Computing
    year:      2010
-   status:    submitted
+   status:    preparation
    key:       narayanan2010b
 ** Characterization and modeling of growth and remodeling in tendon and soft tissue constructs
    author:    E. Arruda, S. Calve, K. Garikipati, K. Grosh, H. Narayanan
@@ -112,7 +111,8 @@
    author:    H. Narayanan, K. Garikipati, A. Logg
    booktitle: The mathematics of growth and remodelling of soft biological tissues
    series:    Mathematisches Forschungsinstitut Oberwolfach Reports
-   number:    39
+   number:    3
+   volume:    5
    year:      2008
    status:    published
    key:       narayanan2008

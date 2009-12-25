@@ -1,50 +1,55 @@
 <h2>Ph.D. dissertation</h2>
-<ul>{% for p in papers %}{% ifequal p.category 'theses' %}
-<li>
-{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
-&#8220;{{ p.title }},&#8221;
-<em>{{ p.school }}</em>, {% if p.year %}{{ p.year }}.
-{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
-{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
-{% endif %}</li>{% endifequal %}{% endfor %}
-</ul>
-<h2>Peer-reviewed journal articles</h2>
-<ul>{% for p in papers %}{% ifequal p.category 'articles' %}
-<li>
-{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
-&#8220;{{ p.title }},&#8221;
-<em>{{ p.journal }}</em>, {% if p.volume %}vol. {{ p.volume }}{% endif %}{% if p.number %}({{ p.number }}), {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% ifequal p.status 'submitted' %}Submitted in {% endifequal %}{% if p.year %}{{ p.year }}.
-{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
-{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
-{% endif %}</li>{% endifequal %}{% endfor %}
-</ul>
+<ol class="decorated">{% for p in papers %}{% if p.category == 'theses' %}
+<li>{% if p.doi %}
+<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/font-x-generic.png" alt="File icon" title="Download the final article (PDF)" /></a>{% endif %}{% if p.pdf %}
+<a href="{{ p.pdf }}"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/text-x-generic.png" alt="File icon" title="Download a preprint of the article (PDF)" /></a>{% endif %}
+<strong>&#8220;{{ p.title }}&#8221;</strong>
+<br />{% for author in p.author %}{% if author == "H. Narayanan" %}<em>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</em>{% endif %} {% endfor %}
+<br />{{ p.school }}
+<br />{% if p.year %}{{ p.year }}
+{% endif %}</li>{% endif %}{% endfor %}
+</ol>
+<h2>Journal articles</h2>
+<ol class="decorated">{% for p in papers %}{% if p.category == 'articles' %}
+<li>{% if p.doi %}
+<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/font-x-generic.png" alt="File icon" title="Download the final article (PDF)" /></a>{% endif %}{% if p.pdf %}
+<a href="{{ p.pdf }}"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/text-x-generic.png" alt="File icon" title="Download a preprint of the article (PDF)" /></a>{% endif %}
+<strong>&#8220;{{ p.title }}&#8221;</strong>
+<br />{% for author in p.author %}{% if author == "H. Narayanan" %}<em>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</em>{% endif %}{% if not forloop.last %},{% endif %} {% endfor %}{% if p.journal %}
+<br />{{ p.journal }}{% endif %}
+<br />{% if p.volume %}Vol. {{ p.volume }}{% endif %}{% if p.number %}({{ p.number }}), {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% if p.status == 'preparation' %}Under preparation for submission in {% endif %}{% if p.status == 'submitted' %}Submitted in {% endif %}{% if p.year %}{{ p.year }}{% endif %}
+</li>{% endif %}{% endfor %}
+</ol>
 <h2>Chapters in books</h2>
-<ul>{% for p in papers %}{% ifequal p.category 'chapters' %}
-<li>
-{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
-&#8220;{{ p.title }},&#8221;
-<em>{{ p.booktitle }}</em>, {% if p.chapter %}chap. {{ p.chapter }}, {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% ifequal p.status 'submitted' %}Submitted in {% endifequal %}{% if p.year %}{{ p.year }}.
-{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
-{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
-{% endif %}</li>{% endifequal %}{% endfor %}
-</ul>
+<ol class="decorated">{% for p in papers %}{% if p.category == 'chapters' %}
+<li>{% if p.doi %}
+<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/font-x-generic.png" alt="File icon" title="Download the final article (PDF)" /></a>{% endif %}{% if p.pdf %}
+<a href="{{ p.pdf }}"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/text-x-generic.png" alt="File icon" title="Download a preprint of the article (PDF)" /></a>{% endif %}
+<strong>&#8220;{{ p.title }}&#8221;</strong>
+<br />{% for author in p.author %}{% if author == "H. Narayanan" %}<em>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</em>{% endif %}{% if not forloop.last %},{% endif %} {% endfor %}
+<br />{{ p.booktitle }}
+<br />{% if p.chapter %}Chap. {{ p.chapter }}, {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% if p.status == 'preparation' %}Under preparation for submission in {% endif %}{% if p.status == 'submitted' %}Submitted in {% endif %}{% if p.year %}{{ p.year }}
+{% endif %}</li>{% endif %}{% endfor %}
+</ol>
 <h2>Conference proceedings</h2>
-<ul>{% for p in papers %}{% ifequal p.category 'proceedings' %}
-<li>
-{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
-&#8220;{{ p.title }},&#8221;
-<em>{{ p.booktitle }}</em>, {% if p.series %}{{ p.series }}, {% endif %}{% if p.volume %}vol. {{ p.volume }}, {% endif %}{% if p.number %}no. {{ p.number }}, {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% ifequal p.status 'submitted' %}Submitted in {% endifequal %}{% if p.year %}{{ p.year }}.
-{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
-{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
-{% endif %}</li>{% endifequal %}{% endfor %}
-</ul>
+<ol class="decorated">{% for p in papers %}{% if p.category == 'proceedings' %}
+<li>{% if p.doi %}
+<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/font-x-generic.png" alt="File icon" title="Download the final article (PDF)" /></a>{% endif %}{% if p.pdf %}
+<a href="{{ p.pdf }}"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/text-x-generic.png" alt="File icon" title="Download a preprint of the article (PDF)" /></a>{% endif %}
+<strong>&#8220;{{ p.title }}&#8221;</strong>
+<br />{% for author in p.author %}{% if author == "H. Narayanan" %}<em>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</em>{% endif %}{% if not forloop.last %},{% endif %} {% endfor %}
+<br />{{ p.booktitle }}
+<br />{% if p.series %}{{ p.series }}, {% endif %}{% if p.volume %}vol. {{ p.volume }}, {% endif %}{% if p.number %}no. {{ p.number }}, {% endif %}{% if p.pages %}pp. {{ p.pages }}, {% endif %}{% if p.status == 'submitted' %}Submitted in {% endif %}{% if p.year %}{{ p.year }}
+{% endif %}</li>{% endif %}{% endfor %}
+</ol>
 <h2>Unpublished works</h2>
-<ul>{% for p in papers %}{% ifequal p.category 'misc' %}
-<li>
-{% for author in p.author %}{% if author == "H. Narayanan" %}<strong>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</strong>{% endif %}, {% endfor %}
-&#8220;{{ p.title }},&#8221;
-<em>{{ p.school }}</em>, {% if p.year %}{{ p.year }}.
-{% endif %}{% if p.doi %}<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article">[DOI]</a> 
-{% endif %}{% if p.pdf %}<a href="{{ p.pdf }}" title="Download a preprint in PDF">[PDF]</a>
-{% endif %}</li>{% endifequal %}{% endfor %}
-</ul>
+<ol class="decorated">{% for p in papers %}{% if p.category == 'misc' %}
+<li>{% if p.doi %}
+<a href="http://dx.doi.org/{{ p.doi }}" title="Download the original article"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/font-x-generic.png" alt="File icon" title="Download the final article (PDF)" /></a>{% endif %}{% if p.pdf %}
+<a href="{{ p.pdf }}"><img width="32px" height="32px" src="/layout/images/icons/lightgrey/text-x-generic.png" alt="File icon" title="Download a preprint of the article (PDF)" /></a>{% endif %}
+<strong>&#8220;{{ p.title }}&#8221;</strong>
+<br />{% for author in p.author %}{% if author == "H. Narayanan" %}<em>{% endif %}{{ author }}{% if author == "H. Narayanan" %}</em>{% endif %} {% endfor %}
+<br />{{ p.school }}
+<br />{% if p.year %}{{ p.year }}
+{% endif %}</li>{% endif %}{% endfor %}
+</ol>
