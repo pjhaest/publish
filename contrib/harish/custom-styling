@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import sys
+import re
 from publish.importing import _read_file as read_file
 from django.template import Template, Context
 from django.conf import settings as django_settings
@@ -20,5 +21,8 @@ else:
 
     # Output results
     context = Context({"papers": papers})
-    print template.render(context)
+    output = template.render(context)
+    output = re.sub('--', '&#8211;', output)
+    output = re.sub('DOC_ROOT', '<!--#echo var="MY_DOCUMENT_ROOT"-->', output)
+    print output
     

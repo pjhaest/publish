@@ -19,7 +19,7 @@
    journal:   Journal of Physics: Condensed Matter
    year:      2009
    status:    submitted
-   preprint:  http://foo
+   preprint:  http://home.simula.no/~harish/files/papers/free-energy-changes-in-tumor-spheroids.pdf
    key:       narayanan2009b
 ** The Micromechanics of Fluid-Solid Interactions During Growth in Porous Soft Biological Tissue
    author:    H. Narayanan, E. Arruda, K. Grosh, K. Garikipati
@@ -76,7 +76,7 @@
 ** Characterization and modeling of growth and remodeling in tendon and soft tissue constructs
    author:    E. Arruda, S. Calve, K. Garikipati, K. Grosh, H. Narayanan
    chapter:   5
-   editor:
+   editor:    G. A. Holzapfel, R. W. Ogden
    year:      2006
    status:    published
    booktitle: Mechanics of Biological Tissue
@@ -87,10 +87,12 @@
 ** Material forces in the context of biotissue remodelling
    author:    K. Garikipati, H. Narayanan, E. Arruda, K. Grosh, S. Calve
    chapter:   8
-   editor:
+   editor:    P. Steinmann, G. A. Maugin
    year:      2005
    status:    published
    booktitle: Mechanics of Material Forces
+   series:    Advances in Mechanics and Mathematics
+   volume:    11
    postprint: http://dx.doi.org/10.1007/0-387-26261-X_8
    preprint:  http://arxiv.org/pdf/q-bio/0312002v1
    pages:     77--84
