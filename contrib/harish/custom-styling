@@ -22,7 +22,9 @@ else:
     # Output results
     context = Context({"papers": papers})
     output = template.render(context)
-    output = re.sub('--', '&#8211;', output)
-    output = re.sub('DOC_ROOT', '<!--#echo var="MY_DOCUMENT_ROOT"-->', output)
+#   Filters for HTML
+#    output = re.sub('--', '&#8211;', output)
+#    output = re.sub('DOC_ROOT', '<!--#echo var="MY_DOCUMENT_ROOT"-->', output)
+#   Filters for LaTeX
     print output
     
