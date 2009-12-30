@@ -26,5 +26,7 @@ else:
 #    output = re.sub('--', '&#8211;', output)
 #    output = re.sub('DOC_ROOT', '<!--#echo var="MY_DOCUMENT_ROOT"-->', output)
 #   Filters for LaTeX
+    output = re.sub('{_', '{', output)
+    output = re.sub('\\\\nl\n\\\\subsection', '\n\\\\subsection', output)
     print output
     
