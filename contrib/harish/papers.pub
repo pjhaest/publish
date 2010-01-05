@@ -14,14 +14,14 @@
    year:      2010
    status:    preparation
    key:       narayanan2010a
-** In Silico Estimates of the Free Energy Changes in Growing, Avascular, Tumor Spheroids
+** In silico estimates of the free energy changes in growing, avascular, tumor spheroids
    author:    H. Narayanan, S. N. Verner, K. L. Mills, R. Kemkemer, K. Garikipati
    journal:   Journal of Physics: Condensed Matter
    year:      2009
    status:    submitted
    preprint:  http://home.simula.no/~harish/files/papers/free-energy-changes-in-tumor-spheroids.pdf
    key:       narayanan2009b
-** The Micromechanics of Fluid-Solid Interactions During Growth in Porous Soft Biological Tissue
+** The micromechanics of fluid-solid interactions during growth in porous soft biological tissue
    author:    H. Narayanan, E. M. Arruda, K. Grosh, K. Garikipati
    journal:   Biomechanics and Modeling in Mechanobiology
    year:      2009
@@ -32,7 +32,7 @@
    key:       narayanan2009a
    preprint:  http://arxiv.org/pdf/q-bio/0701003v4
    postprint: http://dx.doi.org/10.1007/s10237-008-0126-1
-** The Continuum Elastic and Atomistic Viewpoints on the Formation Volume and Strain Energy of a Point Defect
+** The continuum elastic and atomistic viewpoints on the formation volume and strain energy of a point defect
    author:    K. Garikipati, M. Falk, M. Bouville, B. Puchala, H. Narayanan
    journal:   Journal of the Mechanics and Physics of Solids
    year:      2006
@@ -43,7 +43,7 @@
    key:       garikipati2006b
    preprint:  http://arxiv.org/pdf/cond-mat/0508169v1
    postprint: http://dx.doi.org/10.1016/j.jmps.2006.02.007
-** Biological Remodelling: Stationary Energy, Configurational Change, Internal Variables and Dissipation
+** Biological remodelling: Stationary energy, configurational change, internal variables and dissipation
    author:    K. Garikipati, J. Olberding, H. Narayanan, E. M. Arruda, K. Grosh, S. Calve
    journal:   Journal of the Mechanics and Physics of Solids
    year:      2006
@@ -54,7 +54,7 @@
    key:       garikipati2006a
    preprint:  http://arxiv.org/pdf/q-bio/0506023v2
    postprint: http://dx.doi.org/10.1016/j.jmps.2005.11.011
-** A Continuum Treatment of Growth in Biological Tissue: the Coupling of Mass Transport and Mechanics
+** A continuum treatment of growth in biological tissue: the coupling of mass transport and mechanics
    author:    K. Garikipati, E. M. Arruda, K. Grosh, H. Narayanan, S. Calve
    journal:   Journal of the Mechanics and Physics of Solids
    year:      2004
@@ -99,8 +99,8 @@
 * proceedings
 ** Experimental and computational investigation of viscoelasticity of native and engineered ligament and tendon
    author:    J. Ma, H. Narayanan, K. Garikipati, K. Grosh, E. M. Arruda
-   booktitle: IUTAM Symposium on Cellular, Molecular and Tissue Mechanics
-   series:    IUTAM Bookseries   
+   booktitle: Cellular, Molecular and Tissue Mechanics
+   series:    IUTAM Symposium Bookseries
    volume:    16
    year:      2010
    status:    published
@@ -111,7 +111,7 @@
 ** Collaborative computational frameworks and the growth problem
    author:    H. Narayanan, K. Garikipati, A. Logg
    booktitle: The mathematics of growth and remodelling of soft biological tissues
-   series:    Mathematisches Forschungsinstitut Oberwolfach Reports
+   series:    Ma\-the\-mat\-isch\-es For\-schungs\-insti\-tut O\-ber\-wol\-fach Reports
    number:    3
    volume:    5
    year:      2008
@@ -123,7 +123,7 @@
 ** Mathematical modelling of solid tumor growth
    author:    K. Garikipati, H. Narayanan, K. Grosh, E. M. Arruda
    booktitle: The mathematics of growth and remodelling of soft biological tissues
-   series:    Mathematisches Forschungsinstitut Oberwolfach Reports
+   series:    Ma\-the\-mat\-isch\-es For\-schungs\-insti\-tut O\-ber\-wol\-fach Reports
    number:    3
    volume:    5
    year:      2008
